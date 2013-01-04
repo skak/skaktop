@@ -1,0 +1,44 @@
+#!/bin/zsh
+# random response poke script
+# just for fun
+# skak lisasson - new years day - 2012
+
+RANGE=10
+echo
+num=$RANDOM
+let "num %= $RANGE"
+if [[ "$UID" == "0" ]]; then
+	echo "You just killed a small man inside your linux box."
+	sleep 1
+	echo "Good fucking job."
+	sleep 1
+	echo "I hope you feel wonderful."
+	sleep 1
+else
+	if [[ "$num" == "0" ]]; then
+		echo "Hey!"
+	elif [[ "$num" == "1" ]]; then
+		echo "Quit that!"
+	elif [[ "$num" == "2" ]]; then
+		echo "Ouch!"
+	elif [[ "$num" == "3" ]]; then
+		echo "You be careful or I'm gonna bite ya!"
+	elif [[ "$num" == "4" ]]; then
+		echo "Stop poking me!"
+	elif [[ "$num" == "5" ]]; then
+		echo "Don't you have something better to do?"
+	elif [[ "$num" == "6" ]]; then
+		echo "Your finger hurt my feelings."
+	elif [[ "$num" == "7" ]]; then
+		echo "You suck at poking. That only hurt a little."
+	elif [[ "$num" == "8" ]]; then
+		echo "Poke me again! I dare you!"
+	elif [[ "$num" == "9" ]]; then
+		echo "I tell ya. This is some clown action over here."
+	elif [[ "$num" == "10" ]]; then
+		echo "Thanks, now I've got pokeitis."
+	else
+		echo "How on earth did the random number container limited by 0 and 10 get lower or high than 0 or 10?"
+	fi
+fi
+echo

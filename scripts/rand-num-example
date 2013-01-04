@@ -1,0 +1,11 @@
+#!/bin/zsh
+# random response poke script
+# just for fun
+# skak lisasson - new years day - 2012
+
+RANGE=10
+echo
+number=$RANDOM
+let "number %= $RANGE"
+echo "Random number less than $RANGE --- $number"
+echo
