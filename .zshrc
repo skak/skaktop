@@ -39,7 +39,7 @@ zle -N zle-line-init
 zle -N zle-line-finish
 
 # {{{ Environment
-export PATH="${PATH}:${HOME}/code/bin"
+export PATH="${PATH}:${HOME}/code/bin:/usr/local/lib:/usr/local/bin"
 export HISTFILE="${HOME}/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
@@ -74,6 +74,8 @@ export LESS_TERMCAP_us=$'\E[1;32m'    # begin underline
 # {{{ Aliases
 ################# ALIAS ###################
 #GLOBAL
+alias umount="sudo umount"
+alias mount="sudo mount"
 alias @wifi="sudo wifi-menu"
 alias poweroff="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
@@ -82,6 +84,10 @@ alias @S="sudo systemctl"
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
 # SHELL
+alias @ea="vim ~/.config/awesome/rc.new.lua"
+alias @eA="vim ~/.config/awesome/rc.lua"
+alias g@ea="gvim ~/.config/awesome/rc.new.lua"
+alias g@eA="gvim ~/.config/awesome/rc.lua"
 alias @ez="vim ~/.zshrc"
 alias @sz="source ~/.zshrc"
 alias @eb="vim ~/bash.bashrc"

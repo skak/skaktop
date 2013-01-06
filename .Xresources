@@ -1,15 +1,14 @@
 URxvt.foreground: #dcdccc
  
-!URxvt.depth: 32
+URxvt.depth: 32
 URxvt*background: #3f3f3f
  
 URxvt.saveLines:32767
-URxvt.scrollBar: false
- 
+URxvt.scrollBar: true 
 URxvt*font: xft:Terminus:pixelsize=12
  
 URxvt.perl-ext-common: default,matcher,clipboard,digital-clock,keyboard-select,tabbed
-URxvt.urlLauncher: uzbl-browser
+URxvt.urlLauncher: dwb 
 URxvt.matcher.button: 2
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
  
