@@ -1,0 +1,46 @@
+#!/bin/bash
+# just a lil powerdown script to incorporate shutdown commands
+# such as unloading alsas bullshit popping fuck
+# skak lisasson - 4/1/2013
+IFS=
+CHOOSER=$1
+if [[ "$UID" != "0" ]]; then
+	echo "Needs root brah."
+	exit 1
+elif [[ "$UID" == "0" ]]; then
+	echo "Rooted..."
+		case "$CHOOSER" in
+		help)
+			echo "usage:"
+			echo "skakkix ks ..kills this bitch"
+			echo "skakkix rc ..recycles her for another fresh round"
+			echo "skakkix fz ..freezes her solid"
+			echo "skakkix help ..shows you this bullshit"
+		;;
+		ks)
+			echo "Caught the killswitch...."
+			amixer set Master mute >/dev/null
+			modprobe -r snd-hda-intel
+			systemctl poweroff
+		;;
+		rc)
+			echo "Caught the recycle...."
+			amixer set Master mute >/dev/null
+			modprobe -r snd-hda-intel
+			systemctl reboot
+		;;
+		fz)
+			echo "Caught freeze...."
+			amixer set Master mute >/dev/null
+			modprobe -r snd-hda-intel
+			systemctl halt
+		;;
+		*)
+			echo "Caught nothing...."
+			exit
+		;;
+	esac
+else
+	echo "Burnt the roots."
+	exit 1
+fi
