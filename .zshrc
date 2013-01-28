@@ -2,6 +2,7 @@
 # 
 # anrxc's init file for Z-SHELL 4.3.10 on Arch GNU/Linux.
 # edited by skak in zsh 5.0.2
+export DISPLAY=:0
 
 # {{{ User settings
 xrdb -load ~/.Xresources
@@ -84,6 +85,10 @@ alias @S="sudo systemctl"
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
 # SHELL
+alias @esysdefs="/usr/share/applications/defaults.list"
+alias @edefs="/usr/share/applications/mimeapps.list"
+alias @esshd="sudo vim /etc/ssh/sshd_config"
+alias @essh="sudo vim /etc/ssh/ssh_config"
 alias @ea="vim ~/.config/awesome/rc.new.lua"
 alias @eA="vim ~/.config/awesome/rc.lua"
 alias g@ea="gvim ~/.config/awesome/rc.new.lua"
@@ -115,11 +120,18 @@ alias @psyy="packer -Syy"
 ###########################################
 
 ############# HASH(ALIAS.DIR) #############
+alias Dhome="~/"
+alias Dcfg="~/.config/"
+alias Dushare="/usr/share/"
+alias Dx11="/etc/X11/"
+alias Dssh="/etc/ssh/"
+alias Dapps="/usr/share/applications/"
+alias Dappslocal="~/.local/share/applications/"
+#########################################
 
-###########################################
 # COMPLETETION ALIASES
 setopt completealiases
-plugins=(git mercurial command-not-found python pip github gnu-utils history-substring-search)
+plugins=(git perl  mercurial command-not-found python pip github gnu-utils history-substring-search)
 
 
 # {{{ Main
