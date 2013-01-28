@@ -7,10 +7,9 @@ URxvt.saveLines:32767
 URxvt.scrollBar: true 
 URxvt*font: xft:Terminus:pixelsize=12
  
-URxvt.perl-ext-common: default,matcher,clipboard,digital-clock,keyboard-select,tabbed
-URxvt.urlLauncher: dwb 
-URxvt.matcher.button: 2
-URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.perl-ext: default,matcher,clipboard,digital-clock,keyboard-select,tabbed
+URxvt.urlLauncher: lynx
+URxvt.matcher.button: 1
  
 URxvt*colorUL: #c5f779
 URxvt*underlineColor: #c5f779
