@@ -1,0 +1,6 @@
+#!/bin/bash
+# this script automutes the volume after an hour
+# good for if you want it to shutup cuz you think you're gonna pass out
+# cheers, skak
+# feb 02 2013 half passed six in the morning
+sleep 3600&; amixer -q set Master mute
