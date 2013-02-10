@@ -1,14 +1,15 @@
 URxvt.foreground: #dcdccc
  
-URxvt.depth: 32
-URxvt*background: #3f3f3f
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
+!URxvt*background: #3f3f3f
  
 URxvt.saveLines:32767
 URxvt.scrollBar: true 
-URxvt*font: xft:Terminus:pixelsize=12
+URxvt*font: xft:Terminusmodx:pixelsize=12
  
 URxvt.perl-ext: default,matcher,clipboard,digital-clock,keyboard-select,tabbed
-URxvt.urlLauncher: lynx
+URxvt.urlLauncher: w3m
 URxvt.matcher.button: 1
  
 URxvt*colorUL: #c5f779
