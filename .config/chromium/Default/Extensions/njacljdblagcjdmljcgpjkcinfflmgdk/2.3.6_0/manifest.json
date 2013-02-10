@@ -1,0 +1,22 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "img/logo_32.png",
+      "default_title": "View/Search Bookmarks",
+      "popup": "popup.html"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "img/logo_128.png",
+      "16": "img/logo_16.png",
+      "32": "img/logo_32.png",
+      "48": "img/logo_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDnL8Sj9jBRMfMCHjmcVLr10HgAXQVVGRM2iXhXzxdCI5HPckk5Aoi1FXZKEpAKAjaG+n/1ZyocT9hnRuQTdfl2XcbIuL+PfgWZcjsVc1HxjYXK3l9wfDivaF+q7jFTpRsDjIIHr8KavAXZ/k6wj3RQJPHntund5E3T+4Yj+MFt4QIDAQAB",
+   "name": "__MSG_extName__",
+   "options_page": "options.html",
+   "permissions": [ "bookmarks", "chrome://favicon/", "http://*/*", "https://*/*", "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.3.6"
+}

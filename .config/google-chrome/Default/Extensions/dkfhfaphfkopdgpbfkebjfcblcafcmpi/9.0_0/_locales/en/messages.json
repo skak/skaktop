@@ -1,0 +1,142 @@
+{
+   "about_google_message": {
+      "description": "About.",
+      "message": "About"
+   },
+   "about_message": {
+      "description": "About message in help.",
+      "message": "Chrome to Phone, from Google, enables you to send links and other information from Chrome to your Android device. Chrome to Phone is comprised of a Chrome browser extension and an Android application."
+   },
+   "about_title_message": {
+      "description": "Section title in help.",
+      "message": "About"
+   },
+   "app_desc": {
+      "description": "Description of the application.",
+      "message": "MightyText allows you to send/recieve SMS text messages directly in Chrome when syncd with an Android device"
+   },
+   "app_name": {
+      "description": "Name of the application",
+      "message": "MightyText"
+   },
+   "app_name_short": {
+      "description": "Short name of the application",
+      "message": "MightyText"
+   },
+   "connectivity_error_message": {
+      "description": "Error message when there is a connection error with the server.",
+      "message": "Connection error."
+   },
+   "device_not_registered_message": {
+      "description": "Error message when we can't match a user to a device.",
+      "message": "Device not registered for user. Check Android App setup."
+   },
+   "error_sending_message": {
+      "description": "Notice when link cannot be sent. $details$ is automatically replaced with the error text.",
+      "message": "Error sending to phone: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Failed to send message."
+         }
+      }
+   },
+   "features_message1": {
+      "description": "Feature message in help.",
+      "message": "............"
+   },
+   "features_message2": {
+      "description": "Feature message in help.",
+      "message": "............"
+   },
+   "features_message3": {
+      "description": "Feature message in help.",
+      "message": "............"
+   },
+   "features_message4": {
+      "description": "Feature message in help.",
+      "message": "............"
+   },
+   "features_message5": {
+      "description": "Feature message in help.",
+      "message": "............"
+   },
+   "features_title_message": {
+      "description": "Section title in help.",
+      "message": "Features"
+   },
+   "help_message": {
+      "description": "The help message.",
+      "message": "Help"
+   },
+   "invalid_scheme_message": {
+      "description": "Notice when user attempt to send a file link.",
+      "message": "Only http or https pages supported."
+   },
+   "privacy_message": {
+      "description": "Privacy.",
+      "message": "Privacy"
+   },
+   "sending_message": {
+      "description": "Notice when link is being sent to phone.",
+      "message": "Sending..."
+   },
+   "sent_message": {
+      "description": "Notice successfully sent to phone.",
+      "message": "Sent request to your phone"
+   },
+   "sign_in_message": {
+      "description": "Sign in phrase used in the context of 'Please sign in to MightyText'.",
+      "message": "sign in"
+   },
+   "sign_in_required_message": {
+      "description": "Notice when sign in is required. $link$ is automatically replaced with 'sign in'.",
+      "message": "Please $link$ to MightyText.",
+      "placeholders": {
+         "link": {
+            "content": "$1",
+            "example": "Sign in link."
+         }
+      }
+   },
+   "sign_out_message": {
+      "description": "Sign out link message.",
+      "message": "Sign out"
+   },
+   "signed_in_message": {
+      "description": "Signed in message.",
+      "message": "Signed in. You are now ready to send links to your phone."
+   },
+   "signed_out_message": {
+      "description": "Signed out message.",
+      "message": "You are now signed out of MightyText."
+   },
+   "signed_out_title_message": {
+      "description": "Signed out section title.",
+      "message": "Signed out"
+   },
+   "step2_message": {
+      "description": "Comic step 2 in help.",
+      "message": "............"
+   },
+   "step3_message": {
+      "description": "Comic step 3 in help.",
+      "message": "............"
+   },
+   "step4_message": {
+      "description": "Comic step 4 in help.",
+      "message": "............"
+   },
+   "step5_message": {
+      "description": "Comic step 5 in help.",
+      "message": "............"
+   },
+   "step6_message": {
+      "description": "Comic step 6 in help.",
+      "message": "Click the toolbar icon to send the link or currently selected text to your phone."
+   },
+   "tos_message": {
+      "description": "Terms of Service.",
+      "message": "Terms of Service"
+   }
+}

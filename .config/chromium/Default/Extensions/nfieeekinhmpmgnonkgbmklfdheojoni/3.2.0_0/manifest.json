@@ -1,0 +1,21 @@
+{
+   "background_page": "background/background.html",
+   "browser_action": {
+      "default_icon": "public/folder32.png",
+      "default_title": "Google Bookmarks",
+      "popup": "ui/bookmark.html"
+   },
+   "description": "Google bookmarks extension for Chrome",
+   "icons": {
+      "128": "public/folder128.png",
+      "16": "public/folder16.png",
+      "32": "public/folder32.png",
+      "48": "public/folder48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFS6/2AK3EMD1QrUiw3rGNRZXx/CMxHpHfcUucB46zPPLrk2qXPW1D3uvsP6FBaxPIVa1d9dhs1f/NE1qz0NF2I66m8fE2hPnbA3N5rmiqgk0bOqSl6T4r89AETxSVOqPNBTMb4USDGIOAK43Nunko4JA49jDiP0i/+XLfqy+enwIDAQAB",
+   "name": "Google bookmarks",
+   "options_page": "options/options.html",
+   "permissions": [ "tabs", "bookmarks", "http://www.google.com/", "https://www.google.com/" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "3.2.0"
+}

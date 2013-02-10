@@ -1,0 +1,444 @@
+Feb 10, 2013 12:41:06 AM esmska.Main
+FINE: Esmska 1.3 starting...
+Feb 10, 2013 12:41:06 AM esmska.Main
+FINER: System info: os.name=Linux; os.version=3.7.6-1-ARCH; os.arch=amd64; user.name=skak; user.home=/home/skak; user.dir=/usr/share/java/esmska; java.version=1.7.0_09; java.vendor=Oracle Corporation; java.vm.name=OpenJDK 64-Bit Server VM; java.vm.version=23.2-b09; language=en
+Feb 10, 2013 12:41:06 AM esmska.persistence.PersistenceManager
+FINE: Setting new config dir path: /home/skak/.config/esmska
+Feb 10, 2013 12:41:06 AM esmska.persistence.PersistenceManager
+FINE: Setting new data dir path: /home/skak/.local/share/esmska
+Feb 10, 2013 12:41:07 AM esmska.persistence.BackupManager
+FINE: Files backed up to '/home/skak/.config/esmska/backups/2013-02-10'
+Feb 10, 2013 12:41:07 AM esmska.utils.LogSupport initFileHandler
+FINE: Started logging into /home/skak/.config/esmska/console.log
+Feb 10, 2013 12:41:07 AM esmska.persistence.PersistenceManager loadConfig
+FINE: Loading global config...
+Feb 10, 2013 12:41:07 AM esmska.persistence.ImportManager importGlobalConfig
+FINER: Importing global configuration from file: /usr/share/java/esmska/esmska.conf
+Feb 10, 2013 12:41:07 AM esmska.persistence.ImportManager importGlobalConfig
+FINER: Imported global configuration
+Feb 10, 2013 12:41:07 AM esmska.persistence.PersistenceManager loadContacts
+FINE: Loading contacts...
+Feb 10, 2013 12:41:07 AM esmska.persistence.PersistenceManager loadQueue
+FINE: Loading queue
+Feb 10, 2013 12:41:07 AM esmska.persistence.PersistenceManager loadHistory
+FINE: Loading history...
+Feb 10, 2013 12:41:07 AM esmska.persistence.PersistenceManager loadKeyring
+FINE: Loading keyring...
+Feb 10, 2013 12:41:07 AM esmska.Main main
+FINE: First run, doing initialization...
+Feb 10, 2013 12:41:07 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: countryPrefix, old: , new: +1
+Feb 10, 2013 12:41:07 AM esmska.gui.ThemeManager suggestBestLAF
+FINER: Suggested LaF: CROSSPLATFORM
+Feb 10, 2013 12:41:07 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: lookAndFeel, old: SUBSTANCE, new: CROSSPLATFORM
+Feb 10, 2013 12:41:24 AM esmska.gui.ThemeManager setLaF
+FINE: New LaF set: [Nimbus Look and Feel - javax.swing.plaf.nimbus.NimbusLookAndFeel]
+Feb 10, 2013 12:41:24 AM esmska.update.Statistics refreshUUID
+FINE: Regenerating a new UUID
+Feb 10, 2013 12:41:24 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuid, old: null, new: ff23d293-73d0-46cf-901b-9ca3b82468ab
+Feb 10, 2013 12:41:24 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuidMonth, old: -1, new: 1
+Feb 10, 2013 12:41:26 AM esmska.data.Log addRecord
+FINER: A new log record added: [time=Sun Feb 10 00:41:26 PST 2013]
+Feb 10, 2013 12:41:26 AM esmska.gui.MainFrame loadConfig
+FINER: Initializing according to config...
+Feb 10, 2013 12:41:27 AM esmska.gui.MainFrame startAndShow
+FINE: Showing mainframe...
+Feb 10, 2013 12:41:27 AM esmska.gui.MainFrame loadGatewaysAsync
+FINE: Loading gateways asynchronously...
+Feb 10, 2013 12:41:27 AM esmska.persistence.PersistenceManager loadGateways
+FINE: Loading gateways...
+Feb 10, 2013 12:41:27 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from directory: /usr/share/java/esmska/gateways
+Feb 10, 2013 12:41:27 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from set of 22 URLs
+Feb 10, 2013 12:41:27 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2.gateway
+Feb 10, 2013 12:41:28 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 [version=2012-11-26]
+Feb 10, 2013 12:41:28 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DT-mobile.gateway
+Feb 10, 2013 12:41:28 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]T-mobile [version=2012-06-28]
+Feb 10, 2013 12:41:28 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BDK%5DCoolSMS_(GratisSMS).gateway
+Feb 10, 2013 12:41:29 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [DK]CoolSMS (GratisSMS) [version=2011-06-16]
+Feb 10, 2013 12:41:29 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DOdorik.cz.gateway
+Feb 10, 2013 12:41:29 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]Odorik.cz [version=2011-11-29]
+Feb 10, 2013 12:41:29 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5Dt-zones.gateway
+Feb 10, 2013 12:41:29 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]t-zones [version=2012-08-24]
+Feb 10, 2013 12:41:29 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2_SMSender.gateway
+Feb 10, 2013 12:41:30 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 SMSender [version=2012-06-03]
+Feb 10, 2013 12:41:30 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DSMS.cz.gateway
+Feb 10, 2013 12:41:30 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]SMS.cz [version=2011-06-16]
+Feb 10, 2013 12:41:30 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BDK%5DCoolSMS_(FriSMS).gateway
+Feb 10, 2013 12:41:31 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [DK]CoolSMS (FriSMS) [version=2011-06-16]
+Feb 10, 2013 12:41:31 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DVodafone_park.gateway
+Feb 10, 2013 12:41:31 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]Vodafone park [version=2012-08-04]
+Feb 10, 2013 12:41:31 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMSdiscount.gateway
+Feb 10, 2013 12:41:31 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMSdiscount [version=2011-06-16]
+Feb 10, 2013 12:41:31 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2_(registrace).gateway
+Feb 10, 2013 12:41:31 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 (registrace) [version=2012-11-26]
+Feb 10, 2013 12:41:31 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5Dsmska.cz.gateway
+Feb 10, 2013 12:41:32 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]smska.cz [version=2011-06-16]
+Feb 10, 2013 12:41:32 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BSK%5DOrange_(plateny).gateway
+Feb 10, 2013 12:41:32 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [SK]Orange (platený) [version=2011-06-16]
+Feb 10, 2013 12:41:32 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BLT%5Ddos.lt.gateway
+Feb 10, 2013 12:41:32 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [LT]dos.lt [version=2011-06-16]
+Feb 10, 2013 12:41:32 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DKlikniAVolej.gateway
+Feb 10, 2013 12:41:32 AM esmska.gui.Actions$ConfigAction actionPerformed
+FINE: Showing config frame...
+Feb 10, 2013 12:41:32 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]KlikniAVolej [version=2011-11-30]
+Feb 10, 2013 12:41:32 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DSMS_Manager.gateway
+Feb 10, 2013 12:41:33 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]SMS Manager [version=2011-08-18]
+Feb 10, 2013 12:41:33 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BSK%5DOrange.gateway
+Feb 10, 2013 12:41:33 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [SK]Orange [version=2011-06-16]
+Feb 10, 2013 12:41:33 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DPoslatSMS.cz.gateway
+Feb 10, 2013 12:41:33 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]PoslatSMS.cz [version=2011-06-16]
+Feb 10, 2013 12:41:33 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DVodafone.gateway
+Feb 10, 2013 12:41:34 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]Vodafone [version=2012-10-11]
+Feb 10, 2013 12:41:34 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DGoSMS.gateway
+Feb 10, 2013 12:41:34 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]GoSMS [version=2011-06-16]
+Feb 10, 2013 12:41:34 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMS_Global.gateway
+Feb 10, 2013 12:41:34 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMS Global [version=2011-06-16]
+Feb 10, 2013 12:41:34 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMSpoint.gateway
+Feb 10, 2013 12:41:34 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMSpoint [version=2011-06-16]
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importGateways
+FINER: Imported 22 gateways
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from directory: /home/skak/.local/share/esmska/gateways
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from set of 0 URLs
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importGateways
+FINER: Imported 0 gateways
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importDeprecatedGateways
+FINER: Importing deprecated gateways from file: /usr/share/java/esmska/gateways/deprecated.xml
+Feb 10, 2013 12:41:34 AM esmska.persistence.ImportManager importDeprecatedGateways
+FINER: Importing deprecated gateways from URL: file:/usr/share/java/esmska/gateways/deprecated.xml
+Feb 10, 2013 12:41:35 AM esmska.data.Gateways clear
+FINE: Removing all gateways
+Feb 10, 2013 12:41:35 AM esmska.data.Gateways addAll
+FINE: Adding 22 gateways: [[CZ]KlikniAVolej [version=2011-11-30], [CZ]O2 [version=2012-11-26], [CZ]O2 (registrace) [version=2012-11-26], [CZ]O2 SMSender [version=2012-06-03], [CZ]PoslatSMS.cz [version=2011-06-16], [CZ]SMS.cz [version=2011-06-16], [CZ]smska.cz [version=2011-06-16], [CZ]SMS Manager [version=2011-08-18], [CZ]T-mobile [version=2012-06-28], [CZ]t-zones [version=2012-08-24], [CZ]Vodafone [version=2012-10-11], [CZ]Vodafone park [version=2012-08-04], [DK]CoolSMS (FriSMS) [version=2011-06-16], [DK]CoolSMS (GratisSMS) [version=2011-06-16], [INT]GoSMS [version=2011-06-16], [INT]Odorik.cz [version=2011-11-29], [INT]SMSdiscount [version=2011-06-16], [INT]SMS Global [version=2011-06-16], [INT]SMSpoint [version=2011-06-16], [LT]dos.lt [version=2011-06-16], [SK]Orange [version=2011-06-16], [SK]Orange (platený) [version=2011-06-16]]
+Feb 10, 2013 12:41:35 AM esmska.persistence.PersistenceManager loadGatewayProperties
+FINE: Loading gateway config...
+Feb 10, 2013 12:41:40 AM esmska.update.Statistics shouldSend
+FINE: Shouldn't send usage info, first program run
+Feb 10, 2013 12:41:40 AM esmska.update.Statistics sendUsageInfo
+FINE: Not sending usage info
+Feb 10, 2013 12:41:40 AM esmska.update.UpdateChecker checkForUpdates
+FINE: Checking for program updates...
+Feb 10, 2013 12:41:43 AM esmska.update.UpdateChecker$1 propertyChange
+FINE: Found program update: false
+Feb 10, 2013 12:41:43 AM esmska.update.UpdateChecker$1 propertyChange
+FINE: Found gateway update: true
+Feb 10, 2013 12:41:43 AM esmska.update.UpdateInstaller installNewGateways
+FINE: Starting up update installation process...
+Feb 10, 2013 12:41:43 AM esmska.update.UpdateInstaller$Downloader doInBackground
+FINER: Downloading 3 updates
+Feb 10, 2013 12:41:43 AM esmska.update.UpdateInstaller$Downloader doInBackground
+FINER: Downloading gateway update: [CZ]t-zones 2012-12-24
+Feb 10, 2013 12:41:44 AM esmska.update.UpdateInstaller$Downloader doInBackground
+FINER: Downloading gateway update: [CZ]O2 (registrace) 2012-12-25
+Feb 10, 2013 12:41:44 AM esmska.update.UpdateInstaller$Downloader doInBackground
+FINER: Downloading gateway update: [CZ]T-mobile 2012-12-10
+Feb 10, 2013 12:41:45 AM esmska.update.UpdateInstaller doInstallation
+FINER: Saving 3 updates to disk
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINE: Saving gateway...
+Feb 10, 2013 12:41:45 AM esmska.persistence.ExportManager exportGateway
+FINER: Exporting gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway script into file: /home/skak/.local/share/esmska/gateways/[CZ]t-zones.gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway icon into file: /home/skak/.local/share/esmska/gateways/[CZ]t-zones.png
+Feb 10, 2013 12:41:45 AM esmska.update.UpdateInstaller doInstallation
+INFO: Gateway updated: [CZ]t-zones (2012-12-24)
+Feb 10, 2013 12:41:45 AM esmska.data.Log addRecord
+FINER: A new log record added: [time=Sun Feb 10 00:41:45 PST 2013]
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINE: Saving gateway...
+Feb 10, 2013 12:41:45 AM esmska.persistence.ExportManager exportGateway
+FINER: Exporting gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway script into file: /home/skak/.local/share/esmska/gateways/[CZ]O2_(registrace).gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway icon into file: /home/skak/.local/share/esmska/gateways/[CZ]O2_(registrace).png
+Feb 10, 2013 12:41:45 AM esmska.update.UpdateInstaller doInstallation
+INFO: Gateway updated: [CZ]O2 (registrace) (2012-12-25)
+Feb 10, 2013 12:41:45 AM esmska.data.Log addRecord
+FINER: A new log record added: [time=Sun Feb 10 00:41:45 PST 2013]
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINE: Saving gateway...
+Feb 10, 2013 12:41:45 AM esmska.persistence.ExportManager exportGateway
+FINER: Exporting gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway script into file: /home/skak/.local/share/esmska/gateways/[CZ]T-mobile.gateway
+Feb 10, 2013 12:41:45 AM esmska.persistence.PersistenceManager saveGateway
+FINER: Saved gateway icon into file: /home/skak/.local/share/esmska/gateways/[CZ]T-mobile.png
+Feb 10, 2013 12:41:45 AM esmska.update.UpdateInstaller doInstallation
+INFO: Gateway updated: [CZ]T-mobile (2012-12-10)
+Feb 10, 2013 12:41:46 AM esmska.data.Log addRecord
+FINER: A new log record added: [time=Sun Feb 10 00:41:45 PST 2013]
+Feb 10, 2013 12:41:46 AM esmska.update.UpdateInstaller doInstallation
+FINER: Reloading gateways...
+Feb 10, 2013 12:41:46 AM esmska.persistence.PersistenceManager loadGateways
+FINE: Loading gateways...
+Feb 10, 2013 12:41:46 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from directory: /usr/share/java/esmska/gateways
+Feb 10, 2013 12:41:46 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from set of 22 URLs
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 [version=2012-11-26]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DT-mobile.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]T-mobile [version=2012-06-28]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BDK%5DCoolSMS_(GratisSMS).gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [DK]CoolSMS (GratisSMS) [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DOdorik.cz.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]Odorik.cz [version=2011-11-29]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5Dt-zones.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]t-zones [version=2012-08-24]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2_SMSender.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 SMSender [version=2012-06-03]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DSMS.cz.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]SMS.cz [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BDK%5DCoolSMS_(FriSMS).gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [DK]CoolSMS (FriSMS) [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DVodafone_park.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]Vodafone park [version=2012-08-04]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMSdiscount.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMSdiscount [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DO2_(registrace).gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 (registrace) [version=2012-11-26]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5Dsmska.cz.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]smska.cz [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BSK%5DOrange_(plateny).gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [SK]Orange (platený) [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BLT%5Ddos.lt.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [LT]dos.lt [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DKlikniAVolej.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]KlikniAVolej [version=2011-11-30]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DSMS_Manager.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]SMS Manager [version=2011-08-18]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BSK%5DOrange.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [SK]Orange [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DPoslatSMS.cz.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]PoslatSMS.cz [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BCZ%5DVodafone.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]Vodafone [version=2012-10-11]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DGoSMS.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]GoSMS [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMS_Global.gateway
+Feb 10, 2013 12:41:46 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMS Global [version=2011-06-16]
+Feb 10, 2013 12:41:46 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/usr/share/java/esmska/gateways/%5BINT%5DSMSpoint.gateway
+Feb 10, 2013 12:41:47 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [INT]SMSpoint [version=2011-06-16]
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importGateways
+FINER: Imported 22 gateways
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from directory: /home/skak/.local/share/esmska/gateways
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importGateways
+FINER: Importing gateways from set of 3 URLs
+Feb 10, 2013 12:41:47 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/home/skak/.local/share/esmska/gateways/%5BCZ%5Dt-zones.gateway
+Feb 10, 2013 12:41:47 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]t-zones [version=2012-12-24]
+Feb 10, 2013 12:41:47 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/home/skak/.local/share/esmska/gateways/%5BCZ%5DO2_(registrace).gateway
+Feb 10, 2013 12:41:47 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]O2 (registrace) [version=2012-12-25]
+Feb 10, 2013 12:41:47 AM esmska.data.Gateways parseInfo
+FINER: Parsing info of script: file:/home/skak/.local/share/esmska/gateways/%5BCZ%5DT-mobile.gateway
+Feb 10, 2013 12:41:47 AM esmska.data.Gateway <init>
+FINER: Created new gateway: [CZ]T-mobile [version=2012-12-10]
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importGateways
+FINER: Imported 3 gateways
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importDeprecatedGateways
+FINER: Importing deprecated gateways from file: /usr/share/java/esmska/gateways/deprecated.xml
+Feb 10, 2013 12:41:47 AM esmska.persistence.ImportManager importDeprecatedGateways
+FINER: Importing deprecated gateways from URL: file:/usr/share/java/esmska/gateways/deprecated.xml
+Feb 10, 2013 12:41:47 AM esmska.persistence.PersistenceManager loadGateways
+FINER: Local gateway [CZ]O2 (registrace) is newer, replacing global one.
+Feb 10, 2013 12:41:47 AM esmska.persistence.PersistenceManager loadGateways
+FINER: Local gateway [CZ]T-mobile is newer, replacing global one.
+Feb 10, 2013 12:41:47 AM esmska.persistence.PersistenceManager loadGateways
+FINER: Local gateway [CZ]t-zones is newer, replacing global one.
+Feb 10, 2013 12:41:47 AM esmska.data.Gateways clear
+FINE: Removing all gateways
+Feb 10, 2013 12:41:47 AM esmska.data.Gateways addAll
+FINE: Adding 22 gateways: [[CZ]KlikniAVolej [version=2011-11-30], [CZ]O2 [version=2012-11-26], [CZ]O2 (registrace) [version=2012-12-25], [CZ]O2 SMSender [version=2012-06-03], [CZ]PoslatSMS.cz [version=2011-06-16], [CZ]SMS.cz [version=2011-06-16], [CZ]smska.cz [version=2011-06-16], [CZ]SMS Manager [version=2011-08-18], [CZ]T-mobile [version=2012-12-10], [CZ]t-zones [version=2012-12-24], [CZ]Vodafone [version=2012-10-11], [CZ]Vodafone park [version=2012-08-04], [DK]CoolSMS (FriSMS) [version=2011-06-16], [DK]CoolSMS (GratisSMS) [version=2011-06-16], [INT]GoSMS [version=2011-06-16], [INT]Odorik.cz [version=2011-11-29], [INT]SMSdiscount [version=2011-06-16], [INT]SMS Global [version=2011-06-16], [INT]SMSpoint [version=2011-06-16], [LT]dos.lt [version=2011-06-16], [SK]Orange [version=2011-06-16], [SK]Orange (platený) [version=2011-06-16]]
+Feb 10, 2013 12:41:47 AM esmska.persistence.PersistenceManager loadGatewayProperties
+FINE: Loading gateway config...
+Feb 10, 2013 12:42:03 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: showAdvancedSettings, old: false, new: true
+Feb 10, 2013 12:42:18 AM esmska.persistence.PersistenceManager saveConfig
+FINE: Saving config...
+Feb 10, 2013 12:42:18 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: version, old: , new: 1.3
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuid, old: null, new: ff23d293-73d0-46cf-901b-9ca3b82468ab
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuidMonth, old: -1, new: 1
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: countryPrefix, old: , new: +1
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: lookAndFeel, old: SUBSTANCE, new: CROSSPLATFORM
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: showAdvancedSettings, old: false, new: true
+Feb 10, 2013 12:42:19 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: version, old: , new: 1.3
+Feb 10, 2013 12:42:19 AM esmska.persistence.PersistenceManager saveConfig
+FINER: Saved config into file: /home/skak/.config/esmska/settings.xml
+Feb 10, 2013 12:42:19 AM esmska.persistence.PersistenceManager saveGatewayProperties
+FINE: Saving gateway properties...
+Feb 10, 2013 12:42:19 AM esmska.persistence.ExportManager exportGatewayProperties
+FINER: Exporting gateway properties
+Feb 10, 2013 12:42:19 AM esmska.persistence.PersistenceManager saveGatewayProperties
+FINER: Saved gateway config into file: /home/skak/.config/esmska/gateways.json
+Feb 10, 2013 12:42:22 AM esmska.gui.MainFrame exit
+FINE: Closing program...
+Feb 10, 2013 12:42:22 AM esmska.gui.MainFrame saveAll
+FINE: Saving user data...
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: mainDimension, old: null, new: java.awt.Dimension[width=707,height=869]
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: horizontalSplitPaneLocation, old: null, new: 371
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: verticalSplitPaneLocation, old: null, new: 611
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveConfig
+FINE: Saving config...
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuid, old: null, new: ff23d293-73d0-46cf-901b-9ca3b82468ab
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: uuidMonth, old: -1, new: 1
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: countryPrefix, old: , new: +1
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: horizontalSplitPaneLocation, old: null, new: 371
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: lookAndFeel, old: SUBSTANCE, new: CROSSPLATFORM
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: mainDimension, old: null, new: java.awt.Dimension[width=707,height=869]
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: showAdvancedSettings, old: false, new: true
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: version, old: , new: 1.3
+Feb 10, 2013 12:42:22 AM esmska.data.Config$1 firePropertyChange
+CONFIG: Config changed - property: verticalSplitPaneLocation, old: null, new: 611
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveConfig
+FINER: Saved config into file: /home/skak/.config/esmska/settings.xml
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveContacts
+FINE: Saving contacts...
+Feb 10, 2013 12:42:22 AM esmska.persistence.ExportManager exportContacts
+FINER: Exporting 0 contacts to CSV
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveContacts
+FINER: Saved contacts into file: /home/skak/.config/esmska/contacts.csv
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveQueue
+FINE: Saving queue...
+Feb 10, 2013 12:42:22 AM esmska.persistence.ExportManager exportQueue
+FINER: Exporting queue of 0 SMSs
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveQueue
+FINER: Saved queue into file: /home/skak/.config/esmska/queue.csv
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveHistory
+FINE: Saving history...
+Feb 10, 2013 12:42:22 AM esmska.persistence.ExportManager exportHistory
+FINER: Exporting history of 0 records
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveHistory
+FINER: Saved history into file: /home/skak/.config/esmska/history.csv
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveKeyring
+FINE: Saving keyring...
+Feb 10, 2013 12:42:22 AM esmska.persistence.ExportManager exportKeyring
+FINER: Exporting keyring
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveKeyring
+FINER: Saved keyring into file: /home/skak/.config/esmska/keyring.csv
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveGatewayProperties
+FINE: Saving gateway properties...
+Feb 10, 2013 12:42:22 AM esmska.persistence.ExportManager exportGatewayProperties
+FINER: Exporting gateway properties
+Feb 10, 2013 12:42:22 AM esmska.persistence.PersistenceManager saveGatewayProperties
+FINER: Saved gateway config into file: /home/skak/.config/esmska/gateways.json
+Feb 10, 2013 12:42:22 AM esmska.gui.MainFrame exit
+FINE: Exiting program with return code: 0

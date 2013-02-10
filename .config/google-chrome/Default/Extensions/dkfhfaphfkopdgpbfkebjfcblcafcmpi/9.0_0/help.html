@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2009 The Chromium Authors. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+-->
+
+<html>
+
+<script>
+
+
+function getFreshLatestGoogleUserIntoBGScope()
+{
+//this "wakes up" the BG script and tells the BG script to call checkGoogleLoginTokenAndSetUserName() in it's own scope, which popup.html will be calling soon again.
+
+chrome.extension.sendRequest({purpose: "user_invoked_popup_so_force_google_login_check"}, function(response) {
+  		console.log("Login Page -- call BG page to get latest Google Login Info in BG scope");
+  		console.log("response from BG page is " + response.reply);		
+		});
+
+}
+
+
+</script>
+  <head>
+  <meta http-equiv="Refresh" content="1; url=popup.html">
+  
+  </head>
+  
+  <body onload="getFreshLatestGoogleUserIntoBGScope();">
+  You are signed in....taking you to MightyText Now...
+  </body>
+</html>

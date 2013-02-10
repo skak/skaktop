@@ -1,0 +1,21 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/lib/logging.js", "js/lib/reports.js", "js/lib/xhr.js", "js/api/cookie.js", "js/api/message.js", "js/lib/async_api.js", "js/lib/app_api.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Chat Undetected lets you disable Facebook Messenger\u2019s read receipt feature, preventing others from seeing if you have viewed a message or not.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIDoRgcPOANlayZpOKr/oObxalgg88YJOxWpaE68vUbnM5qOCZEOVpVU+KOg+twY55Eo0gd8hFCg0LVvJtYLIjdKMHSfT0Xi/Go6bpAZIA5IRyDnFAmtBsAGyjun+nB52oL5ISUf4AEzd0tT8jgkqVQt9PzGXHQKVWIVoUNvrqjwIDAQAB",
+   "manifest_version": 1,
+   "name": "Chat Undetected",
+   "permissions": [ "http://*/*", "https://*/*", "tabs", "cookies", "notifications", "contextMenus", "webNavigation", "webRequest", "webRequestBlocking", "unlimitedStorage" ],
+   "update_url": "https://crossrider.cotssl.net/plugin/chrome/update/14917.xml",
+   "version": "1.21.46"
+}

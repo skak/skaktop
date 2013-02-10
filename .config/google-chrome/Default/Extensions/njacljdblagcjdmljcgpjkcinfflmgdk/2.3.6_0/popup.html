@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html
+		{
+			width: 296px;
+		}
+		body
+		{
+			background-color: white;
+			color: black;
+			font-size: 0.9em;
+			padding: 0;
+			margin: 0.2em;
+			overflow: hidden;
+		}
+		a, a:visited, a:active
+		{
+			color: black;
+			text-decoration: none;
+		}
+		a:hover
+		{
+			color: white;
+			background-color: #5c93d5;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#3488D1), color-stop(.05, #669ADE), to(#1653BB));
+			text-decoration: none;
+			cursor: pointer;
+		}
+		img
+		{
+			margin-bottom: -2px;
+		}
+		hr
+		{
+			border: 0 1px 0 0 solid #BBB;
+			margin: 0;
+		}
+		#results
+		{
+			overflow: auto;
+			height: 28.5em;
+			border-left: 1px solid #555;
+			border-right: 1px solid #555;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #999;
+		}
+		#bookmarks
+		{
+			padding-left: 0.2em;
+			list-style: none;
+			margin: 0.3em 0;
+		}
+		#bookmarks li
+		{
+			border-bottom: 1px solid #EEEEEE;
+		}
+		#bookmarks li:last-child
+		{
+			border-bottom: 0;
+		}
+		#bookmarks li a
+		{
+			display: block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			padding: 1px;
+			cursor: pointer;
+		}
+		#bookmarks li a:hover
+		{
+			background: #5c93d5;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#3488D1), color-stop(.05, #669ADE), to(#1653BB));
+		}
+		#bookmarks_title_c
+		{
+			background: #DADADA;
+			margin-top: 0.2em;
+			border-radius: 5px 5px 0 0;
+			border: 1px solid #555;
+			border-bottom: 0;
+		}
+		#bookmarks_title
+		{
+			list-style: none;
+			padding: 0.3em;
+			margin: 0;
+		}
+		#bookmarks_title li
+		{
+			display: inline;
+			padding: 0 0.3em 0 0;
+		}
+		#bookmarks_title li:hover
+		{
+			background: #eaeaff;
+		}
+		#bookmarks_ext
+		{
+			padding: 0.4em;
+			background: #DADADA;
+			min-height: 4.5em;
+			border-radius: 0 0 5px 5px;
+			border: 1px solid #555;
+			border-top: 0;
+		}
+		#bookmarks_ext .title
+		{
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+		#bookmarks_ext .type
+		{
+			font-size: 0.8em;
+		}
+		#bookmarks_ext .url
+		{
+			color: blue;
+			font-style: italic;
+			text-overflow: ellipsis;
+			max-height: 50px;
+			overflow: hidden;
+		}
+		#bookmarks_ext .added
+		{
+			font-size: 0.8em;
+		}
+		#resizer
+		{
+			border-left: 1px solid #fff;
+			border-right: 1px solid #bbb;
+			width: 3px;
+			height: 552px;
+			position: absolute;
+			left: 1px;
+			bottom: 1px;
+			cursor: w-resize;
+			opacity: 0;
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: .3s;
+		}
+		.context-menu
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			float: left;
+		}
+		.context-menu ul
+		{
+			-webkit-transition-property: opacity;
+			-webkit-transition-duration: .3s;
+			opacity: 1;
+			padding: 5px 0;
+			list-style: none;
+			border: 1px solid #bbb;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			background-color: rgba(244,246,252,.96);
+			box-shadow: 0 2px 6px rgba(0,0,0,.2);
+			-webkit-box-shadow: 0 2px 6px rgba(0,0,0,.2);
+		}
+		.context-menu li
+		{
+			padding: 0 10px;
+			line-height: 18px;
+			text-shadow: #6374AB 1px 1px 1px;
+		}
+		.context-menu li img
+		{
+			margin-bottom: -4px;
+		}
+		.context-menu li a
+		{
+			display: block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			padding: 1px;
+			cursor: pointer;
+		}
+		.context-menu li a:hover
+		{
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#3AF246), color-stop(.05, #2CB835), to(#1C7522));
+		}
+		.context-menu li.separator
+		{
+			padding: 0;
+			height: 1px;
+			margin: 2px 0;
+			background-color: #ccc;
+			pointer-events: none;
+		}
+		.edit-bookmarks
+		{
+			display: none;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		.edit-folder
+		{
+			display: none;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		.create-folder
+		{
+			display: none;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+	</style>
+	<link href="jQueryUI/css/jquery-ui-1.8.5.custom.css" rel="stylesheet"></link>
+	<script src="jQueryUI/js/jquery-1.4.2.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		$j = jQuery.noConflict();
+	</script>
+	<script src="jQueryUI/js/jquery-ui-1.8.5.custom.min.js"></script>
+	<script src="prototype/prototype_1.7_rc3.min.js"></script>
+	<script src="gen.js"></script>
+	<script src="popup.js"></script>
+	<script src="ab.js"></script>
+</head>
+<body>
+	<div>
+		<img id="lock" src="img/startup_folder_unlocked.png" style="float: left; height: 32px;
+			width: 32px; cursor: pointer" onclick="lockStartupFolder();" _ltitle='lockTitle'/>
+		<div style="padding-left: 42px;">
+			<table style="width: 100%; position: relative; right: 0px;" align="right">
+				<tr>
+					<td>
+						<b _la="extName" />
+					</td>
+					<td style="width: 20px;">
+						<img src="img/calendar-star-32.png" _ltitle='showRecent' id="open_recent_bookmarks"
+							style="height: 20px; width: 20px; cursor: pointer" />
+					</td>
+					<td style="width: 20px;">
+						<img src="img/star-add-32.png" _ltitle="addToFavorites" id="btn_save_bookmark" style="height: 20px;
+							width: 20px; cursor: pointer" onclick="saveTab();" />
+					</td>
+					<td style="width: 20px;">
+						<img src="img/notebook-add-32.png" _ltitle="saveSessionToFavorites" id="btn_save_session"
+							style="height: 20px; width: 20px; cursor: pointer" onclick="saveSession();" />
+					</td>
+					<td style="width: 20px;">
+						<b>
+							<img src="img/chrome_bookmarks.png" _ltitle="openBookmarksManager" id="open_chrome_bookmarks"
+								style="height: 20px; width: 20px; cursor: pointer" /></b>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="padding-left: 42px;">
+			<input type="search" id="search_box" style="width: 100%;" placeholder="" autofocus />
+		</div>
+	</div>
+	<div id="bookmarks_title_c">
+		<ul id="bookmarks_title">
+		</ul>
+	</div>
+	<div id="results" oncontextmenu="return menu(event);">
+		<ul id="bookmarks">
+		</ul>
+	</div>
+	<div id="bookmarks_ext">
+	</div>
+	<div id="resizer">
+	</div>
+	<div id="edit-bookmarks" class="edit-bookmarks">
+		<table style="width: 100%; position: relative; right: 0px;">
+			<tr>
+				<td>
+					<span _lb='name'>:</span>
+				</td>
+				<td>
+					<input value="" id="edit-bookmarks-name" style="width: 220px;"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span _lb='folder'>:</span>
+				</td>
+				<td>
+					<select id="edit-bookmarks-folder" style="width: 224px;">
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					URL:
+				</td>
+				<td>
+					<textarea rows="1" cols="28" id="edit-bookmarks-url" name="Url"></textarea>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="edit-folder" class="edit-folder">
+		<table style="width: 100%; position: relative; right: 0px;">
+			<tr>
+				<td>
+					<span _lb='name'>:</span>
+				</td>
+				<td>
+					<input value="" id="edit-folder-name" style="width: 220px;"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span _lb='folder'>:</span>
+				</td>
+				<td>
+					<select id="edit-folder-folder" style="width: 224px;">
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="create-folder" class="create-folder">
+		<table style="width: 100%; position: relative; right: 0px;">
+			<tr>
+				<td>
+					<span _lb='name'>:</span>
+				</td>
+				<td>
+					<input value="" id="create-folder-name" style="width: 220px;"></input>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="contextMenuId" class="context-menu" />
+</body>
+<script>
+	(function ()
+	{
+		Event.observe('search_box', "keyup", search_key);
+		Event.observe('search_box', "click", search_key);
+		Event.observe('open_chrome_bookmarks', "click", function ()
+		{
+			if (localStorage['edit_window'] == "true")
+				chrome.windows.create({ url: "chrome://bookmarks/", left: 0, top: 100, width: 800, height: 700 });
+			else
+				chrome.tabs.create({ url: "chrome://bookmarks/", selected: true });
+			window.close();
+		});
+		Event.observe('open_recent_bookmarks', "click", function () { disp_list.populate_recent(); });
+		Event.observe('results', "click", function () { hideMenu(); }
+		);
+		document.body.style.height = '40em';
+		if (!getStorageValueBool('ext', true))
+		{
+			$('bookmarks_ext').style.display = 'none';
+			$('results').style.height = '34em';
+			$('results').style["border-radius"] = "0 0 5px 5px";
+		}
+
+		disp_list = new AB.list($('bookmarks'), $('bookmarks_title'), $('bookmarks_ext'), $('resizer'));
+		var startupFolder = parseInt(getStorageValue("startup_folder", "1"));
+		if (startupFolder > 1)
+			$("lock").src = "img/startup_folder_locked.png";
+		disp_list.populate(startupFolder);
+	})();
+</script>
+</html>

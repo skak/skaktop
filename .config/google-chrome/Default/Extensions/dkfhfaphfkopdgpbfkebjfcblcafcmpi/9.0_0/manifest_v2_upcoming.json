@@ -1,0 +1,40 @@
+{
+  "name": "MightyText - Send/Receive SMS Text Messages",
+  "description": "Text from Chrome! Sync'd w/ Android #. SMS & Texting like Google Voice.  See our YouTube demo. Instant notifications like Gmail app.",
+  "version": "8.8",
+  "default_locale": "en",
+  "icons": {
+  			"48": "img/mt_new_48x48.png"
+  },
+  "minimum_chrome_version": "18.0.0",
+  "options_page": "popup.html#options",
+  "browser_action": {
+    "default_title": "MightyText",
+    "default_icon": "img/icon-19-off.png",
+    "default_popup": "popup.html"
+  },    
+  "content_security_policy": "object-src 'self'; script-src 'self' https://www.facebook.com https://mightytext.net https://textyserver.appspot.com https://ssl.google-analytics.com https://i.kissmetrics.com https://doug1izaerwt3.cloudfront.net https://talkgadget.google.com",
+  "manifest_version": 2,
+    "background": {
+    "page": "background.html"
+  },
+    "web_accessible_resources": [
+    "error_icon.png","img/mt_new_48x48.png"
+    ],
+  "permissions": [
+    "unlimitedStorage","contextMenus", "tabs", "notifications", "http://www.google.com/m8/feeds/*", "https://*.google.com/*",
+    "http://www.google.com/m8/feeds/*",
+    "https://www.google.com/accounts/OAuthGetRequestToken",
+    "https://www.google.com/accounts/OAuthAuthorizeToken",
+    "https://www.google.com/accounts/OAuthGetAccessToken",
+    "https://textyserver.appspot.com/*",
+    "http://*.textyapp.com/*",
+    "https://*.textyapp.com/*"
+    ] 
+
+
+
+
+
+}
+

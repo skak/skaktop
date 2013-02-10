@@ -1,0 +1,14 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "\u8282\u7701\u65F6\u95F4\uFF0C\u63D0\u9AD8\u60A8\u7684\u5DE5\u4F5C\u6548\u7387\uFF01\u83B7\u5F97\u5FEB\u901F\u5B9A\u4E49\uFF0C\u81EA\u52A8\u52A0\u8F7D\u9875\u9762\uFF0C\u641C\u7D22\u901F\u5EA6\u66F4\u5FEB\uFF0C\u8FD8\u6709\u66F4\u591A\u4F18\u70B9\u3002"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "FastestChrome \u2013 \u52A0\u5FEB\u6D4F\u89C8\u901F\u5EA6"
+   },
+   "page_n": {
+      "description": "Nth page, e.g.: Page 3",
+      "message": "\u7B2C{0}\u9875"
+   }
+}

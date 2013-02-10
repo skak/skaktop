@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+</HEAD>
+
+<BODY>
+
+<style>
+
+html{
+background: white;
+}
+.user-alert-top {
+background: #FFF1A8;
+color: black;
+font-size: 13px;
+font-family: arial;
+padding: 5px 5px;
+-webkit-border-radius: 10px;
+display:block;
+
+}
+</style>
+
+<script>
+var baseUrl = 'https://textyserver.appspot.com';
+var signInUrl = baseUrl + '/signin?extret=' +
+    encodeURIComponent(chrome.extension.getURL('help.html')) + '%23signed_in&ver=5';
+</script>
+
+<span id="sign-in-status" name="sign-in-status" class="user-alert-top">
+	<img align="BOTTOM" src="error_icon.png" width="20" height="18"> 
+		<span style="color:red"> <B>Not signed in to MightyText.</B></span>  <br>
+			Please <a href="#" onclick="window.close();chrome.tabs.create({url: signInUrl})"><B>sign in using your Google Account</B></a>
+			to send &amp; receive text messages.</span>
+
+</BODY>
+
+
+</HTML>

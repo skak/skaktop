@@ -1,0 +1,14 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Zeit sparen und die Produktivit\u00E4t erh\u00F6hen! Schneller Definitionen erhalten, die n\u00E4chste Seite schneller laden, schneller suchen und mehr."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "FastestChrome \u2013 Schneller browsen"
+   },
+   "page_n": {
+      "description": "Nth page, e.g.: Page 3",
+      "message": "Seite {0}"
+   }
+}

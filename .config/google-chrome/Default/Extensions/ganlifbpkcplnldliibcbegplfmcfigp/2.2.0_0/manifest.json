@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "scripts/vendor/port/port.js", "scripts/vendor/jquery/jquery.js", "scripts/analytics.js", "scripts/recommends.js", "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "markup/index.html",
+      "default_title": "Display the Collusion graph"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "scripts/vendor/port/port.js", "scripts/vendor/jquery/jquery.js", "scripts/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Visualize and, optionally, block the invisible websites that track you.",
+   "icons": {
+      "128": "images/128.png",
+      "48": "images/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJtPU3FVPNGATjIzQn9MrepSABkQsl4CEc3rHvrDlqC9J4PbH95GbTM9oUgwz3w17JD2K6Dzh0KQ6g9R0KSOip7tsl5Iu5ucQ8uaBHP9sbJKZKmUJVlshSPM6MTj5cvquzqTx+P6v4AknAylzlaH61JqP51P6nPpO8fqtrTrWf7wIDAQAB",
+   "manifest_version": 2,
+   "name": "Collusion for Chrome",
+   "permissions": [ "chrome://favicon/", "contextMenus", "cookies", "history", "idle", "notifications", "tabs", "unlimitedStorage", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.2.0"
+}

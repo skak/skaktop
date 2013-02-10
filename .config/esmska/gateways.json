@@ -1,0 +1,98 @@
+{
+  "configs":   {
+    "[CZ]KlikniAVolej":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]O2":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]O2 (registrace)":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]O2 SMSender":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]PoslatSMS.cz":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]SMS Manager":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]SMS.cz":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]T-mobile":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]Vodafone":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]Vodafone park":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]smska.cz":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[CZ]t-zones":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[DK]CoolSMS (FriSMS)":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[DK]CoolSMS (GratisSMS)":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[INT]GoSMS":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[INT]Odorik.cz":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[INT]SMS Global":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[INT]SMSdiscount":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[INT]SMSpoint":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[LT]dos.lt":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[SK]Orange":     {
+      "receipt": false,
+      "signature": ""
+    },
+    "[SK]Orange (platený)":     {
+      "receipt": false,
+      "signature": ""
+    }
+  },
+  "signatures": [],
+  "default signature":   {
+    "profileName": "Default",
+    "userName": "",
+    "userNumber": ""
+  }
+}

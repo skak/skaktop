@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "SMS Chrome",
+      "popup": "popup.html"
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbMo1NROP+sb4gqReDBIx/8oKnxJiZhOXJsKUof6Ml8dpkm1hScrMm4HqY8bbyhr446N7T9SNPy7495p7/ZqWnX0vdSVjkQTAj3102v5Cw6hWzQp4UfQLuJYb3+5IoDkmGzqiLaxK5qkFyd2oVSUPRWt592sww0kHKC7OWtIGv3QIDAQAB",
+   "name": "SMS Chrome",
+   "options_page": "fancy-settings/source/index.html",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

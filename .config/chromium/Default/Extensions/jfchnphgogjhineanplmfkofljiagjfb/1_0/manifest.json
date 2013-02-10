@@ -1,0 +1,19 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "icon_19_19.png",
+      "default_title": "Open Downloads window"
+   },
+   "description": "Access the Downloads window directly from the toolbar",
+   "icons": {
+      "128": "icon_128_128.png",
+      "16": "icon_16_16.png",
+      "32": "icon_32_32.png",
+      "48": "icon_48_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWJoGlQLyFFgs1OmZX2zj3WVPvW04FrU2mZsRpbOmyp2cZKVCzl49LjCizEoDWR4sSq3t2OvsmFy70STvasMoIM3zK+W1I48yncCJFe64V/7GIOixBwQHApX1CGipbQBVxFB5HKnUYH6AoyJfG9cUrQCJ+QYmAtVzZKufLDSNROwIDAQAB",
+   "name": "Downloads",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1"
+}

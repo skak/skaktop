@@ -37,16 +37,20 @@ gvim = "gvim"
 gedit = "gedit"
 imclient = "pidgin"
 mail = "thunderbird"
-file = "4pane"
-browser = "google-chrome"
+file = "pcmanfm" --"pcmanfm""spacefm"--"4pane"
+termfile = "urxvt -name MidnightCommander -e mc"
+-- browser = "google-chrome"
+browser = "chromium"
 urxvt = "urxvt"
+termtmux = "urxvt -e tmux"
+termscreen = "urxvt -e screen"
 terminator = "terminator"
 terminal = "xterm"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 altkey = "Mod1"
-
+--[[
 local layouts =
 {
     awful.layout.suit.floating,			--1
@@ -62,19 +66,44 @@ local layouts =
     awful.layout.suit.max.fullscreen,	--11
     awful.layout.suit.magnifier			--12
 }
+--]]
+local layouts =
+{
+    awful.layout.suit.floating,			--1
+    awful.layout.suit.tile, --right		--2
+    awful.layout.suit.tile.bottom,		--3
+    awful.layout.suit.fair,				--4
+    awful.layout.suit.fair.horizontal,	--5 
+    awful.layout.suit.max,				--6
+    awful.layout.suit.max.fullscreen	--7
+}
 if beautiful.wallpaper then
     for s = 1, screen.count() do
         gears.wallpaper.maximized(beautiful.wallpaper, s, true)
     end
 end
- tags = {
-   names = {        "一", 		"二", 		"三", 		"四",	    "五",       "六",        "七",       "八",       "九",       "十" },
---   names  = {     "[1]",      "[2]",      "[3]",      "[4]",      "[5]",      "[6]",      "[7]",      "[8]",      "[9]"},
+-- TAGS , DIFFERRENT LAYOUTS PER SCREEN
+  tags = {
+    settings = {
+      { names =   {   "[TILE]", 	   "[FLOAT]",       "三",       "四",       "五", "[CONFIG]",  "[URXVT]",    "[RSS]", "[ALPINE]",  "[CRACKBOOK]" },
+        layouts = { layouts[2], layouts[1], layouts[2], layouts[2], layouts[2], layouts[2], layouts[4], layouts[2], layouts[6],    layouts[6] }
+      },
+      { names = {         "一", 		    "二", 		    "三", 		    "四",	      "五",       "六",       "七",       "八",       "九",       "十" },
+        layouts = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2] }
+  }}}
+  for s = 1, screen.count() do
+    tags[s] = awful.tag(tags.settings[s].names, s, tags.settings[s].layouts)
+  end
+
+-- TAGS , LAYOUTS SAME ACROSS ALL SCREENS
+--[[ tags = {
+   names = {        "一", 		"二", 		"三", 		"四",	    "五",       "六",        "七",       "八",       "[ALPINE]",       "[FACEBOOK]" },
+--   names  = {     "[1]",      "[2]",      "[3]",      "[4]",      "[5]",      "[6]",      "[7]",      九"[8]",      十"[9]"},
    layout = { layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2], layouts[2] } }
  
  for s = 1, screen.count() do
      tags[s] = awful.tag(tags.names, s, tags.layout)
- end
+ end --]]
 -- {{{ Menu
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
@@ -90,8 +119,10 @@ appsmenu = {
 	{ "GTKedit", "gksudo " .. lxapp },
 	{ "gvim", gvim },
 	{ "#gvim", "gksudo " .. gvim },
-	{ "pidgin", imclient },
+	{ "pidgin", "pidgin" },
+    { "finch", "urxvt -e finch" },
 	{ "thunderbird", mail },
+    { "alpine mail", "urxvt -e alpine" },
 	{ "google chrome", browser} }
 skakmenu = {
    { "root", "gksudo " .. file .. " /" },
@@ -112,7 +143,11 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesomes, menu = mymainme
 myChromeLauncher = awful.widget.launcher({   image = beautiful.awesomec, command = browser })
 menubar.utils.terminal = urxvt -- Set the terminal for applications that require it
 -- {{{ Wibox
-mytextclock = awful.widget.textclock()
+skakClock = awful.widget.textclockskak()
+skakTag = wibox.widget.textbox()
+skakTag:set_markup(" .:SkAk:.")
+skakHost = wibox.widget.textbox()
+skakHost:set_markup(".:SkAkTop:.")
 swibTop = {} -- skaks top wibox (horizontal)
 swibBottom = {} -- skaks bottom wibox (horizontal)
 swibRight = {} -- skaks right wibox (vertical)
@@ -220,8 +255,10 @@ for s = 1, screen.count() do
 			swibTopRight:add(volspace)
 			swibTopRight:add(pacicon)
 			swibTopRight:add(pacwidget)
-		    swibTopRight:add(mytextclock)
-			    local swibTopAlign = wibox.layout.align.horizontal()
+   swibTopRight:add(skakTag)
+   swibTopRight:add(skakClock)
+   swibTopRight:add(skakHost)
+         local swibTopAlign = wibox.layout.align.horizontal()
 				    swibTopAlign:set_left(swibTopLeft)
 					swibTopAlign:set_middle(swibTopMiddle)
 				    swibTopAlign:set_right(swibTopRight)
@@ -232,6 +269,28 @@ root.buttons(awful.util.table.join(
     awful.button({ }, 4, awful.tag.viewnext), -- mouse wheel on tag buttons
     awful.button({ }, 5, awful.tag.viewprev) ) )
 globalkeys = awful.util.table.join(
+--mod+b hopefully to hide and show wibox
+    awful.key({ modkey }, "b", function ()
+        swibTop[mouse.screen].visible = not swibTop[mouse.screen].visible
+        swibBottom[mouse.screen].visible = not swibBottom[mouse.screen].visible
+        swibRight[mouse.screen].visible = not swibRight[mouse.screen].visible
+        swibLeft[mouse.screen].visible = not swibLeft[mouse.screen].visible
+    end),
+--mod+shift+b hides or shows ALL wibox
+    awful.key({ modkey, "Shift" }, "b", function ()
+        for s = 1, screen.count() do
+        swibTop[s].visible = not swibTop[s].visible
+        swibBottom[s].visible = not swibBottom[s].visible
+        swibRight[s].visible = not swibRight[s].visible
+        swibLeft[s].visible = not swibLeft[s].visible
+        end
+    end),
+    awful.key({ modkey }, "=", function (c)
+        awful.util.spawn("transset-df --actual --inc 0.1")
+    end),
+    awful.key({ modkey }, "-", function (c)
+        awful.util.spawn("transset-df --actual --dec 0.1")
+    end),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
@@ -246,6 +305,7 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx(-1)
             if client.focus then client.focus:raise() end
         end),
+    awful.key({                   }, "Menu", function () mymainmenu:show() end), -- produce main menu on Menu key
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end), -- produce main menu on mod4 + w
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end), -- layout manip
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
@@ -281,9 +341,10 @@ editor_cmd = terminal .. " -e " .. editor
 --[[ 123 XF86AudioRaiseVolume,122 XF86AudioLowerVolume,121 XF86AudioMute,174 XF86AudioStop,171 XF86AudioNext,172 XF86AudioPlay,173 XF86AudioPrev,234 XF86AudioMedia
 awful.key({ }, "USERKEYCHOICE", function () awful.util.spawn(" ") end),
 awful.key({       , "       " }, " ", function () awful.util.spawn(     ) end), --]]
-    awful.key({ },"XF86AudioMute",        function () awful.util.spawn_with_shell("amixer -q set Master toggle") end),
-    awful.key({ },"XF86AudioRaiseVolume", function () awful.util.spawn_with_shell("amixer -q set Master 3+% unmute") end),
-    awful.key({ },"XF86AudioLowerVolume", function () awful.util.spawn_with_shell("amixer -q set Master 3-% unmute") end),
+    awful.key({ },"XF86AudioMute",        function () awful.util.spawn_with_shell("amixer -c 0 set Master,0 toggle") end),
+    awful.key({ },"XF86AudioRaiseVolume", function () awful.util.spawn_with_shell("amixer -c 0 sset Master,0 1+ unmute") end),
+    awful.key({ },"XF86AudioLowerVolume", function () awful.util.spawn_with_shell("amixer -c 0 sset Master,0 1- unmute") end),
+    awful.key({ modkey, }, "Menu", function () awful.util.spawn("xephyr-awesome rc.new.lua") end),
     awful.key({ altkey, "Control" }, "f", function () awful.util.spawn(dmenu) end),
     awful.key({ modkey, "Control" }, "`", function () awful.util.spawn(lxapp) end),	
     awful.key({ modkey, "Control" }, "g", function () awful.util.spawn(gedit) end),	
@@ -292,10 +353,14 @@ awful.key({       , "       " }, " ", function () awful.util.spawn(     ) end), 
     awful.key({ modkey, "Control" }, "t", function () awful.util.spawn(file) end),
     awful.key({ modkey, "Control" }, "c", function () awful.util.spawn(browser) end),
     awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(terminator) end),
-    awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(terminal) end),
-    awful.key({ modkey,           }, "Return", function () awful.util.spawn(urxvt) end),
+    awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(urxvt) end),
+    awful.key({ modkey,           }, "Return", function () awful.util.spawn(termtmux) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+    awful.key({ modkey, "Control", "Shift" }, "r", function () awful.util.spawn_with_shell("sudo restart") end),
+    awful.key({ modkey, "Control", "Shift" }, "s", function () awful.util.spawn_with_shell("sudo poweroff") end),   
+    awful.key({ modkey, "Control", "Shift" }, "l", function () awful.util.spawn_with_shell("sudo suspend") end),
+    awful.key({ modkey, "Control", "Shift" }, "h", function () awful.util.spawn_with_shell("sudo halt") end),
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1)      end),
@@ -343,6 +408,13 @@ for i = 1, keynumber do
                             awful.tag.viewonly(tags[screen][i])
                         end
                   end),
+        awful.key({ modkey }, "0",
+                  function ()
+                        local screen = mouse.screen
+                        if tags[screen][10] then
+                            awful.tag.viewonly(tags[screen][10])
+                        end
+                  end),
         awful.key({ modkey, "Control" }, "#" .. i + 9,
                   function ()
                       local screen = mouse.screen
@@ -350,32 +422,115 @@ for i = 1, keynumber do
                           awful.tag.viewtoggle(tags[screen][i])
                       end
                   end),
+        awful.key({ modkey, "Control" }, "0",
+                  function ()
+                        local screen = mouse.screen
+                        if tags[screen][10] then
+                            awful.tag.viewtoggle(tags[screen][10])
+                        end
+                   end),
         awful.key({ modkey, "Shift" }, "#" .. i + 9,
                   function ()
                       if client.focus and tags[client.focus.screen][i] then
                           awful.client.movetotag(tags[client.focus.screen][i])
                       end
                   end),
+        awful.key({ modkey, "Shift" }, "0",
+                  function ()
+                        if client.focus and tags[client.focus.screen][10] then
+                           awful.client.movetotag(tags[client.focus.screen][10]) 
+                        end
+                   end),
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       if client.focus and tags[client.focus.screen][i] then
                           awful.client.toggletag(tags[client.focus.screen][i])
+                      end
+                   end),
+        awful.key({ modkey, "Control", "Shift" }, "0",
+                  function ()
+                      if client.focus and tags[client.focus.screen][10] then
+                          awful.client.toggletag(tags[client.focus.screen][10])
                       end
                   end))
 end
 clientbuttons = awful.util.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
     awful.button({ modkey }, 1, awful.mouse.client.move),
-    awful.button({ modkey }, 3, awful.mouse.client.resize))
+    awful.button({ modkey }, 3, awful.mouse.client.resize),
+    awful.button({ modkey }, 4, function (c)
+      awful.util.spawn("transset-df --actual --inc 0.1") 
+    end),
+    awful.button({ modkey }, 5, function (c)
+      awful.util.spawn("transset-df --actual --dec 0.1") 
+    end)
+    ) 
+ 
 root.keys(globalkeys) -- set global keys
 awful.rules.rules = { -- CLIENT RULES
-    { rule = { }, properties = { border_width = beautiful.border_width,
-                 			     border_color = beautiful.border_normal,
-			                     focus = awful.client.focus.filter,
-            			         keys = clientkeys,
-								 maximized_vertical = false,
-								 maximized_horizontal = false,
-            			         buttons = clientbuttons } },
+-- [...]
+    { 
+      rule = { }, 
+      properties = { 
+        border_width = beautiful.border_width,
+        border_color = beautiful.border_normal,
+        focus        = awful.client.focus.filter,
+        keys         = clientkeys,
+        floating        = false,
+		maximized_vertical = false,
+		maximized_horizontal = false,
+        buttons      = clientbuttons 
+      } 
+    },
+    {
+      rule = { name = "Save File" }, properties = { floating = true }
+    },
+    {
+      rule = { class = "Gvim" },
+      --, name = "rc.new.lua (~/.config/awesome) - GVIM"
+      properties = { tag = tags[1][6] }
+    },
+    {
+      rule = { class = "Xmessage" },  
+      properties = { floating = true } 
+    },
+    {
+      rule = { class = "URxvt", name = "finch" },
+      properties = { tag = tags[1][10] }
+    },
+    {
+      rule = { class = "URxvt", name = "alpine" },
+      properties = { tag = tags[1][9] }
+    },
+    {
+      rule = { class = "URxvt", name = "newsbeuter" },
+      properties = { tag = tags[1][8] }
+    },
+
+-- [...]
+-- [...]
+--[[    { 
+      rule = { class = "Pidgin", role = "conversation" },  
+      properties = { floating = true, tag = tags[2][1] },
+      callback =  function(c)
+                     c:geometry( { width = 400, height = 400 } )
+
+                 end
+    },
+--]]
+-- [...]
+
+-- [...]
+--[[    { 
+      rule = { class = "Pidgin", 
+               role = "buddy_list" },
+      properties = { floating = true, tag = tags[2][1] },
+      callback = awful.client.setslave(c),
+                 function(c)
+                 c:geometry( { width = 200, height = 400 } ) 
+                 end
+    },
+--]]
     { rule = { class = "MPlayer" },  properties = { floating = true } },
     { rule = { class = "pinentry" }, properties = { floating = true } },
     { rule = { class = "gimp" },     properties = { floating = true } },
@@ -427,6 +582,18 @@ client.connect_signal("manage", function (c, startup)
 end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)			-- ON FOCUS CHANGE BORDER COLOR
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)		-- ON LOSSF FOCUS REVERT BORDER COLOR
+function run_once(prg)
+  awful.util.spawn_with_shell("pgrep -u $USER -x " .. prg .. " || (" .. prg .. ")")
+end
+os.execute"xrdb -load ~/.Xresources"
+os.execute"amixer set Master 10 unmute"
+awful.util.spawn_with_shell("pgrep -u $USER -x gvim || (gvim ~/.config/awesome/rc.new.lua)")
+awful.util.spawn_with_shell("pgrep -u $USER -x xcompgr || (xcompmgr &)")
+awful.util.spawn_with_shell("pgrep -u $USER -x finch || (urxvt -e finch)")
+awful.util.spawn_with_shell("pgrep -u $USER -x newsbeuter || (urxvt -name newsbeuter -e tmux -c newsbeuter)")
+awful.util.spawn_with_shell("pgrep -u $USER -x alpine || (urxvt -name alpine -e alpine)")
+-- awful.util.spawn_with_shell("pgrep -u $USER -x pidgin || (pidgin)")
+-- [WORKING EXAMPLE] function run_once(prg) awful.util.spawn_with_shell("pgrep -u $USER -x " .. prg .. " || (" .. prg .. ")") end
 -- awful.util.spawn_with_shell(gedit .. " /home/skak/.config/awesome/rc.new.lua" ) 				-- ON STARTUP
 -- awful.util.spawn_with_shell(imclient)															-- ON STARTUP
 

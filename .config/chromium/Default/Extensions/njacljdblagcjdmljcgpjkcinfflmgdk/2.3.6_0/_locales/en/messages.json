@@ -1,0 +1,161 @@
+{
+   "addBookmarkHere": {
+      "message": "Add Bookmark Here"
+   },
+   "addToFavorites": {
+      "message": "Add Bookmark To Favorites"
+   },
+   "added": {
+      "message": "Added"
+   },
+   "atomicBookmarksOptions": {
+      "message": "Atomic Bookmarks Options"
+   },
+   "bookmark": {
+      "message": "Bookmark"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "confirmDeleteFolder": {
+      "message": "and all subitems will be removed. Are you sure?"
+   },
+   "createNewFolder": {
+      "message": "Create New Folder"
+   },
+   "deleteBookmark": {
+      "message": "Delete Bookmark"
+   },
+   "deleteFolder": {
+      "message": "Delete Folder"
+   },
+   "editBookmark": {
+      "message": "Edit Bookmark"
+   },
+   "editFolder": {
+      "message": "Edit Folder"
+   },
+   "editingBookmarksOpt": {
+      "message": "Editing Bookmarks"
+   },
+   "extDescription": {
+      "message": "Search and organize your bookmarks quickly."
+   },
+   "extName": {
+      "message": "Atomic Bookmarks 2"
+   },
+   "extTitle": {
+      "message": "View/Search Bookmarks"
+   },
+   "extendedInformationOpt": {
+      "message": "Show extended information when hovering over a bookmark"
+   },
+   "favBookmarkFoldersOpt": {
+      "message": "Favorite Bookmark Folders"
+   },
+   "favBookmarksFolderOpt": {
+      "message": "Quick Bookmarks Folder"
+   },
+   "favSessionsFolderOpt": {
+      "message": "Quick Sessions Folder"
+   },
+   "folder": {
+      "message": "Folder"
+   },
+   "inBackgroundOpt": {
+      "message": "In Background"
+   },
+   "inCurrentTabOpt": {
+      "message": "Open in Current Tab"
+   },
+   "inNewTabOpt": {
+      "message": "Open in New Tab"
+   },
+   "inNewWindowOpt": {
+      "message": "Open in New Window"
+   },
+   "keepWindowOpenOpt": {
+      "message": "Keep Bookmarks Window Open"
+   },
+   "lockTitle": {
+      "message": "Lock/Unlock Startup Folder"
+   },
+   "name": {
+      "message": "Name"
+   },
+   "newFolder": {
+      "message": "New Folder"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "openAllBookmarks": {
+      "message": "Open All Bookmarks"
+   },
+   "openAllInNewWindow": {
+      "message": "Open All in New Window"
+   },
+   "openBmInBackgroundTab": {
+      "message": "Open in Background Tab"
+   },
+   "openBmInCurrentTab": {
+      "message": "Open in Current Tab"
+   },
+   "openBmInForegroundTab": {
+      "message": "Open in Foreground Tab"
+   },
+   "openBmInIncognitoWindow": {
+      "message": "Open in Incognito Window"
+   },
+   "openBmInNewWindow": {
+      "message": "Open in New Window"
+   },
+   "openBookmarksManager": {
+      "message": "Open Google Chrome Bookmarks Manager"
+   },
+   "openFolderInIncognitoWindow": {
+      "message": "Open All in Incognito Window"
+   },
+   "openLinkLeftButtonOptions": {
+      "message": "With left mouse button"
+   },
+   "openLinkMiddleButtonOptions": {
+      "message": "With middle button/wheel"
+   },
+   "openLinkOptions": {
+      "message": "Open Link Options"
+   },
+   "openManagerInNewWindowOpt": {
+      "message": "Open Google Chrome Bookmarks Manager in New Window"
+   },
+   "recentBookmarks": {
+      "message": "Recent Bookmarks"
+   },
+   "recentBookmarksNumberOpt": {
+      "message": "Recent Bookmarks Number"
+   },
+   "saveSessionHere": {
+      "message": "Save Session Here"
+   },
+   "saveSessionToFavorites": {
+      "message": "Save Session To Favorites"
+   },
+   "scriplet": {
+      "message": "Scriplet"
+   },
+   "showExtendedInformationOpt": {
+      "message": "Show at the bottom panel"
+   },
+   "showExtendedInformationTooltipOpt": {
+      "message": "Show in Tooltips"
+   },
+   "showRecent": {
+      "message": "Show Recent/All Bookmarks"
+   },
+   "startupFolderOpt": {
+      "message": "Startup Folder"
+   },
+   "type": {
+      "message": "Type"
+   }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FastestChrome Options</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="options.js"></script>
+        <!--
+        <script type="text/javascript" src="background.js"></script>
+        -->
+        <link rel="stylesheet" type="text/css" href="options.css" />
+    </head>
+
+    <body>
+        <div id="content">
+            <h1 id="header">
+                <img id="extension-logo" src="http://static.smarterfox.com/media/img/fastestchrome-logo-shiny-64.png" alt="logo" />
+                FastestChrome Options
+            </h1>
+            <fieldset class="rootlevel">
+                <legend>General</legend>
+                <div class="setting">
+                    <input type="checkbox" id="enable-linkify-checkbox" /> <label>Linkify text urls</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-related-articles-checkbox" /> <label>Add &quot;related articles&quot; to Wikipedia</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="enable-endless-pages-checkbox" /> <label>Enable Endless Pages</label>
+                </div>
+                <div class="setting">
+                    <label>Use the following blacklist: (e.g. <code>reddit.com,abc.com</code>)</label> <br />
+                    <input type="text" id="endless-pages-blacklist-input" />
+                </div>
+                <!--
+                -->
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <span>Comments, suggestions, or bug reports?</span>
+                    <br />
+                    <a href="mailto:support@smarterfox.com" id="feedback-link" class="text-link" target="_blank">Email us: support@smarterfox.com</a>
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="rootlevel">
+                <legend>Search Results</legend>
+                <div class="setting">
+                    <input type="checkbox" id="add-related-deals-checkbox" /> 
+                    <label>Show related &quot;deals&quot; on lower right</label> <label class="new">(new)</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-similar-product-search-checkbox" /> 
+                    <label>Add similar product search (Superfish)</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-related-searches-checkbox" /> <label>Add other search engines</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-serp-info-box-checkbox" /> <label>Add DuckDuckGo info boxes to search engines</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-search-refinements-checkbox" /> <label>Add search Refinements</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-related-shopping-results-checkbox" /> <label>Add related shopping results</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="add-price-comparison-results-checkbox" /> <label>Add Price Comparison Results (top bar)</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="rootlevel">
+                <legend>Popup Bubble</legend>
+                <div class="setting"><input type="checkbox" id="show-popup-bubble-checkbox" /> <label>Show Popup Bubble</label>
+                <div class="setting">
+                    <input type="checkbox" id="popup-bubble-display-above-text-checkbox" /> <label>Display above text</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="popup-bubble-open-new-tab-checkbox" /> <label>Open in new tab</label>
+                </div>
+                <fieldset>
+                    <legend>Search Engines</legend>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-wikipedia-checkbox" /> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAIpwAACKcBMsYCAwAAAAd0SU1FB9kFEwgQLXKnj9oAAAPsSURBVDiNdVRZSGRXEH1Joz8icSIMJsEQEvKvov4ICoOYIAp+KKISkLiAgij5UGOMjgoug6CiKC64i/sSpVHcl7jv7W6722pcWmyNoqBW6hRpyYSZC8W7975bdU+dOrcUIlL+axYWFq+SkpLybWxsYo17VlZWX/H6DebOzs4/ent7/+Lu7v7z/31h7y8U5fvV1VWNra3tIObGvZqamtaHh4fHxMTExb29vcejoyMKCwt7jIqKWuD/bz4Y0MXF5e319bU2JyfngA99x/YJ22empqZuERERKwcHB9Td3U37+/u0srJCc3NzNDIyQk1NTVcqleonPvv6JSCPL87OznQ8p+TkZC2vv2GzcnNz+83a2joqLy9vCQFnZ2dpfX2dlpaWqLe3lzo7O+WStLS0ORMTE7+XgCkpKTX07/Dz86PIyEhDVlaWISMjgxISEmRfp9PRzs4O7e7uEtMi6EZHRyVweHg4gp6bm5tbKK958PlbODES+ZmZmQmkxjsE2d3dHWm1WsrOzqa6ujoaGhqigYEBGh4epvT0dCovLyd7e3sfhR3fGR0vLy9fULa0tMj8/PycNBoNcVGIi0NxcXHU09NDY2Nj1N/fL2mXlZXJJV5eXkXK9va2DojggIDPz8/iuLGxQcvLy8IXEN7c3JBer5f14uKiIOzr66P29naqqqqiiooK8vf3n1aYbP3ExIQcZkkIKgcHBwJ/BoNB1ltbW8IbF466urrk3OTkpFhDQ4MEZA7Jx8fnSGEJ6I2pHh4eyvf2ViglVBbBwBMQb25u0sLCgnAXExMjVLS1tVFJSYmkHRoa+pfCmydwPjk5EYf7+3txwBoVRTFmZmZetFdcXEyBgYGUm5srVa6traWioiIqKCig4ODgVYVJnUE6LGpBhLQQDMjAHeaQzPT0tASG7iorK0U2kAwC4hIE9PT0HFZYvB7j4+NPQHlxcSGFOD4+Fvnw8xKOUGnwxAWkqakpqSz7CJ/V1dXEmiV+/+To6Pi7CJvFq356ehIHaA2ogPjq6krSRlVbW1ulqoODgyIbyMfX15dKS0spNjYWAf+2tLT8UgLyJAIPHinPz89LFcEXJIJUcdHa2ppIBAjVajWlpqYSNwcqLCwUdEFBQX9+ysP4llXcSf7gFO6A8PT0lJqbm4UXvB6kBc6QKgz/sAfu8Ers7OzecYxv3+s2PD53dXX9FVUFCiCqr6+njo4OSRMBwSN3FylKfn4+MQgKCAhAC1N9rB+aODk5vWUU5+ARUoHu8CpQ0cbGRjFcxA3kkjtRAft8/dEGazRuRabcZH8ICQkpjo6OVjNHmvj4+GXuiyMeHh453ATCzMzMXn3I9x8oCiuuorpqawAAAABJRU5ErkJggg==" /><label>Wikipedia</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-imdb-checkbox" /> <img src="http://www.imdb.com/favicon.ico" /><label>IMDB</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-delicious-checkbox" /> <img src="http://delicious.com/favicon.ico" /><label>Delicious</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-yandex-checkbox" /> <img src="http://www.yandex.ru/favicon.ico" /><label>Yandex</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-surfcanyon-checkbox" /> <img src="http://surfcanyon.com/favicon.ico" /><label>Surf Canyon</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-bing-checkbox" /> <img src="http://www.bing.com/favicon.ico" /><label>Bing</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-baidu-checkbox" /> <img src="http://www.baidu.com/favicon.ico" /><label>Baidu</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-youtube-checkbox" /> <img src="http://www.youtube.com/favicon.ico" /><label>YouTube</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-wiktionary-checkbox" /> <img src="http://en.wiktionary.org/favicon.ico" /><label>Wiktionary</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-blekko-checkbox" /> <img src="http://blekko.com/favicon.ico" /><label>Blekko</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-google-maps-checkbox" /> <img src="http://smarterfox.com/media/smarterwiki/google-maps.png" /><label>Google Maps</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-google-checkbox" /> <img src="http://www.google.com/favicon.ico" /><label>Google</label>
+                    </div>
+                    <div class="search-engine setting left">
+                        <input type="checkbox" class="search-checkbox" id="search-duckduckgo-checkbox" /> <img src="http://ff.duckduckgo.com/favicon.ico" /><label>DDG</label>
+                    </div>
+                    <div class="search-engine setting right">
+                        <input type="checkbox" class="search-checkbox" id="search-twitter-checkbox" /> <img src="http://twitter.com/favicon.ico" /><label>Twitter</label>
+                    </div>
+                </fieldset>
+                <div class="setting">
+                    <input type="checkbox" id="popup-bubble-show-definitions-checkbox" /> <label>Show definitions</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="popup-bubble-show-link-info-checkbox" /> <label>Show link info (Facebook / Twitter)</label>
+                </div>
+                <div class="setting">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="popup-bubble-show-link-info-always-checkbox" /> <label>Always show link info</label>
+                </div>
+                <div class="setting">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="popup-bubble-add-share-attribution-checkbox" /> <label>Add share attribution (&quot;Sent using&quot;, etc)</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="popup-bubble-force-single-row-checkbox" /> <label>Display as a single row</label>
+                </div>
+            </fieldset>
+            <div>
+                Settings not being saved? Your Chrome profile is probably corrupted. Backup settings by syncing with Google and 
+                <a href="http://support.google.com/chrome/bin/answer.py?hl=en&answer=142059">reset your profile</a>.
+            </div>
+        </div>
+    </body>
+</html>

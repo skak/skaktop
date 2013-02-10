@@ -1,0 +1,107 @@
+<!-- Load fancy-settings -->
+<script type="text/javascript" src="fancy-settings/source/lib/store.js"></script>
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8"> 
+  <style type="text/css"> 
+    iframe { 
+      border: none;
+      /* Scrolling: no */
+      overflow: hidden;
+    }
+    #deutschland {
+        width: 300px;
+        height: 340px;
+        overflow: hidden;
+        position: relative;
+    }
+    #deutschland iframe {
+        position: absolute;
+        top: -420px;
+        left: -480px;
+        width: 1280px;
+        height: 1200px;
+    }
+    #polska {
+        width: 266px;
+        height: 239px;
+        overflow: hidden;
+        position: relative;
+    }
+    #polska iframe {
+        position: absolute;
+        top: -360px;
+        left: -518px;
+        width: 1280px;
+        height: 1200px;
+    }
+    section {
+        padding: 10px 18px;
+    }
+    h1 {
+        font-family: Arial;
+        font-size: 14px;
+        display: inline;
+    }
+    img {
+      height: 20px; 
+      position: relative;
+      top: 3px;
+    }
+    textarea {
+        display: none;
+        font-family: Arial;
+    }
+  </style> 
+  <!-- Javascript needed for the address book toggle function -->
+  <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+  <script type="text/javascript">
+    // Fix problem with delay of the window that does not execute load() correctly. Using ready() instead of load()
+    $(window).unload (
+      function save() {
+          var textarea = document.querySelector("#contacts");
+          localStorage["contacts"] = textarea.value;
+      }
+    );
+    $(window).ready(
+      function restore() {
+        var textarea = document.querySelector("#contacts");
+        var content = localStorage["contacts"];
+        textarea.value = content;
+    });
+  </script>
+</head>
+<body>
+  <!-- Based on the country set the frame URL accordingly -->
+  <script type="text/javascript">
+    // Set default country to Deutschland if no user setting is available
+    var settings = new Store("settings", {
+        "country": "Deutschland",
+    });
+    
+    // Special settings for the German iframe. Without random URL it does not show the SMS form.
+    var country = settings.get('country');
+    var n = Math.floor(Math.random()*11);
+    
+    if(country == 'Deutschland') {
+        document.write("<div id='deutschland'><iframe src='http://sms.dynamicdrive.de/sms.php?" +  n + "308307246028BA119A119A119A46A101A117A114A111A112A97A102A105A110A97A110A122A46A100A101'></iframe></div>")
+    } else if(country == 'Polska') {
+        document.write("<div id='polska'><iframe src='http://smsportal.org/sms/'></iframe></div>")
+    }
+  </script>
+  <section>
+    <h1>Address book</h1>
+    <img src="adress-book.png"> 
+    <textarea cols="42" rows="5" id="contacts"></textarea> 		
+    <script type="text/javascript">
+      $("img").click(function () {
+      $("textarea").toggle();
+      });
+      $("h1").click(function () {
+      $("textarea").toggle();
+      });
+    </script>
+  </section>	
+</body>
+</html>

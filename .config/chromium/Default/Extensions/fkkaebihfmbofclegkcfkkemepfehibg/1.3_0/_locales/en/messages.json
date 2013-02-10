@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "The world's most interactive and user-friendly weather map from Weather Underground has gone full screen."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Full Screen Weather"
+   }
+}

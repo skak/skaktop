@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Export Chrome bookmarks into Google Bookmarks.</title>
+		<link rel="stylesheet" type="text/css" href="../public/jqueryui/lightBlue/jquery-ui-1.7.2.custom.css"/> 
+		<script type="text/javascript" src="../public/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="../public/jquery-ui-1.7.2.custom.min.js"></script> 
+		<script type="text/javascript" src="options.js"></script> 
+<style>
+body{background:#dceaf9 url(../ui/images/bg_title.png) repeat-x;padding:10px;font-size:80%;}
+h2 {margin:0;padding:6px;text-align:right;color:#999;font-family:fantasy,cursive,Courier;font-weight:normal;}
+#top {width:75%;margin:auto;}
+#container {width:75%;height:80%;overflow:hidden;margin:auto;}
+#bookmarks {overflow-y:scroll;height:80%;}
+#buttons {width:75%;margin:auto;margin-top:4px;}
+#data {width:100%;height:76%;}
+.notes {font-size:80%;font-family:Times, "Times New Roman", Georgia, serif;}
+.prompt {width: 100px; text-align:right;display:-moz-inline-box; display:inline-block;}
+.prompt1 {width: 200px; text-align:right;display:-moz-inline-box; display:inline-block;}
+#sortable1, #sortable2{ font-family:Verdana,Arial,Helvetica,sans-serif;list-style-type: none; margin: 0; padding: 0;margin-top:2px; background: #eee; padding: 4px; width: 390px;height:30px; }
+#sortable2 {background-color:#ccc;}
+#sortable2 h2 {color:white;}
+#sortable1 li, #sortable2 li {float:left;margin:4px;padding:4px;}
+#sortable1 h2, #sortable2 h2 {float:right;font-size:90%;font-family:fantasy,cursive,Courier;font-weight:normal;}
+</style>
+</head>
+<body>
+<div id="top"><h2>Chrome Extension Options</h2></div>
+<div id="container">	
+  <ul>		
+    <li>
+    <a href="#tabs-1">Display</a>
+    </li>		
+    <li>
+    <a href="#tabs-2">Bookmarks API</a>
+    </li>		
+    <li style='float:right;padding-top:4px;'>			
+      <span>Google Bookmarks Options
+      </span>		
+    </li>	
+  </ul>
+  <div id="tabs-1">
+    <div style="padding:8px;">
+      <p>
+        <span class="prompt">Font size:</span>
+        <input class="options" type="text" id="font_size" size="7" /> * Please type <b>%</b> or <b>px</b> or <b>em</b> inside.
+      </p>
+      <fieldset>
+      <legend>Popup Size</legend>
+      <p>
+        <span class="prompt">width:</span>
+        <input type="text" class="options" id="width" size="5" />px (400 ~ 1000px)
+      </p>
+      <p>
+        <span class="prompt">height:</span>
+        <input type="text" class="options" id="height" size="5" />px (450 ~ 900px)
+      </p>
+      </fieldset>
+
+<div class="option_sort"> 
+<ul id="sortable1" class="droptrue"> 
+  <h2>SHOW TABS</h2> 
+</ul> 
+<ul id="sortable2" class="droptrue"> 
+  <h2>HIDE TABS</h2> 
+</ul> 
+<br clear="both" /> 
+</div> 
+
+    </div>	 
+  </div>	
+  <div id="tabs-2">
+    <div style="padding:8px;">
+      <p>
+        Please <b>donot</b> change these setting unless you do know Google Bookmarks API.
+      </p>
+      <p>
+        <span class="prompt1">Google Bookmarks URL:</span>
+        <input type="text" class="options" id="bookmark_url" size="40" />
+      </p>
+      <p>
+        <span class="prompt1">Signature URL:</span>
+        <input type="text" class="options" id="sig_url" size="40" />
+      </p>
+    </div>	 
+  </div>
+</div>
+<div id="buttons">
+  <input type="button" value="Save Options" onclick="save_options();">
+  <input type="button" value="Restore to default" onclick="restore_options();" />
+  <span class="notes">
+  </span>
+</div>
+
+</body>
+</html>

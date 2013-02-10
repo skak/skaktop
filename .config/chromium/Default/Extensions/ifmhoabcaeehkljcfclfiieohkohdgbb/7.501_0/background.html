@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+chrome.extension.onRequest.addListener(function(message,sender,callback) {
+	// Check for internal messages
+	if (message && typeof message=="object" && message.command) {
+		if (message.command=="getvalue") {
+			var value = localStorage.getItem(message.key);
+			callback({'value':value});
+			return;
+		}
+		if (message.command=="getvalues") {
+			var values = {};
+			var keys = message.keys;
+			for (var i=0; i<keys.length; i++) {
+				values[keys[i]] = localStorage.getItem(keys[i]);
+			}
+			callback({'values':values});
+			return;
+		}
+		if (message.command=="setvalue") {
+			var value = localStorage.setItem(message.key,message.value);
+			callback({'value':value});
+			return;
+		}
+		if (message.command=="ajax") {
+			var obj = message.data;
+			var request=new XMLHttpRequest();
+			request.onreadystatechange=function() { if(request.readyState==4) { callback({'request':request}); } }
+			request.onerror=function() { if(obj.onerror) { obj.onerror(request); } }
+			try { request.open(obj.method,obj.url,true); } catch(e) { alert(e); return; }
+			if(obj.headers) { for(name in obj.headers) { request.setRequestHeader(name,obj.headers[name]); } }
+			request.send(obj.data); return {};
+		}
+	}
+});
+</script>
+</body>
+</html>

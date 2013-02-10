@@ -1,0 +1,4486 @@
+start {"settings":{"CircularMap":true,"Description":"An unusual matchup! Gauls vs. Persians on a classic acropolis-style map.","GameType":"conquest","Keywords":[],"LockTeams":false,"Name":"Acropolis 1","PlayerData":[{"AI":"","Civ":"gaul","Colour":{"b":200,"g":46,"r":46},"Name":"Player 1","Resources":{"stone":200},"Team":-1},{"AI":"qbot-wc","Civ":"pers","Colour":{"b":20,"g":20,"r":150},"Name":"Player 2","Resources":{"stone":200},"Team":-1}],"Preview":"acropolis_1.png","RevealMap":false,"PopulationCap":300,"StartingResources":300,"CheatsEnabled":true,"mapType":"scenario"},"mapFilter":"Default","map":"Acropolis 01","mapType":"scenario","mapPath":"maps/scenarios/"}
+turn 0 200
+end
+turn 1 200
+end
+turn 2 200
+end
+turn 3 200
+end
+turn 4 200
+end
+turn 5 200
+end
+turn 6 200
+end
+turn 7 200
+end
+turn 8 200
+end
+turn 9 200
+end
+turn 10 200
+end
+turn 11 200
+end
+turn 12 200
+end
+turn 13 200
+end
+turn 14 200
+end
+turn 15 200
+end
+turn 16 200
+end
+turn 17 200
+end
+turn 18 200
+end
+turn 19 200
+end
+turn 20 200
+end
+turn 21 200
+end
+turn 22 200
+end
+turn 23 200
+end
+turn 24 200
+end
+turn 25 200
+end
+turn 26 200
+end
+turn 27 200
+end
+turn 28 200
+end
+turn 29 200
+end
+turn 30 200
+end
+turn 31 200
+end
+turn 32 200
+end
+turn 33 200
+end
+turn 34 200
+end
+turn 35 200
+end
+turn 36 200
+end
+turn 37 200
+end
+turn 38 200
+end
+turn 39 200
+end
+turn 40 200
+end
+turn 41 200
+end
+turn 42 200
+end
+turn 43 200
+end
+turn 44 200
+end
+turn 45 200
+end
+turn 46 200
+end
+turn 47 200
+end
+turn 48 200
+end
+turn 49 200
+end
+turn 50 200
+end
+turn 51 200
+end
+turn 52 200
+end
+turn 53 200
+end
+turn 54 200
+end
+turn 55 200
+end
+turn 56 200
+end
+turn 57 200
+end
+turn 58 200
+end
+turn 59 200
+end
+turn 60 200
+end
+turn 61 200
+end
+turn 62 200
+end
+turn 63 200
+end
+turn 64 200
+end
+turn 65 200
+end
+turn 66 200
+end
+turn 67 200
+end
+turn 68 200
+end
+turn 69 200
+end
+turn 70 200
+end
+turn 71 200
+end
+turn 72 200
+end
+turn 73 200
+end
+turn 74 200
+end
+turn 75 200
+end
+turn 76 200
+end
+turn 77 200
+end
+turn 78 200
+end
+turn 79 200
+end
+turn 80 200
+end
+turn 81 200
+end
+turn 82 200
+end
+turn 83 200
+end
+turn 84 200
+end
+turn 85 200
+end
+turn 86 200
+end
+turn 87 200
+end
+turn 88 200
+end
+turn 89 200
+end
+turn 90 200
+end
+turn 91 200
+end
+turn 92 200
+end
+turn 93 200
+end
+turn 94 200
+end
+turn 95 200
+end
+turn 96 200
+end
+turn 97 200
+end
+turn 98 200
+end
+turn 99 200
+end
+turn 100 200
+end
+turn 101 200
+end
+turn 102 200
+end
+turn 103 200
+end
+turn 104 200
+end
+turn 105 200
+end
+turn 106 200
+end
+turn 107 200
+end
+turn 108 200
+end
+turn 109 200
+end
+turn 110 200
+end
+turn 111 200
+end
+turn 112 200
+end
+turn 113 200
+end
+turn 114 200
+end
+turn 115 200
+end
+turn 116 200
+end
+turn 117 200
+end
+turn 118 200
+end
+turn 119 200
+end
+turn 120 200
+end
+turn 121 200
+end
+turn 122 200
+end
+turn 123 200
+end
+turn 124 200
+end
+turn 125 200
+end
+turn 126 200
+end
+turn 127 200
+end
+turn 128 200
+end
+turn 129 200
+end
+turn 130 200
+end
+turn 131 200
+end
+turn 132 200
+end
+turn 133 200
+end
+turn 134 200
+end
+turn 135 200
+end
+turn 136 200
+end
+turn 137 200
+end
+turn 138 200
+end
+turn 139 200
+end
+turn 140 200
+end
+turn 141 200
+end
+turn 142 200
+end
+turn 143 200
+end
+turn 144 200
+end
+turn 145 200
+end
+turn 146 200
+end
+turn 147 200
+end
+turn 148 200
+end
+turn 149 200
+end
+turn 150 200
+end
+turn 151 200
+end
+turn 152 200
+end
+turn 153 200
+end
+turn 154 200
+end
+turn 155 200
+end
+turn 156 200
+end
+turn 157 200
+end
+turn 158 200
+end
+turn 159 200
+end
+turn 160 200
+end
+turn 161 200
+end
+turn 162 200
+end
+turn 163 200
+end
+turn 164 200
+end
+turn 165 200
+end
+turn 166 200
+end
+turn 167 200
+end
+turn 168 200
+cmd 1 {"type":"walk","entities":[4618],"x":471.33251953125,"z":172.2352294921875,"queued":false}
+end
+turn 169 200
+end
+turn 170 200
+end
+turn 171 200
+end
+turn 172 200
+end
+turn 173 200
+cmd 1 {"type":"walk","entities":[4618],"x":464.13232421875,"z":167.60107421875,"queued":false}
+end
+turn 174 200
+end
+turn 175 200
+end
+turn 176 200
+cmd 1 {"type":"walk","entities":[4618],"x":457.820068359375,"z":165.21051025390625,"queued":false}
+end
+turn 177 200
+end
+turn 178 200
+end
+turn 179 200
+end
+turn 180 200
+end
+turn 181 200
+end
+turn 182 200
+cmd 1 {"type":"walk","entities":[4618],"x":434.4087829589844,"z":163.47268676757812,"queued":false}
+end
+turn 183 200
+end
+turn 184 200
+end
+turn 185 200
+end
+turn 186 200
+cmd 1 {"type":"walk","entities":[4618],"x":441.037841796875,"z":155.75115966796875,"queued":false}
+end
+turn 187 200
+end
+turn 188 200
+end
+turn 189 200
+end
+turn 190 200
+end
+turn 191 200
+end
+turn 192 200
+end
+turn 193 200
+end
+turn 194 200
+end
+turn 195 200
+end
+turn 196 200
+end
+turn 197 200
+end
+turn 198 200
+end
+turn 199 200
+end
+turn 200 200
+end
+turn 201 200
+end
+turn 202 200
+end
+turn 203 200
+end
+turn 204 200
+end
+turn 205 200
+end
+turn 206 200
+end
+turn 207 200
+end
+turn 208 200
+end
+turn 209 200
+end
+turn 210 200
+end
+turn 211 200
+end
+turn 212 200
+end
+turn 213 200
+end
+turn 214 200
+end
+turn 215 200
+end
+turn 216 200
+end
+turn 217 200
+end
+turn 218 200
+end
+turn 219 200
+end
+turn 220 200
+end
+turn 221 200
+end
+turn 222 200
+end
+turn 223 200
+end
+turn 224 200
+end
+turn 225 200
+end
+turn 226 200
+end
+turn 227 200
+end
+turn 228 200
+end
+turn 229 200
+end
+turn 230 200
+end
+turn 231 200
+end
+turn 232 200
+end
+turn 233 200
+end
+turn 234 200
+end
+turn 235 200
+end
+turn 236 200
+end
+turn 237 200
+end
+turn 238 200
+end
+turn 239 200
+end
+turn 240 200
+end
+turn 241 200
+end
+turn 242 200
+end
+turn 243 200
+end
+turn 244 200
+end
+turn 245 200
+end
+turn 246 200
+end
+turn 247 200
+end
+turn 248 200
+end
+turn 249 200
+end
+turn 250 200
+end
+turn 251 200
+end
+turn 252 200
+end
+turn 253 200
+end
+turn 254 200
+end
+turn 255 200
+end
+turn 256 200
+end
+turn 257 200
+end
+turn 258 200
+end
+turn 259 200
+end
+turn 260 200
+end
+turn 261 200
+end
+turn 262 200
+end
+turn 263 200
+end
+turn 264 200
+end
+turn 265 200
+end
+turn 266 200
+end
+turn 267 200
+end
+turn 268 200
+end
+turn 269 200
+end
+turn 270 200
+end
+turn 271 200
+end
+turn 272 200
+end
+turn 273 200
+end
+turn 274 200
+end
+turn 275 200
+end
+turn 276 200
+end
+turn 277 200
+end
+turn 278 200
+end
+turn 279 200
+end
+turn 280 200
+end
+turn 281 200
+end
+turn 282 200
+end
+turn 283 200
+end
+turn 284 200
+cmd 1 {"type":"gather","entities":[4621],"target":1435,"queued":false}
+end
+turn 285 200
+end
+turn 286 200
+end
+turn 287 200
+end
+turn 288 200
+end
+turn 289 200
+end
+turn 290 200
+end
+turn 291 200
+end
+turn 292 200
+end
+turn 293 200
+end
+turn 294 200
+end
+turn 295 200
+end
+turn 296 200
+end
+turn 297 200
+end
+turn 298 200
+end
+turn 299 200
+end
+turn 300 200
+end
+turn 301 200
+end
+turn 302 200
+end
+turn 303 200
+end
+turn 304 200
+end
+turn 305 200
+end
+turn 306 200
+end
+turn 307 200
+end
+turn 308 200
+end
+turn 309 200
+end
+turn 310 200
+end
+turn 311 200
+end
+turn 312 200
+end
+turn 313 200
+end
+turn 314 200
+end
+turn 315 200
+end
+turn 316 200
+end
+turn 317 200
+end
+turn 318 200
+end
+turn 319 200
+end
+turn 320 200
+cmd 1 {"type":"gather","entities":[4620],"target":81,"queued":false}
+end
+turn 321 200
+end
+turn 322 200
+end
+turn 323 200
+end
+turn 324 200
+end
+turn 325 200
+end
+turn 326 200
+end
+turn 327 200
+end
+turn 328 200
+end
+turn 329 200
+end
+turn 330 200
+end
+turn 331 200
+end
+turn 332 200
+end
+turn 333 200
+end
+turn 334 200
+end
+turn 335 200
+end
+turn 336 200
+end
+turn 337 200
+cmd 1 {"type":"gather","entities":[4619],"target":1396,"queued":false}
+end
+turn 338 200
+end
+turn 339 200
+end
+turn 340 200
+end
+turn 341 200
+end
+turn 342 200
+end
+turn 343 200
+end
+turn 344 200
+end
+turn 345 200
+end
+turn 346 200
+end
+turn 347 200
+end
+turn 348 200
+end
+turn 349 200
+end
+turn 350 200
+end
+turn 351 200
+end
+turn 352 200
+end
+turn 353 200
+end
+turn 354 200
+end
+turn 355 200
+end
+turn 356 200
+end
+turn 357 200
+end
+turn 358 200
+end
+turn 359 200
+end
+turn 360 200
+end
+turn 361 200
+end
+turn 362 200
+end
+turn 363 200
+end
+turn 364 200
+end
+turn 365 200
+end
+turn 366 200
+end
+turn 367 200
+end
+turn 368 200
+end
+turn 369 200
+end
+turn 370 200
+end
+turn 371 200
+end
+turn 372 200
+end
+turn 373 200
+end
+turn 374 200
+end
+turn 375 200
+end
+turn 376 200
+end
+turn 377 200
+end
+turn 378 200
+end
+turn 379 200
+end
+turn 380 200
+end
+turn 381 200
+end
+turn 382 200
+end
+turn 383 200
+end
+turn 384 200
+end
+turn 385 200
+end
+turn 386 200
+end
+turn 387 200
+end
+turn 388 200
+end
+turn 389 200
+end
+turn 390 200
+end
+turn 391 200
+end
+turn 392 200
+end
+turn 393 200
+cmd 1 {"type":"gather","entities":[4615],"target":1398,"queued":false}
+end
+turn 394 200
+end
+turn 395 200
+end
+turn 396 200
+end
+turn 397 200
+end
+turn 398 200
+end
+turn 399 200
+end
+turn 400 200
+end
+turn 401 200
+end
+turn 402 200
+end
+turn 403 200
+end
+turn 404 200
+end
+turn 405 200
+end
+turn 406 200
+end
+turn 407 200
+end
+turn 408 200
+end
+turn 409 200
+end
+turn 410 200
+end
+turn 411 200
+end
+turn 412 200
+end
+turn 413 200
+end
+turn 414 200
+end
+turn 415 200
+end
+turn 416 200
+end
+turn 417 200
+end
+turn 418 200
+end
+turn 419 200
+end
+turn 420 200
+end
+turn 421 200
+end
+turn 422 200
+end
+turn 423 200
+end
+turn 424 200
+end
+turn 425 200
+end
+turn 426 200
+end
+turn 427 200
+end
+turn 428 200
+end
+turn 429 200
+end
+turn 430 200
+end
+turn 431 200
+end
+turn 432 200
+end
+turn 433 200
+end
+turn 434 200
+end
+turn 435 200
+end
+turn 436 200
+end
+turn 437 200
+end
+turn 438 200
+end
+turn 439 200
+end
+turn 440 200
+end
+turn 441 200
+end
+turn 442 200
+end
+turn 443 200
+end
+turn 444 200
+end
+turn 445 200
+end
+turn 446 200
+end
+turn 447 200
+end
+turn 448 200
+end
+turn 449 200
+end
+turn 450 200
+end
+turn 451 200
+end
+turn 452 200
+end
+turn 453 200
+end
+turn 454 200
+end
+turn 455 200
+end
+turn 456 200
+end
+turn 457 200
+end
+turn 458 200
+end
+turn 459 200
+end
+turn 460 200
+end
+turn 461 200
+end
+turn 462 200
+end
+turn 463 200
+end
+turn 464 200
+end
+turn 465 200
+end
+turn 466 200
+end
+turn 467 200
+end
+turn 468 200
+end
+turn 469 200
+end
+turn 470 200
+end
+turn 471 200
+end
+turn 472 200
+end
+turn 473 200
+end
+turn 474 200
+end
+turn 475 200
+end
+turn 476 200
+end
+turn 477 200
+end
+turn 478 200
+end
+turn 479 200
+end
+turn 480 200
+end
+turn 481 200
+end
+turn 482 200
+end
+turn 483 200
+end
+turn 484 200
+end
+turn 485 200
+end
+turn 486 200
+end
+turn 487 200
+end
+turn 488 200
+end
+turn 489 200
+end
+turn 490 200
+end
+turn 491 200
+end
+turn 492 200
+end
+turn 493 200
+end
+turn 494 200
+end
+turn 495 200
+end
+turn 496 200
+end
+turn 497 200
+end
+turn 498 200
+end
+turn 499 200
+end
+turn 500 200
+end
+turn 501 200
+end
+turn 502 200
+end
+turn 503 200
+end
+turn 504 200
+end
+turn 505 200
+end
+turn 506 200
+end
+turn 507 200
+end
+turn 508 200
+end
+turn 509 200
+end
+turn 510 200
+end
+turn 511 200
+end
+turn 512 200
+end
+turn 513 200
+end
+turn 514 200
+end
+turn 515 200
+end
+turn 516 200
+end
+turn 517 200
+end
+turn 518 200
+end
+turn 519 200
+end
+turn 520 200
+end
+turn 521 200
+end
+turn 522 200
+end
+turn 523 200
+end
+turn 524 200
+end
+turn 525 200
+end
+turn 526 200
+end
+turn 527 200
+end
+turn 528 200
+end
+turn 529 200
+end
+turn 530 200
+end
+turn 531 200
+end
+turn 532 200
+end
+turn 533 200
+end
+turn 534 200
+end
+turn 535 200
+end
+turn 536 200
+end
+turn 537 200
+end
+turn 538 200
+end
+turn 539 200
+end
+turn 540 200
+end
+turn 541 200
+end
+turn 542 200
+end
+turn 543 200
+end
+turn 544 200
+end
+turn 545 200
+end
+turn 546 200
+end
+turn 547 200
+end
+turn 548 200
+end
+turn 549 200
+end
+turn 550 200
+end
+turn 551 200
+end
+turn 552 200
+end
+turn 553 200
+end
+turn 554 200
+end
+turn 555 200
+end
+turn 556 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 557 200
+end
+turn 558 200
+end
+turn 559 200
+end
+turn 560 200
+end
+turn 561 200
+end
+turn 562 200
+end
+turn 563 200
+end
+turn 564 200
+end
+turn 565 200
+end
+turn 566 200
+end
+turn 567 200
+end
+turn 568 200
+end
+turn 569 200
+end
+turn 570 200
+end
+turn 571 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 572 200
+end
+turn 573 200
+end
+turn 574 200
+end
+turn 575 200
+end
+turn 576 200
+end
+turn 577 200
+end
+turn 578 200
+end
+turn 579 200
+end
+turn 580 200
+end
+turn 581 200
+end
+turn 582 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 583 200
+end
+turn 584 200
+end
+turn 585 200
+end
+turn 586 200
+end
+turn 587 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 588 200
+end
+turn 589 200
+end
+turn 590 200
+end
+turn 591 200
+end
+turn 592 200
+end
+turn 593 200
+end
+turn 594 200
+end
+turn 595 200
+end
+turn 596 200
+end
+turn 597 200
+end
+turn 598 200
+end
+turn 599 200
+end
+turn 600 200
+end
+turn 601 200
+end
+turn 602 200
+end
+turn 603 200
+end
+turn 604 200
+end
+turn 605 200
+end
+turn 606 200
+end
+turn 607 200
+end
+turn 608 200
+end
+turn 609 200
+end
+turn 610 200
+end
+turn 611 200
+end
+turn 612 200
+end
+turn 613 200
+end
+turn 614 200
+end
+turn 615 200
+end
+turn 616 200
+end
+turn 617 200
+end
+turn 618 200
+end
+turn 619 200
+end
+turn 620 200
+end
+turn 621 200
+end
+turn 622 200
+end
+turn 623 200
+end
+turn 624 200
+end
+turn 625 200
+end
+turn 626 200
+end
+turn 627 200
+end
+turn 628 200
+end
+turn 629 200
+end
+turn 630 200
+end
+turn 631 200
+end
+turn 632 200
+end
+turn 633 200
+end
+turn 634 200
+end
+turn 635 200
+end
+turn 636 200
+end
+turn 637 200
+end
+turn 638 200
+end
+turn 639 200
+end
+turn 640 200
+end
+turn 641 200
+end
+turn 642 200
+end
+turn 643 200
+end
+turn 644 200
+end
+turn 645 200
+end
+turn 646 200
+end
+turn 647 200
+end
+turn 648 200
+end
+turn 649 200
+end
+turn 650 200
+end
+turn 651 200
+end
+turn 652 200
+end
+turn 653 200
+end
+turn 654 200
+end
+turn 655 200
+end
+turn 656 200
+end
+turn 657 200
+end
+turn 658 200
+end
+turn 659 200
+end
+turn 660 200
+end
+turn 661 200
+end
+turn 662 200
+cmd 1 {"type":"construct","template":"structures/gaul_house","x":451.19921875,"z":157.46173095703125,"angle":2.356194490192345,"entities":[4664],"autorepair":true,"autocontinue":true,"queued":false}
+end
+turn 663 200
+end
+turn 664 200
+end
+turn 665 200
+end
+turn 666 200
+end
+turn 667 200
+end
+turn 668 200
+end
+turn 669 200
+end
+turn 670 200
+end
+turn 671 200
+end
+turn 672 200
+end
+turn 673 200
+end
+turn 674 200
+end
+turn 675 200
+end
+turn 676 200
+end
+turn 677 200
+end
+turn 678 200
+end
+turn 679 200
+end
+turn 680 200
+cmd 1 {"type":"repair","entities":[4666],"target":4668,"autocontinue":true,"queued":false}
+end
+turn 681 200
+end
+turn 682 200
+end
+turn 683 200
+end
+turn 684 200
+end
+turn 685 200
+end
+turn 686 200
+end
+turn 687 200
+end
+turn 688 200
+end
+turn 689 200
+end
+turn 690 200
+end
+turn 691 200
+end
+turn 692 200
+end
+turn 693 200
+end
+turn 694 200
+end
+turn 695 200
+end
+turn 696 200
+end
+turn 697 200
+end
+turn 698 200
+end
+turn 699 200
+cmd 1 {"type":"repair","entities":[4669],"target":4668,"autocontinue":true,"queued":false}
+end
+turn 700 200
+end
+turn 701 200
+end
+turn 702 200
+end
+turn 703 200
+end
+turn 704 200
+end
+turn 705 200
+end
+turn 706 200
+end
+turn 707 200
+end
+turn 708 200
+end
+turn 709 200
+end
+turn 710 200
+end
+turn 711 200
+end
+turn 712 200
+end
+turn 713 200
+end
+turn 714 200
+end
+turn 715 200
+end
+turn 716 200
+end
+turn 717 200
+end
+turn 718 200
+end
+turn 719 200
+end
+turn 720 200
+end
+turn 721 200
+end
+turn 722 200
+end
+turn 723 200
+end
+turn 724 200
+end
+turn 725 200
+end
+turn 726 200
+end
+turn 727 200
+end
+turn 728 200
+end
+turn 729 200
+end
+turn 730 200
+end
+turn 731 200
+end
+turn 732 200
+end
+turn 733 200
+end
+turn 734 200
+end
+turn 735 200
+end
+turn 736 200
+end
+turn 737 200
+end
+turn 738 200
+end
+turn 739 200
+end
+turn 740 200
+end
+turn 741 200
+end
+turn 742 200
+end
+turn 743 200
+end
+turn 744 200
+end
+turn 745 200
+end
+turn 746 200
+end
+turn 747 200
+end
+turn 748 200
+end
+turn 749 200
+end
+turn 750 200
+end
+turn 751 200
+end
+turn 752 200
+end
+turn 753 200
+end
+turn 754 200
+end
+turn 755 200
+end
+turn 756 200
+end
+turn 757 200
+end
+turn 758 200
+end
+turn 759 200
+end
+turn 760 200
+end
+turn 761 200
+end
+turn 762 200
+end
+turn 763 200
+end
+turn 764 200
+end
+turn 765 200
+end
+turn 766 200
+end
+turn 767 200
+end
+turn 768 200
+end
+turn 769 200
+end
+turn 770 200
+end
+turn 771 200
+end
+turn 772 200
+end
+turn 773 200
+end
+turn 774 200
+end
+turn 775 200
+end
+turn 776 200
+end
+turn 777 200
+end
+turn 778 200
+end
+turn 779 200
+end
+turn 780 200
+end
+turn 781 200
+end
+turn 782 200
+end
+turn 783 200
+end
+turn 784 200
+end
+turn 785 200
+end
+turn 786 200
+end
+turn 787 200
+end
+turn 788 200
+end
+turn 789 200
+end
+turn 790 200
+end
+turn 791 200
+end
+turn 792 200
+end
+turn 793 200
+end
+turn 794 200
+end
+turn 795 200
+end
+turn 796 200
+end
+turn 797 200
+end
+turn 798 200
+end
+turn 799 200
+end
+turn 800 200
+end
+turn 801 200
+end
+turn 802 200
+end
+turn 803 200
+end
+turn 804 200
+end
+turn 805 200
+end
+turn 806 200
+end
+turn 807 200
+end
+turn 808 200
+end
+turn 809 200
+end
+turn 810 200
+end
+turn 811 200
+end
+turn 812 200
+end
+turn 813 200
+end
+turn 814 200
+end
+turn 815 200
+end
+turn 816 200
+end
+turn 817 200
+end
+turn 818 200
+end
+turn 819 200
+end
+turn 820 200
+end
+turn 821 200
+cmd 1 {"type":"construct","template":"structures/gaul_mill","x":418.9350891113281,"z":179.0819091796875,"angle":2.356194490192345,"entities":[4671],"autorepair":true,"autocontinue":true,"queued":false}
+end
+turn 822 200
+end
+turn 823 200
+end
+turn 824 200
+end
+turn 825 200
+end
+turn 826 200
+end
+turn 827 200
+end
+turn 828 200
+end
+turn 829 200
+end
+turn 830 200
+end
+turn 831 200
+end
+turn 832 200
+end
+turn 833 200
+end
+turn 834 200
+end
+turn 835 200
+end
+turn 836 200
+end
+turn 837 200
+end
+turn 838 200
+end
+turn 839 200
+end
+turn 840 200
+end
+turn 841 200
+end
+turn 842 200
+end
+turn 843 200
+end
+turn 844 200
+end
+turn 845 200
+end
+turn 846 200
+end
+turn 847 200
+end
+turn 848 200
+end
+turn 849 200
+end
+turn 850 200
+end
+turn 851 200
+end
+turn 852 200
+end
+turn 853 200
+end
+turn 854 200
+end
+turn 855 200
+end
+turn 856 200
+end
+turn 857 200
+end
+turn 858 200
+end
+turn 859 200
+end
+turn 860 200
+end
+turn 861 200
+end
+turn 862 200
+end
+turn 863 200
+end
+turn 864 200
+end
+turn 865 200
+end
+turn 866 200
+end
+turn 867 200
+end
+turn 868 200
+end
+turn 869 200
+end
+turn 870 200
+end
+turn 871 200
+end
+turn 872 200
+cmd 1 {"type":"gather","entities":[4666],"target":1552,"queued":false}
+end
+turn 873 200
+end
+turn 874 200
+end
+turn 875 200
+end
+turn 876 200
+end
+turn 877 200
+end
+turn 878 200
+end
+turn 879 200
+end
+turn 880 200
+end
+turn 881 200
+end
+turn 882 200
+end
+turn 883 200
+end
+turn 884 200
+end
+turn 885 200
+end
+turn 886 200
+end
+turn 887 200
+end
+turn 888 200
+end
+turn 889 200
+end
+turn 890 200
+end
+turn 891 200
+end
+turn 892 200
+end
+turn 893 200
+end
+turn 894 200
+end
+turn 895 200
+end
+turn 896 200
+end
+turn 897 200
+end
+turn 898 200
+end
+turn 899 200
+end
+turn 900 200
+end
+turn 901 200
+end
+turn 902 200
+end
+turn 903 200
+end
+turn 904 200
+end
+turn 905 200
+end
+turn 906 200
+end
+turn 907 200
+end
+turn 908 200
+end
+turn 909 200
+end
+turn 910 200
+end
+turn 911 200
+end
+turn 912 200
+end
+turn 913 200
+end
+turn 914 200
+end
+turn 915 200
+end
+turn 916 200
+end
+turn 917 200
+end
+turn 918 200
+end
+turn 919 200
+end
+turn 920 200
+end
+turn 921 200
+end
+turn 922 200
+end
+turn 923 200
+end
+turn 924 200
+end
+turn 925 200
+end
+turn 926 200
+end
+turn 927 200
+end
+turn 928 200
+end
+turn 929 200
+end
+turn 930 200
+end
+turn 931 200
+end
+turn 932 200
+end
+turn 933 200
+end
+turn 934 200
+end
+turn 935 200
+end
+turn 936 200
+end
+turn 937 200
+end
+turn 938 200
+end
+turn 939 200
+end
+turn 940 200
+end
+turn 941 200
+end
+turn 942 200
+cmd 1 {"type":"gather","entities":[4616],"target":1397,"queued":false}
+end
+turn 943 200
+end
+turn 944 200
+end
+turn 945 200
+end
+turn 946 200
+end
+turn 947 200
+end
+turn 948 200
+end
+turn 949 200
+end
+turn 950 200
+end
+turn 951 200
+end
+turn 952 200
+end
+turn 953 200
+end
+turn 954 200
+end
+turn 955 200
+end
+turn 956 200
+end
+turn 957 200
+end
+turn 958 200
+end
+turn 959 200
+end
+turn 960 200
+end
+turn 961 200
+end
+turn 962 200
+end
+turn 963 200
+end
+turn 964 200
+end
+turn 965 200
+end
+turn 966 200
+end
+turn 967 200
+end
+turn 968 200
+end
+turn 969 200
+end
+turn 970 200
+end
+turn 971 200
+end
+turn 972 200
+end
+turn 973 200
+end
+turn 974 200
+end
+turn 975 200
+cmd 1 {"type":"gather","entities":[4617],"target":1570,"queued":false}
+end
+turn 976 200
+end
+turn 977 200
+end
+turn 978 200
+end
+turn 979 200
+end
+turn 980 200
+end
+turn 981 200
+end
+turn 982 200
+end
+turn 983 200
+end
+turn 984 200
+end
+turn 985 200
+end
+turn 986 200
+end
+turn 987 200
+end
+turn 988 200
+end
+turn 989 200
+end
+turn 990 200
+end
+turn 991 200
+end
+turn 992 200
+end
+turn 993 200
+end
+turn 994 200
+end
+turn 995 200
+end
+turn 996 200
+end
+turn 997 200
+end
+turn 998 200
+end
+turn 999 200
+end
+turn 1000 200
+end
+turn 1001 200
+end
+turn 1002 200
+end
+turn 1003 200
+end
+turn 1004 200
+end
+turn 1005 200
+end
+turn 1006 200
+end
+turn 1007 200
+end
+turn 1008 200
+end
+turn 1009 200
+end
+turn 1010 200
+end
+turn 1011 200
+end
+turn 1012 200
+end
+turn 1013 200
+end
+turn 1014 200
+end
+turn 1015 200
+end
+turn 1016 200
+end
+turn 1017 200
+end
+turn 1018 200
+end
+turn 1019 200
+end
+turn 1020 200
+end
+turn 1021 200
+end
+turn 1022 200
+end
+turn 1023 200
+end
+turn 1024 200
+end
+turn 1025 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 1026 200
+end
+turn 1027 200
+end
+turn 1028 200
+end
+turn 1029 200
+end
+turn 1030 200
+end
+turn 1031 200
+end
+turn 1032 200
+end
+turn 1033 200
+end
+turn 1034 200
+end
+turn 1035 200
+end
+turn 1036 200
+cmd 1 {"type":"train","template":"units/gaul_support_female_citizen","count":1,"entities":[4582]}
+end
+turn 1037 200
+end
+turn 1038 200
+end
+turn 1039 200
+end
+turn 1040 200
+end
+turn 1041 200
+end
+turn 1042 200
+end
+turn 1043 200
+end
+turn 1044 200
+end
+turn 1045 200
+end
+turn 1046 200
+end
+turn 1047 200
+end
+turn 1048 200
+end
+turn 1049 200
+end
+turn 1050 200
+end
+turn 1051 200
+end
+turn 1052 200
+end
+turn 1053 200
+end
+turn 1054 200
+end
+turn 1055 200
+end
+turn 1056 200
+end
+turn 1057 200
+end
+turn 1058 200
+end
+turn 1059 200
+end
+turn 1060 200
+end
+turn 1061 200
+end
+turn 1062 200
+end
+turn 1063 200
+end
+turn 1064 200
+end
+turn 1065 200
+end
+turn 1066 200
+end
+turn 1067 200
+end
+turn 1068 200
+end
+turn 1069 200
+end
+turn 1070 200
+end
+turn 1071 200
+end
+turn 1072 200
+end
+turn 1073 200
+end
+turn 1074 200
+end
+turn 1075 200
+end
+turn 1076 200
+end
+turn 1077 200
+end
+turn 1078 200
+end
+turn 1079 200
+end
+turn 1080 200
+end
+turn 1081 200
+end
+turn 1082 200
+end
+turn 1083 200
+end
+turn 1084 200
+end
+turn 1085 200
+end
+turn 1086 200
+end
+turn 1087 200
+end
+turn 1088 200
+end
+turn 1089 200
+end
+turn 1090 200
+end
+turn 1091 200
+end
+turn 1092 200
+end
+turn 1093 200
+end
+turn 1094 200
+end
+turn 1095 200
+end
+turn 1096 200
+end
+turn 1097 200
+end
+turn 1098 200
+end
+turn 1099 200
+end
+turn 1100 200
+end
+turn 1101 200
+end
+turn 1102 200
+end
+turn 1103 200
+end
+turn 1104 200
+end
+turn 1105 200
+end
+turn 1106 200
+end
+turn 1107 200
+end
+turn 1108 200
+end
+turn 1109 200
+end
+turn 1110 200
+end
+turn 1111 200
+end
+turn 1112 200
+end
+turn 1113 200
+end
+turn 1114 200
+end
+turn 1115 200
+end
+turn 1116 200
+end
+turn 1117 200
+end
+turn 1118 200
+end
+turn 1119 200
+end
+turn 1120 200
+end
+turn 1121 200
+end
+turn 1122 200
+end
+turn 1123 200
+end
+turn 1124 200
+end
+turn 1125 200
+end
+turn 1126 200
+end
+turn 1127 200
+end
+turn 1128 200
+end
+turn 1129 200
+end
+turn 1130 200
+end
+turn 1131 200
+end
+turn 1132 200
+end
+turn 1133 200
+end
+turn 1134 200
+end
+turn 1135 200
+end
+turn 1136 200
+end
+turn 1137 200
+end
+turn 1138 200
+end
+turn 1139 200
+end
+turn 1140 200
+end
+turn 1141 200
+end
+turn 1142 200
+end
+turn 1143 200
+end
+turn 1144 200
+end
+turn 1145 200
+end
+turn 1146 200
+end
+turn 1147 200
+end
+turn 1148 200
+end
+turn 1149 200
+end
+turn 1150 200
+end
+turn 1151 200
+end
+turn 1152 200
+end
+turn 1153 200
+end
+turn 1154 200
+end
+turn 1155 200
+end
+turn 1156 200
+end
+turn 1157 200
+end
+turn 1158 200
+end
+turn 1159 200
+end
+turn 1160 200
+end
+turn 1161 200
+end
+turn 1162 200
+end
+turn 1163 200
+end
+turn 1164 200
+end
+turn 1165 200
+end
+turn 1166 200
+end
+turn 1167 200
+end
+turn 1168 200
+end
+turn 1169 200
+end
+turn 1170 200
+end
+turn 1171 200
+end
+turn 1172 200
+end
+turn 1173 200
+end
+turn 1174 200
+end
+turn 1175 200
+end
+turn 1176 200
+end
+turn 1177 200
+end
+turn 1178 200
+end
+turn 1179 200
+end
+turn 1180 200
+end
+turn 1181 200
+end
+turn 1182 200
+end
+turn 1183 200
+end
+turn 1184 200
+end
+turn 1185 200
+end
+turn 1186 200
+end
+turn 1187 200
+end
+turn 1188 200
+end
+turn 1189 200
+end
+turn 1190 200
+end
+turn 1191 200
+end
+turn 1192 200
+end
+turn 1193 200
+end
+turn 1194 200
+end
+turn 1195 200
+end
+turn 1196 200
+end
+turn 1197 200
+end
+turn 1198 200
+end
+turn 1199 200
+end
+turn 1200 200
+end
+turn 1201 200
+end
+turn 1202 200
+end
+turn 1203 200
+end
+turn 1204 200
+end
+turn 1205 200
+end
+turn 1206 200
+end
+turn 1207 200
+end
+turn 1208 200
+end
+turn 1209 200
+end
+turn 1210 200
+end
+turn 1211 200
+end
+turn 1212 200
+end
+turn 1213 200
+end
+turn 1214 200
+end
+turn 1215 200
+end
+turn 1216 200
+end
+turn 1217 200
+end
+turn 1218 200
+end
+turn 1219 200
+end
+turn 1220 200
+end
+turn 1221 200
+end
+turn 1222 200
+end
+turn 1223 200
+end
+turn 1224 200
+end
+turn 1225 200
+end
+turn 1226 200
+end
+turn 1227 200
+end
+turn 1228 200
+end
+turn 1229 200
+end
+turn 1230 200
+end
+turn 1231 200
+end
+turn 1232 200
+end
+turn 1233 200
+end
+turn 1234 200
+end
+turn 1235 200
+end
+turn 1236 200
+end
+turn 1237 200
+end
+turn 1238 200
+cmd 1 {"type":"control-all","flag":true}
+end
+turn 1239 200
+end
+turn 1240 200
+end
+turn 1241 200
+end
+turn 1242 200
+end
+turn 1243 200
+end
+turn 1244 200
+end
+turn 1245 200
+cmd 1 {"type":"control-all","flag":false}
+end
+turn 1246 200
+end
+turn 1247 200
+end
+turn 1248 200
+end
+turn 1249 200
+end
+turn 1250 200
+end
+turn 1251 200
+end
+turn 1252 200
+end
+turn 1253 200
+end
+turn 1254 200
+end
+turn 1255 200
+end
+turn 1256 200
+end
+turn 1257 200
+end
+turn 1258 200
+end
+turn 1259 200
+end
+turn 1260 200
+end
+turn 1261 200
+end
+turn 1262 200
+end
+turn 1263 200
+end
+turn 1264 200
+end
+turn 1265 200
+end
+turn 1266 200
+end
+turn 1267 200
+end
+turn 1268 200
+end
+turn 1269 200
+end
+turn 1270 200
+end
+turn 1271 200
+end
+turn 1272 200
+end
+turn 1273 200
+end
+turn 1274 200
+end
+turn 1275 200
+end
+turn 1276 200
+end
+turn 1277 200
+end
+turn 1278 200
+end
+turn 1279 200
+end
+turn 1280 200
+end
+turn 1281 200
+end
+turn 1282 200
+end
+turn 1283 200
+end
+turn 1284 200
+end
+turn 1285 200
+end
+turn 1286 200
+end
+turn 1287 200
+end
+turn 1288 200
+end
+turn 1289 200
+end
+turn 1290 200
+end
+turn 1291 200
+end
+turn 1292 200
+end
+turn 1293 200
+end
+turn 1294 200
+end
+turn 1295 200
+end
+turn 1296 200
+end
+turn 1297 200
+end
+turn 1298 200
+end
+turn 1299 200
+end
+turn 1300 200
+end
+turn 1301 200
+end
+turn 1302 200
+end
+turn 1303 200
+end
+turn 1304 200
+end
+turn 1305 200
+end
+turn 1306 200
+end
+turn 1307 200
+end
+turn 1308 200
+end
+turn 1309 200
+end
+turn 1310 200
+end
+turn 1311 200
+end
+turn 1312 200
+end
+turn 1313 200
+end
+turn 1314 200
+end
+turn 1315 200
+end
+turn 1316 200
+end
+turn 1317 200
+end
+turn 1318 200
+end
+turn 1319 200
+end
+turn 1320 200
+end
+turn 1321 200
+end
+turn 1322 200
+end
+turn 1323 200
+end
+turn 1324 200
+end
+turn 1325 200
+end
+turn 1326 200
+end
+turn 1327 200
+end
+turn 1328 200
+end
+turn 1329 200
+end
+turn 1330 200
+end
+turn 1331 200
+end
+turn 1332 200
+end
+turn 1333 200
+end
+turn 1334 200
+end
+turn 1335 200
+end
+turn 1336 200
+end
+turn 1337 200
+end
+turn 1338 200
+end
+turn 1339 200
+end
+turn 1340 200
+end
+turn 1341 200
+end
+turn 1342 200
+end
+turn 1343 200
+end
+turn 1344 200
+end
+turn 1345 200
+end
+turn 1346 200
+end
+turn 1347 200
+end
+turn 1348 200
+end
+turn 1349 200
+end
+turn 1350 200
+end
+turn 1351 200
+cmd 1 {"type":"construct","template":"structures/gaul_farmstead","x":475.3249206542969,"z":191.6217041015625,"angle":2.356194490192345,"entities":[4669],"autorepair":true,"autocontinue":true,"queued":false}
+end
+turn 1352 200
+end
+turn 1353 200
+end
+turn 1354 200
+end
+turn 1355 200
+end
+turn 1356 200
+end
+turn 1357 200
+end
+turn 1358 200
+end
+turn 1359 200
+end
+turn 1360 200
+end
+turn 1361 200
+end
+turn 1362 200
+end
+turn 1363 200
+end
+turn 1364 200
+end
+turn 1365 200
+end
+turn 1366 200
+end
+turn 1367 200
+end
+turn 1368 200
+end
+turn 1369 200
+end
+turn 1370 200
+end
+turn 1371 200
+cmd 1 {"type":"repair","entities":[4664],"target":4701,"autocontinue":true,"queued":false}
+end
+turn 1372 200
+end
+turn 1373 200
+end
+turn 1374 200
+end
+turn 1375 200
+end
+turn 1376 200
+end
+turn 1377 200
+end
+turn 1378 200
+end
+turn 1379 200
+end
+turn 1380 200
+end
+turn 1381 200
+end
+turn 1382 200
+end
+turn 1383 200
+end
+turn 1384 200
+end
+turn 1385 200
+end
+turn 1386 200
+end
+turn 1387 200
+cmd 1 {"type":"repair","entities":[4689],"target":4701,"autocontinue":true,"queued":false}
+end
+turn 1388 200
+end
+turn 1389 200
+end
+turn 1390 200
+end
+turn 1391 200
+end
+turn 1392 200
+end
+turn 1393 200
+end
+turn 1394 200
+end
+turn 1395 200
+end
+turn 1396 200
+end
+turn 1397 200
+end
+turn 1398 200
+end
+turn 1399 200
+end
+turn 1400 200
+end
+turn 1401 200
+end
+turn 1402 200
+end
+turn 1403 200
+end
+turn 1404 200
+end
+turn 1405 200
+end
+turn 1406 200
+end
+turn 1407 200
+end
+turn 1408 200
+end
+turn 1409 200
+end
+turn 1410 200
+end
+turn 1411 200
+end
+turn 1412 200
+end
+turn 1413 200
+end
+turn 1414 200
+end
+turn 1415 200
+end
+turn 1416 200
+end
+turn 1417 200
+end
+turn 1418 200
+end
+turn 1419 200
+end
+turn 1420 200
+end
+turn 1421 200
+end
+turn 1422 200
+end
+turn 1423 200
+end
+turn 1424 200
+end
+turn 1425 200
+end
+turn 1426 200
+end
+turn 1427 200
+end
+turn 1428 200
+end
+turn 1429 200
+end
+turn 1430 200
+end
+turn 1431 200
+end
+turn 1432 200
+end
+turn 1433 200
+end
+turn 1434 200
+end
+turn 1435 200
+end
+turn 1436 200
+end
+turn 1437 200
+end
+turn 1438 200
+end
+turn 1439 200
+end
+turn 1440 200
+end
+turn 1441 200
+end
+turn 1442 200
+end
+turn 1443 200
+end
+turn 1444 200
+end
+turn 1445 200
+cmd 1 {"type":"construct","template":"structures/gaul_field","x":479.96368408203125,"z":223.77432250976562,"angle":2.356194490192345,"entities":[4687],"autorepair":true,"autocontinue":true,"queued":false}
+end
+turn 1446 200
+end
+turn 1447 200
+end
+turn 1448 200
+end
+turn 1449 200
+end
+turn 1450 200
+end
+turn 1451 200
+end
+turn 1452 200
+end
+turn 1453 200
+end
+turn 1454 200
+end
+turn 1455 200
+end
+turn 1456 200
+end
+turn 1457 200
+end
+turn 1458 200
+end
+turn 1459 200
+end
+turn 1460 200
+end
+turn 1461 200
+end
+turn 1462 200
+end
+turn 1463 200
+end
+turn 1464 200
+end
+turn 1465 200
+end
+turn 1466 200
+end
+turn 1467 200
+end
+turn 1468 200
+end
+turn 1469 200
+end
+turn 1470 200
+end
+turn 1471 200
+end
+turn 1472 200
+end
+turn 1473 200
+end
+turn 1474 200
+end
+turn 1475 200
+end
+turn 1476 200
+end
+turn 1477 200
+end
+turn 1478 200
+end
+turn 1479 200
+end
+turn 1480 200
+end
+turn 1481 200
+end
+turn 1482 200
+end
+turn 1483 200
+end
+turn 1484 200
+end
+turn 1485 200
+end
+turn 1486 200
+end
+turn 1487 200
+end
+turn 1488 200
+end
+turn 1489 200
+end
+turn 1490 200
+end
+turn 1491 200
+end
+turn 1492 200
+end
+turn 1493 200
+end
+turn 1494 200
+end
+turn 1495 200
+end
+turn 1496 200
+end
+turn 1497 200
+end
+turn 1498 200
+end
+turn 1499 200
+end
+turn 1500 200
+end
+turn 1501 200
+end
+turn 1502 200
+end
+turn 1503 200
+cmd 1 {"type":"walk","entities":[4618],"x":465.635498046875,"z":148.32864379882812,"queued":false}
+end
+turn 1504 200
+end
+turn 1505 200
+end
+turn 1506 200
+end
+turn 1507 200
+end
+turn 1508 200
+cmd 1 {"type":"walk","entities":[4618],"x":468.03021240234375,"z":153.37289428710938,"queued":false}
+end
+turn 1509 200
+end
+turn 1510 200
+end
+turn 1511 200
+end
+turn 1512 200
+end
+turn 1513 200
+end
+turn 1514 200
+end
+turn 1515 200
+end
+turn 1516 200
+end
+turn 1517 200
+end
+turn 1518 200
+end
+turn 1519 200
+end
+turn 1520 200
+end
+turn 1521 200
+end
+turn 1522 200
+end
+turn 1523 200
+end
+turn 1524 200
+end
+turn 1525 200
+end
+turn 1526 200
+end
+turn 1527 200
+end
+turn 1528 200
+end
+turn 1529 200
+end
+turn 1530 200
+end
+turn 1531 200
+end
+turn 1532 200
+end
+turn 1533 200
+end
+turn 1534 200
+end
+turn 1535 200
+end
+turn 1536 200
+end
+turn 1537 200
+end
+turn 1538 200
+end
+turn 1539 200
+end
+turn 1540 200
+end
+turn 1541 200
+end
+turn 1542 200
+end
+turn 1543 200
+end
+turn 1544 200
+end
+turn 1545 200
+end
+turn 1546 200
+end
+turn 1547 200
+end
+turn 1548 200
+end
+turn 1549 200
+end
+turn 1550 200
+end
+turn 1551 200
+end
+turn 1552 200
+end
+turn 1553 200
+end
+turn 1554 200
+end
+turn 1555 200
+end
+turn 1556 200
+end
+turn 1557 200
+end
+turn 1558 200
+end
+turn 1559 200
+end
+turn 1560 200
+end
+turn 1561 200
+end
+turn 1562 200
+end
+turn 1563 200
+end
+turn 1564 200
+end
+turn 1565 200
+end
+turn 1566 200
+end
+turn 1567 200
+end
+turn 1568 200
+end
+turn 1569 200
+end
+turn 1570 200
+end
+turn 1571 200
+end
+turn 1572 200
+end
+turn 1573 200
+end
+turn 1574 200
+end
+turn 1575 200
+end
+turn 1576 200
+end
+turn 1577 200
+end
+turn 1578 200
+end
+turn 1579 200
+end
+turn 1580 200
+end
+turn 1581 200
+end
+turn 1582 200
+end
+turn 1583 200
+end
+turn 1584 200
+end
+turn 1585 200
+end
+turn 1586 200
+end
+turn 1587 200
+end
+turn 1588 200
+end
+turn 1589 200
+end
+turn 1590 200
+end
+turn 1591 200
+end
+turn 1592 200
+end
+turn 1593 200
+end
+turn 1594 200
+end
+turn 1595 200
+end
+turn 1596 200
+end
+turn 1597 200
+end
+turn 1598 200
+end
+turn 1599 200
+end
+turn 1600 200
+end
+turn 1601 200
+end
+turn 1602 200
+end
+turn 1603 200
+end
+turn 1604 200
+end
+turn 1605 200
+end
+turn 1606 200
+end
+turn 1607 200
+end
+turn 1608 200
+end
+turn 1609 200
+end
+turn 1610 200
+end
+turn 1611 200
+end
+turn 1612 200
+end
+turn 1613 200
+end
+turn 1614 200
+end
+turn 1615 200
+end
+turn 1616 200
+end
+turn 1617 200
+end
+turn 1618 200
+end
+turn 1619 200
+end
+turn 1620 200
+end
+turn 1621 200
+end
+turn 1622 200
+end
+turn 1623 200
+end
+turn 1624 200
+end
+turn 1625 200
+end
+turn 1626 200
+end
+turn 1627 200
+end
+turn 1628 200
+end
+turn 1629 200
+end
+turn 1630 200
+end
+turn 1631 200
+end
+turn 1632 200
+end
+turn 1633 200
+end
+turn 1634 200
+end
+turn 1635 200
+end
+turn 1636 200
+end
+turn 1637 200
+end
+turn 1638 200
+end
+turn 1639 200
+end
+turn 1640 200
+end
+turn 1641 200
+end
+turn 1642 200
+end
+turn 1643 200
+end
+turn 1644 200
+end
+turn 1645 200
+end
+turn 1646 200
+end
+turn 1647 200
+end
+turn 1648 200
+end
+turn 1649 200
+end
+turn 1650 200
+end
+turn 1651 200
+end
+turn 1652 200
+end
+turn 1653 200
+end
+turn 1654 200
+cmd 1 {"type":"gather","entities":[4621],"target":81,"queued":false}
+end
+turn 1655 200
+end
+turn 1656 200
+end
+turn 1657 200
+end
+turn 1658 200
+end
+turn 1659 200
+end
+turn 1660 200
+end
+turn 1661 200
+end
+turn 1662 200
+end
+turn 1663 200
+end
+turn 1664 200
+end
+turn 1665 200
+end
+turn 1666 200
+end
+turn 1667 200
+end
+turn 1668 200
+end
+turn 1669 200
+end
+turn 1670 200
+end
+turn 1671 200
+end
+turn 1672 200
+end
+turn 1673 200
+end
+turn 1674 200
+end
+turn 1675 200
+end
+turn 1676 200
+end
+turn 1677 200
+end
+turn 1678 200
+end
+turn 1679 200
+end
+turn 1680 200
+end
+turn 1681 200
+end
+turn 1682 200
+end
+turn 1683 200
+end
+turn 1684 200
+end
+turn 1685 200
+end
+turn 1686 200
+end
+turn 1687 200
+end
+turn 1688 200
+end
+turn 1689 200
+end
+turn 1690 200
+end
+turn 1691 200
+end
+turn 1692 200
+end
+turn 1693 200
+end
+turn 1694 200
+end
+turn 1695 200
+end
+turn 1696 200
+end
+turn 1697 200
+end
+turn 1698 200
+end
+turn 1699 200
+end
+turn 1700 200
+end
+turn 1701 200
+end
+turn 1702 200
+end
+turn 1703 200
+end
+turn 1704 200
+end
+turn 1705 200
+end
+turn 1706 200
+end
+turn 1707 200
+end
+turn 1708 200
+end
+turn 1709 200
+end
+turn 1710 200
+end
+turn 1711 200
+end
+turn 1712 200
+end
+turn 1713 200
+end
+turn 1714 200
+end
+turn 1715 200
+end
+turn 1716 200
+end
+turn 1717 200
+end
+turn 1718 200
+end
+turn 1719 200
+end
+turn 1720 200
+end
+turn 1721 200
+end
+turn 1722 200
+end
+turn 1723 200
+end
+turn 1724 200
+end
+turn 1725 200
+end
+turn 1726 200
+end
+turn 1727 200
+end
+turn 1728 200
+cmd 1 {"type":"stance","entities":[4621],"name":"violent"}
+end
+turn 1729 200
+end
+turn 1730 200
+end
+turn 1731 200
+end
+turn 1732 200
+end
+turn 1733 200
+end
+turn 1734 200
+end
+turn 1735 200
+end
+turn 1736 200
+end
+turn 1737 200
+end
+turn 1738 200
+end
+turn 1739 200
+end
+turn 1740 200
+end
+turn 1741 200
+end
+turn 1742 200
+end
+turn 1743 200
+end
+turn 1744 200
+end
+turn 1745 200
+end
+turn 1746 200
+end
+turn 1747 200
+end
+turn 1748 200
+end
+turn 1749 200
+end
+turn 1750 200
+end
+turn 1751 200
+end
+turn 1752 200
+end
+turn 1753 200
+end
+turn 1754 200
+end
+turn 1755 200
+end
+turn 1756 200
+end
+turn 1757 200
+end
+turn 1758 200
+end
+turn 1759 200
+end
+turn 1760 200
+end
+turn 1761 200
+end
+turn 1762 200
+end
+turn 1763 200
+end
+turn 1764 200
+end
+turn 1765 200
+end
+turn 1766 200
+end
+turn 1767 200
+end
+turn 1768 200
+end
+turn 1769 200
+end
+turn 1770 200
+end
+turn 1771 200
+end
+turn 1772 200
+end
+turn 1773 200
+cmd 1 {"type":"stance","entities":[4621],"name":"passive"}
+end
+turn 1774 200
+end
+turn 1775 200
+end
+turn 1776 200
+end
+turn 1777 200
+end
+turn 1778 200
+end
+turn 1779 200
+end
+turn 1780 200
+end
+turn 1781 200
+end
+turn 1782 200
+end
+turn 1783 200
+end
+turn 1784 200
+end
+turn 1785 200
+end
+turn 1786 200
+end
+turn 1787 200
+end
+turn 1788 200
+end
+turn 1789 200
+end
+turn 1790 200
+end
+turn 1791 200
+end
+turn 1792 200
+end
+turn 1793 200
+end
+turn 1794 200
+end
+turn 1795 200
+cmd 1 {"type":"gather","entities":[4689],"target":81,"queued":false}
+end
+turn 1796 200
+end
+turn 1797 200
+end
+turn 1798 200
+end
+turn 1799 200
+end
+turn 1800 200
+end
+turn 1801 200
+end
+turn 1802 200
+end
+turn 1803 200
+end
+turn 1804 200
+end
+turn 1805 200
+end
+turn 1806 200
+end
+turn 1807 200
+end
+turn 1808 200
+end
+turn 1809 200
+end
+turn 1810 200
+end
+turn 1811 200
+end
+turn 1812 200
+end
+turn 1813 200
+end
+turn 1814 200
+end
+turn 1815 200
+end
+turn 1816 200
+end
+turn 1817 200
+end
+turn 1818 200
+end
+turn 1819 200
+end
+turn 1820 200
+end
+turn 1821 200
+end
+turn 1822 200
+end
+turn 1823 200
+end
+turn 1824 200
+end
+turn 1825 200
+end
+turn 1826 200
+end
+turn 1827 200
+end
+turn 1828 200
+end
+turn 1829 200
+end
+turn 1830 200
+end
+turn 1831 200
+end
+turn 1832 200
+end
+turn 1833 200
+end
+turn 1834 200
+end
+turn 1835 200
+end
+turn 1836 200
+end
+turn 1837 200
+end
+turn 1838 200
+end
+turn 1839 200
+end
+turn 1840 200
+end
+turn 1841 200
+end
+turn 1842 200
+end
+turn 1843 200
+end
+turn 1844 200
+end
+turn 1845 200
+end
+turn 1846 200
+end
+turn 1847 200
+end
+turn 1848 200
+end
+turn 1849 200
+end
+turn 1850 200
+end
+turn 1851 200
+end
+turn 1852 200
+end
+turn 1853 200
+end
+turn 1854 200
+end
+turn 1855 200
+end
+turn 1856 200
+end
+turn 1857 200
+end
+turn 1858 200
+end
+turn 1859 200
+end
+turn 1860 200
+end
+turn 1861 200
+end
+turn 1862 200
+end
+turn 1863 200
+end
+turn 1864 200
+end
+turn 1865 200
+end
+turn 1866 200
+end
+turn 1867 200
+end
+turn 1868 200
+end
+turn 1869 200
+end
+turn 1870 200
+end
+turn 1871 200
+end
+turn 1872 200
+end
+turn 1873 200
+end
+turn 1874 200
+end
+turn 1875 200
+end
+turn 1876 200
+end
+turn 1877 200
+end
+turn 1878 200
+end
+turn 1879 200
+end
+turn 1880 200
+end
+turn 1881 200
+end
+turn 1882 200
+end
+turn 1883 200
+end
+turn 1884 200
+end
+turn 1885 200
+end
+turn 1886 200
+end
+turn 1887 200
+end
+turn 1888 200
+end
+turn 1889 200
+end
+turn 1890 200
+end
+turn 1891 200
+end
+turn 1892 200
+end
+turn 1893 200
+end
+turn 1894 200
+end
+turn 1895 200
+end
+turn 1896 200
+end
+turn 1897 200
+end
+turn 1898 200
+end
+turn 1899 200
+end
+turn 1900 200
+end
+turn 1901 200
+end
+turn 1902 200
+end
+turn 1903 200
+end
+turn 1904 200
+end
+turn 1905 200
+end
+turn 1906 200
+end
+turn 1907 200
+end
+turn 1908 200
+end
+turn 1909 200
+end
+turn 1910 200
+end
+turn 1911 200
+end
+turn 1912 200
+end
+turn 1913 200
+end
+turn 1914 200
+end
+turn 1915 200
+end
+turn 1916 200
+end
+turn 1917 200
+end
+turn 1918 200
+end
+turn 1919 200
+end
+turn 1920 200
+end
+turn 1921 200
+end
+turn 1922 200
+end
+turn 1923 200
+end
+turn 1924 200
+end
+turn 1925 200
+end
+turn 1926 200
+cmd 1 {"type":"gather","entities":[4664],"target":82,"queued":false}
+end
+turn 1927 200
+end
+turn 1928 200
+end
+turn 1929 200
+end
+turn 1930 200
+end
+turn 1931 200
+end
+turn 1932 200
+end
+turn 1933 200
+end
+turn 1934 200
+end
+turn 1935 200
+end
+turn 1936 200
+end
+turn 1937 200
+cmd 1 {"type":"gather","entities":[4669],"target":82,"queued":false}
+end
+turn 1938 200
+end
+turn 1939 200
+end
+turn 1940 200
+end
+turn 1941 200
+end
+turn 1942 200
+end
+turn 1943 200
+end
+turn 1944 200
+end
+turn 1945 200
+end
+turn 1946 200
+end
+turn 1947 200
+end
+turn 1948 200
+cmd 1 {"type":"gather","entities":[4617],"target":83,"queued":false}
+end
+turn 1949 200
+end
+turn 1950 200
+end
+turn 1951 200
+end
+turn 1952 200
+end
+turn 1953 200
+end
+turn 1954 200
+end
+turn 1955 200
+end
+turn 1956 200
+end
+turn 1957 200
+end
+turn 1958 200
+end
+turn 1959 200
+end
+turn 1960 200
+end
+turn 1961 200
+end
+turn 1962 200
+end
+turn 1963 200
+end
+turn 1964 200
+end
+turn 1965 200
+end
+turn 1966 200
+end
+turn 1967 200
+end
+turn 1968 200
+end
+turn 1969 200
+end
+turn 1970 200
+end
+turn 1971 200
+end
+turn 1972 200
+end
+turn 1973 200
+end
+turn 1974 200
+end
+turn 1975 200
+end
+turn 1976 200
+end
+turn 1977 200
+end
+turn 1978 200
+end
+turn 1979 200
+end
+turn 1980 200
+end
+turn 1981 200
+end
+turn 1982 200
+end
+turn 1983 200
+end
+turn 1984 200
+end
+turn 1985 200
+end
+turn 1986 200
+end
+turn 1987 200
+end
+turn 1988 200
+end
+turn 1989 200
+end
+turn 1990 200
+end
+turn 1991 200
+end
+turn 1992 200
+end
+turn 1993 200
+end
+turn 1994 200
+end
+turn 1995 200
+end
+turn 1996 200
+end
+turn 1997 200
+end
+turn 1998 200
+end
+turn 1999 200
+end
+turn 2000 200
+end
+turn 2001 200
+end
+turn 2002 200
+end
+turn 2003 200
+end
+turn 2004 200
+end
+turn 2005 200
+end
+turn 2006 200
+end
+turn 2007 200
+end
+turn 2008 200
+end
+turn 2009 200
+end
+turn 2010 200
+end
+turn 2011 200
+end
+turn 2012 200
+end
+turn 2013 200
+end
+turn 2014 200
+end
+turn 2015 200
+end
+turn 2016 200
+end
+turn 2017 200
+end
+turn 2018 200
+end
+turn 2019 200
+end
+turn 2020 200
+end
+turn 2021 200
+end
+turn 2022 200
+end
+turn 2023 200
+end
+turn 2024 200
+end
+turn 2025 200
+end
+turn 2026 200
+end
+turn 2027 200
+end
+turn 2028 200
+end
+turn 2029 200
+end
+turn 2030 200
+end
+turn 2031 200
+end
+turn 2032 200
+end
+turn 2033 200
+end
+turn 2034 200
+end
+turn 2035 200
+end
+turn 2036 200
+end
+turn 2037 200
+end
+turn 2038 200
+end
+turn 2039 200
+end
+turn 2040 200
+end
+turn 2041 200
+end
+turn 2042 200
+end
+turn 2043 200
+end
+turn 2044 200
+end
+turn 2045 200
+end
+turn 2046 200
+end
+turn 2047 200
+end
+turn 2048 200
+end
+turn 2049 200
+end
+turn 2050 200
+end
+turn 2051 200
+end
+turn 2052 200
+end
+turn 2053 200
+end
+turn 2054 200
+end
+turn 2055 200
+end
+turn 2056 200
+end
+turn 2057 200
+end
+turn 2058 200
+end
+turn 2059 200
+end
+turn 2060 200
+end
+turn 2061 200
+end
+turn 2062 200
+end
+turn 2063 200
+end
+turn 2064 200
+end
+turn 2065 200
+end
+turn 2066 200
+end
+turn 2067 200
+end
+turn 2068 200
+end
+turn 2069 200
+end
+turn 2070 200
+end
+turn 2071 200
+end
+turn 2072 200
+end
+turn 2073 200
+end
+turn 2074 200
+end
+turn 2075 200
+end
+turn 2076 200
+end
+turn 2077 200
+end
+turn 2078 200
+end
+turn 2079 200
+end
+turn 2080 200
+end
+turn 2081 200
+end
+turn 2082 200
+end
+turn 2083 200
+end
+turn 2084 200
+end
+turn 2085 200
+end
+turn 2086 200
+end
+turn 2087 200
+end
+turn 2088 200
+end
+turn 2089 200
+end
+turn 2090 200
+end
+turn 2091 200
+end
+turn 2092 200
+end
+turn 2093 200
+end
+turn 2094 200
+end
+turn 2095 200
+end
+turn 2096 200
+end
+turn 2097 200
+end
+turn 2098 200
+end
+turn 2099 200
+end
+turn 2100 200
+end
+turn 2101 200
+end
+turn 2102 200
+end
+turn 2103 200
+end
+turn 2104 200
+end
+turn 2105 200
+end
+turn 2106 200
+end
+turn 2107 200
+end
+turn 2108 200
+end
+turn 2109 200
+end
+turn 2110 200
+end
+turn 2111 200
+end
+turn 2112 200
+end
+turn 2113 200
+end
+turn 2114 200
+end
+turn 2115 200
+end
+turn 2116 200
+end
+turn 2117 200
+end
+turn 2118 200
+end
+turn 2119 200
+end
+turn 2120 200
+end
+turn 2121 200
+end
+turn 2122 200
+end
+turn 2123 200
+end
+turn 2124 200
+end
+turn 2125 200
+end
+turn 2126 200
+end
+turn 2127 200
+end
+turn 2128 200
+end
+turn 2129 200
+end
+turn 2130 200
+end
+turn 2131 200
+end
+turn 2132 200
+end
+turn 2133 200
+end
+turn 2134 200
+end
+turn 2135 200
+end
+turn 2136 200
+end
+turn 2137 200
+end
+turn 2138 200
+end
+turn 2139 200
+end
+turn 2140 200
+end
+turn 2141 200
+end
+turn 2142 200
+end
+turn 2143 200
+end
+turn 2144 200
+end
+turn 2145 200
+end
+turn 2146 200
+end
+turn 2147 200
+end
+turn 2148 200
+end
+turn 2149 200
+end
+turn 2150 200
+end
+turn 2151 200
+end
+turn 2152 200
+end
+turn 2153 200
+end
+turn 2154 200
+end
+turn 2155 200
+end
+turn 2156 200
+end
+turn 2157 200
+end
+turn 2158 200
+end
+turn 2159 200
+end
+turn 2160 200
+end
+turn 2161 200
+end
+turn 2162 200
+end
+turn 2163 200
+end
+turn 2164 200
+end
+turn 2165 200
+end
+turn 2166 200
+end
+turn 2167 200
+end
+turn 2168 200
+end
+turn 2169 200
+end
+turn 2170 200
+end
+turn 2171 200
+end
+turn 2172 200
+end
+turn 2173 200
+end
+turn 2174 200
+end
+turn 2175 200
+end
+turn 2176 200
+end
+turn 2177 200
+end
+turn 2178 200
+end
+turn 2179 200
+end
+turn 2180 200
+end
+turn 2181 200
+end
+turn 2182 200
+end
+turn 2183 200
+end
+turn 2184 200
+end
+turn 2185 200
+end
+turn 2186 200
+end
+turn 2187 200
+end
+turn 2188 200
+end
+turn 2189 200
+end
+turn 2190 200
+end
+turn 2191 200
+end
+turn 2192 200
+end
+turn 2193 200
+end
+turn 2194 200
+end
+turn 2195 200
+end
+turn 2196 200
+end
+turn 2197 200
+end
+turn 2198 200
+end
+turn 2199 200
+end
+turn 2200 200
+end
+turn 2201 200
+end
+turn 2202 200
+end
+turn 2203 200
+end
+turn 2204 200
+end
+turn 2205 200
+end
+turn 2206 200
+end
+turn 2207 200
+end
+turn 2208 200
+end
+turn 2209 200
+end
+turn 2210 200
+end
+turn 2211 200
+end
+turn 2212 200
+end
+turn 2213 200
+end
+turn 2214 200
+end
+turn 2215 200
+end
+turn 2216 200
+end
+turn 2217 200
+end
+turn 2218 200
+end
+turn 2219 200
+end
+turn 2220 200
+end
+turn 2221 200
+end
+turn 2222 200
+end
+turn 2223 200
+end

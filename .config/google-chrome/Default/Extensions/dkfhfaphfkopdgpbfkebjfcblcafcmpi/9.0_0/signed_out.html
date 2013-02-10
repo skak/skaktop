@@ -1,0 +1,43 @@
+
+<html>
+<head>
+<title>Texty - Signed Out</title>
+<style type="text/css">
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: arial;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+}
+</style>
+
+<script>
+//duplicating this function call from send_logic.js -- we are changing icon here in this file because this is the call back from the google
+// oauth logout step...so we are more confident that the user is indeed logged out.
+
+function setIcon(google_auth_boolean) {
+        
+      if (google_auth_boolean) {
+          chrome.browserAction.setIcon({ 'path' : 'img/icon-19-on.png'});
+        } else {
+          chrome.browserAction.setIcon({ 'path' : 'img/icon-19-off.png'});
+        }
+ 
+      
+      };
+</script>
+
+
+
+</head>
+
+<body onload="setIcon(false);">
+<img  src="mighty_launch_small.png">
+
+<h2>You are now signed out of MightyText</script></h2>
+<p> Any SMS text messages that were previously sync'd to the MightyText Chrome Extension will still be there, however, you won't be able to send/receive new messages until you login to the MightyText Chrome Extension again.</p>
+
+</body>
+</html>

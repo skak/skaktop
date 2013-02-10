@@ -1,0 +1,20 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "img/icon-19-off.png",
+      "default_popup": "popup.html",
+      "default_title": "MightyText"
+   },
+   "default_locale": "en",
+   "description": "Text from Chrome! Sync'd w/ Android #. SMS & Texting like Google Voice.  See our YouTube demo. Instant notifications like Gmail app.",
+   "icons": {
+      "48": "img/mt_new_48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDozz3pjtDD8yYlbhyPMI3sjSiZXSbdd4YePNeF2RozHr6wlT8+th9gLPiGWeErqTExC+kSceCU6n9yDARdR3waftrHIMWKTblJEfWCM+0Ouftmez82RDepmVp3kWxHkBzGY7+nnWKWd2j1nN+oBQMXSqzvhXcc0+8QDFb1zgJSXQIDAQAB",
+   "minimum_chrome_version": "18.0.0",
+   "name": "MightyText - Send/Receive SMS Text Messages",
+   "options_page": "popup.html#options",
+   "permissions": [ "unlimitedStorage", "contextMenus", "tabs", "notifications", "http://www.google.com/m8/feeds/*", "https://*.google.com/*", "http://www.google.com/m8/feeds/*", "https://www.google.com/accounts/OAuthGetRequestToken", "https://www.google.com/accounts/OAuthAuthorizeToken", "https://www.google.com/accounts/OAuthGetAccessToken", "https://textyserver.appspot.com/*", "http://*.textyapp.com/*", "https://*.textyapp.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "9.0"
+}

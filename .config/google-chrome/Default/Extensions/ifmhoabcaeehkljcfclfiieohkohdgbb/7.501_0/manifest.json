@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "exclude_globs": [ "http://*.channel.facebook.com/*", "http://static.*.facebook.com/*", "http://*.facebook.com/ai.php*" ],
+      "include_globs": [ "http://*.facebook.com/*", "http://facebook.com/*", "https://*.facebook.com/*", "https://facebook.com/*", "http://*.facebook.tld/*", "http://facebook.tld/*", "https://*.facebook.tld/*", "https://facebook.tld/*" ],
+      "js": [ "socialfixer.user.js" ],
+      "matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Social Fixer for Facebook fixes annoyances, adds features, and enhances existing functionality to make FB more fun and efficient",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHmZxYmQGCsxGdDKjXhR2RVPqz0VO9tyo8590M1TCgUqvPMXlaUuZnTY6UhCG89w6BlKampIeEyxMiWGzLXKeSZzWqjNKD7Fn76n6gmDXKSD/hO25psN/+6ZBFkVK2ENBEMlhN2gDQBD5iycgnPvm/+Ca9hUSZVd6jUEB/uJcH7wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "19.0",
+   "name": "Social Fixer for Facebook",
+   "permissions": [ "http://*.SocialFixer.com/*", "https://*.SocialFixer.com/*", "http://*.facebook.com/*", "https://*.facebook.com/*", "storage", "unlimitedStorage" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "7.501"
+}

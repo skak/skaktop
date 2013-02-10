@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Export Chrome bookmarks into Google Bookmarks.</title>
+		<link rel="stylesheet" type="text/css" href="../public/jqueryui/lightBlue/jquery-ui-1.7.2.custom.css"/> 
+		<link rel="stylesheet" href="../public/jquery.treeview.css" type="text/css" />
+		<script type="text/javascript" src="../public/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="../public/jquery-ui-1.7.2.custom.min.js"></script> 
+		<script type="text/javascript" src="../public/jquery.treeview.min.js"></script>
+		<script type="text/javascript" src="import.js"></script>
+<style>
+body{background:#dceaf9 url(../ui/images/bg_title.png) repeat-x;padding:10px;}
+h2 {margin:0;padding:6px;text-align:right;color:#999;font-family:fantasy,cursive,Courier;font-weight:normal;}
+#top {width:75%;margin:auto;}
+#container {width:75%;height:80%;overflow:hidden;margin:auto;}
+#bookmarks {overflow-y:scroll;height:80%;}
+#buttons {width:75%;margin:auto;margin-top:4px;}
+#data {width:100%;height:76%;}
+.notes {font-size:80%;font-family:Times, "Times New Roman", Georgia, serif;}
+</style>
+</head>
+<body>
+<form action="http://www.google.com/bookmarks/mark?op=upload" method="POST">
+<div id="top">
+<h2>Export Chrome Bookmarks</h2>
+</div>
+<div id="container">
+	<ul>
+		<li><a href="#tabs-1">Chrome Bookmarks</a></li>
+		<li><a href="#tabs-2">Upload Data</a></li>
+		<li style='float:right;padding-top:4px;'>
+			<span>Google Bookmarks Tools</span>
+		</li>
+	</ul>
+	<div id="tabs-1">
+	 <div id="bookmarks">
+	 </div>
+	</div>
+	<div id="tabs-2">
+	 <textarea id="data" readonly name="&lt;?xml version"></textarea>
+	</div>
+</div>
+<div id="buttons">
+<input type="button" value="Refresh" onclick="dumpBookmarks();">
+<input type="submit" value="Export to Google Bookmarks" />
+<span class="notes">Press "Export" button bring you to Google's export page, and you could choose continue or cancel ;-)</span><br />
+<span class="notes"><b>Shift+Ctrl+B</b>:Bookmarks manager</span> 
+</div>
+</form>
+
+</body>
+</html>

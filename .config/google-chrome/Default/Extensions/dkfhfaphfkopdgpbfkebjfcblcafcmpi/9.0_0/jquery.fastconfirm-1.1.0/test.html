@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="jquery.fastconfirm.css"/>
+	<title>Fast Confirm demo</title>
+</head>
+
+<body>
+	<style>
+		* {
+			font: 14px Arial;
+		}
+		p {
+			width: 500px;
+		}
+	</style>
+
+	<p>
+		Fast Confirm is another very lightweight, easy to use and efficient jQuery plugin. 
+		It is designed to ask the user for confirmations in an easy and smooth way. 
+		You can easily make the bubble appear on top, right, bottom or left side.
+	</p>
+	<p>
+		Also, it supports CSS3 to allow modern browser users to have a better experience 
+		while keeping HTML as lightweight as possible. This plugin <strong>doesn't use one single image</strong>. 
+		The box container is <strong>only made of 2 divs</strong>. 
+		I think this is quite self explanatory. But, wait! Old browser users will still have a degraded but nice experience too.
+	</p>
+	<p>
+		Just try to click the button ! <button id="try">Try it!</button>
+	</p>
+	
+
+	<script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="jquery.fastconfirm.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#try').click(function() {
+				$(this).fastConfirm({
+					position: "right",
+					questionText: "Are you sure you want <br/>to try Fast Confirm?",
+					onProceed: function(trigger) {
+						alert("If you want a try, you've got it!");
+					},
+					onCancel: function(trigger) {
+						alert("Erm. In fact, you were already trying it, don't you think?");
+					}
+				});
+			});
+		});
+	</script>
+	
+</body>
+</html>

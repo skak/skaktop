@@ -1,0 +1,29 @@
+#!/bin/bash
+# to backup files to specified dir
+# skak lisasson - 29/12/2012 - arch linux
+# start with generic if root else !exec statement
+			if [[ "$UID" != "0" ]]; then
+				echo "Needs root."
+			elif [[ "$UID" == "0" ]]; then
+				echo ";[ yeaaa waddywannnt"
+			else
+				echo "If you are seeing this message... you're probably editing the script."
+			fi
+# global vars
+# get input
+	while [ ! -d "$backupdir" ] do
+		echo -n "Where would you like to back files up to? (ie. /home/backup/):"
+		read -e backupdir
+			if [ ! -d "$backupdir" ]; then
+				echo $backupdir " is not a directory. Input a new directory. Don't forget the trailing slash."
+				echo "ie. /home/timtam/Desktop is not acceptable. /home/timtam/Desktop/ is."
+		fi
+	done
+	echo -n "Should I run this script just once? (y/n):"
+	read -e ynonce
+		if [[ "$ynonce" == "y" || "$ynonce" == "Y" ]]; then
+			maincage="1"
+		elif [[ "$ynonce" == 'n" || "$ynonce" == "N" ]]; then
+			maincage="2"
+		else [[ "
+

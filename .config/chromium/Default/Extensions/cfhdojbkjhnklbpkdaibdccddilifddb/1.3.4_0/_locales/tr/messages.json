@@ -1,0 +1,214 @@
+{
+   "add": {
+      "message": "Ekle"
+   },
+   "add_domain_button": {
+      "message": "Adres Ekle"
+   },
+   "add_filter_button": {
+      "message": "Filtre Ekle"
+   },
+   "add_filters_msg": {
+      "message": "Filtreler Ekle?"
+   },
+   "add_your_own_filters": {
+      "message": "Kendi Filtrelerini Ekle"
+   },
+   "apply_changes": {
+      "message": "De\u011Fi\u015Fiklikleri Onayla"
+   },
+   "block_element": {
+      "message": "\u00D6\u011Feyi Engelle"
+   },
+   "cancel": {
+      "message": "\u0130ptal"
+   },
+   "clickhide_instructions": {
+      "message": "Bu pencere kapand\u0131\u011F\u0131nda,sayfadaki bir \u00F6\u011Feye t\u0131klay\u0131n"
+   },
+   "description": {
+      "message": "Webdeki t\u00FCm sinir bozucu reklamlar\u0131 engeller:Youtube'daki video reklamlar\u0131,Facebook reklamlar\u0131,Logolar ve daha fazlas\u0131."
+   },
+   "disable_inline": {
+      "message": "Sat\u0131rlardaki yaz\u0131 reklamlar\u0131n\u0131 devre d\u0131\u015F\u0131 b\u0131rak"
+   },
+   "disabled_for_these_domains": {
+      "message": "Adblock Plus a\u015Fa\u011F\u0131daki adresleri engelledi.Adresleri hem adres \u00E7ubu\u011Fundaki Adblock ikonundan engelleyebilir veya adresi kutucu\u011Fa yaz\u0131p \"Adresi ekle\" butonuna t\u0131klayabilirsin."
+   },
+   "easy_create_filter": {
+      "message": "Kolayca filtre yarat"
+   },
+   "edit_filters_raw": {
+      "message": "Filtreleri metin olarak d\u00FCzenleyin"
+   },
+   "enable_only_the": {
+      "message": "Sadece kendi filtrelerinizi etkin k\u0131l\u0131n.Baz\u0131lar\u0131 Chrome'u tepkisiz hale getirebilir."
+   },
+   "enabled_for_site": {
+      "message": "Bu site i\u00E7in etkin"
+   },
+   "filter_lists": {
+      "message": "S\u00FCzge\u00E7 listesi"
+   },
+   "filter_must_follow_syntax": {
+      "message": "Fitren \u003Ca href='$url$'\u003EAdblock Plus Filtre s\u00F6zdizimini\u003C/a\u003E takip etmeli. Nesne-istek gibi belirli filtre t\u00FCrleri desteklenmez.",
+      "placeholders": {
+         "url": {
+            "content": "$1"
+         }
+      }
+   },
+   "filters_acceptableAds2_label": {
+      "message": "Rahats\u0131z etmeyen baz\u0131 reklamlara izin ver"
+   },
+   "filters_addSubscriptionAdd_label": {
+      "message": "Ekle"
+   },
+   "filters_addSubscriptionOther_label": {
+      "message": "Ba\u015Fka abonelik ekle"
+   },
+   "filters_addSubscription_label": {
+      "message": "S\u00FCzge\u00E7 aboneli\u011Fi ekle"
+   },
+   "filters_readMore_label": {
+      "message": "Daha fazla bilgi al"
+   },
+   "filters_subscription_delete_label": {
+      "message": "Sil"
+   },
+   "filters_subscription_enabled_label": {
+      "message": "Devrede"
+   },
+   "filters_subscription_lastDownload_checksumMismatch": {
+      "message": "Ba\u015Far\u0131s\u0131z, checksum e\u015Fle\u015Fmedi"
+   },
+   "filters_subscription_lastDownload_connectionError": {
+      "message": "Olmad\u0131. \u0130ndirmede sorun var."
+   },
+   "filters_subscription_lastDownload_inProgress": {
+      "message": "\u0130ndiriliyor..."
+   },
+   "filters_subscription_lastDownload_invalidData": {
+      "message": "Olmad\u0131. Bu d\u00FCzg\u00FCn bir s\u00FCzge\u00E7 listesi de\u011Fil."
+   },
+   "filters_subscription_lastDownload_invalidURL": {
+      "message": "Olmad\u0131. Bu ge\u00E7erli bir adres de\u011Fil."
+   },
+   "filters_viewList_label": {
+      "message": "Listeye bak"
+   },
+   "firstRun_acceptableAdsExplanation": {
+      "message": "\u003Cstrong\u003EAdblock Plus t\u00FCm rahats\u0131z edici reklamlar\u0131 engeller.\u003C/strong\u003E Ayr\u0131ca siteleri rahats\u0131z etmeyen reklamlar koymaya te\u015Fvik ediyoruz. \u003Ca\u003Ekat\u0131 kurallar\u003C/a\u003E koyarak reklamlar\u0131 engellememizin sebebi bu,ve e\u011Fer siteler rahats\u0131z etmeyen reklamlar koyarsalar onlar\u0131 destek ama\u00E7l\u0131 o reklamlar\u0131 engellemeyiz . Tabi ki \u003Ca\u003Ebu \u00F6zelli\u011Fi kapatarak\u003C/a\u003E t\u00FCm reklamlar\u0131 engelleyebilirsiniz."
+   },
+   "firstRun_changelog": {
+      "message": "Yeniliklere bak\u0131n"
+   },
+   "firstRun_dataCorruptionWarning": {
+      "message": "Bu sayfa s\u00FCrekli g\u00F6steriliyor mu? \u003Ca\u003EBuraya T\u0131klay\u0131n!\u003C/a\u003E"
+   },
+   "firstRun_feature_acceptableAds": {
+      "message": "Rahats\u0131z etmeyen reklamlarla siteleri destekleyin (dahas\u0131 a\u015Fa\u011F\u0131da)"
+   },
+   "firstRun_feature_betterSurfing": {
+      "message": "Rahats\u0131z edici reklamlar olmadan internet keyfi s\u00FCr\u00FCn"
+   },
+   "firstRun_feature_videoAds": {
+      "message": "Ticari kesintiler olmadan video seyredin"
+   },
+   "firstRun_features_heading": {
+      "message": "Adblock ile \u015Funlar\u0131 yapabilirsiniz;"
+   },
+   "firstRun_share1": {
+      "message": "Adblock Plus'un payla\u015F\u0131lmaya de\u011Fer oldu\u011Funu d\u00FC\u015F\u00FCn\u00FCyor musunuz?L\u00FCtfen yap\u0131n!"
+   },
+   "firstRun_share2": {
+      "message": "Adblock Plus \u00FCcretsiz ve a\u00E7\u0131k kaynakl\u0131d\u0131r.L\u00FCtfen bizi destekleyin:"
+   },
+   "firstRun_share2_donate": {
+      "message": "Ba\u011F\u0131\u015F yap\u0131n"
+   },
+   "firstRun_share2_or": {
+      "message": "Yada"
+   },
+   "firstRun_title_install": {
+      "message": "Adblock Plus y\u00FCklendi"
+   },
+   "firstRun_title_update": {
+      "message": "Adblock Plus g\u00FCncellendi"
+   },
+   "found_a_bug": {
+      "message": "Bir hata m\u0131 buldunuz?Adblock plus'u kendi dilinize mi \u00E7evirmek istiyorsunuz?L\u00FCtfen \u003Ca href='$url$'\u003E buradan dosya isteyiniz.",
+      "placeholders": {
+         "url": {
+            "content": "$1"
+         }
+      }
+   },
+   "general": {
+      "message": "Genel"
+   },
+   "global_remove_subscription_warning": {
+      "message": "Ger\u00E7ekten abonelikten \u00E7\u0131kmak istiyor musunuz?"
+   },
+   "global_subscription_invalid_location": {
+      "message": "Dosya listesi konumu ne d\u00FCzg\u00FCn bir URL ne de d\u00FCzg\u00FCn bir ada sahip."
+   },
+   "last_updated_at": {
+      "message": "En son $date$ $time$'de g\u00FCncellendi",
+      "placeholders": {
+         "date": {
+            "content": "$2"
+         },
+         "time": {
+            "content": "$1"
+         }
+      }
+   },
+   "last_updated_at_today": {
+      "message": "En son $time$ bug\u00FCn g\u00FCncellendi",
+      "placeholders": {
+         "time": {
+            "content": "$1"
+         }
+      }
+   },
+   "name": {
+      "message": "Adblock Plus"
+   },
+   "new_filters_added": {
+      "message": "Yeni filtreler eklendi; Onlar\u0131 d\u00FCzenlemek i\u00E7in\u003Ca id='options_url' target='_blank'\u003ESe\u00E7eneklere\u003C/a\u003E bak\u0131n."
+   },
+   "options": {
+      "message": "Adblock Plus se\u00E7enekleri"
+   },
+   "out_of_date_lists": {
+      "message": "Zaman\u0131 ge\u00E7mi\u015F listeler d\u00FCzenli olarak g\u00FCncellenmektedir."
+   },
+   "overlay_hideplaceholders_label": {
+      "message": "Engellenen \u00F6\u011Felerin yer i\u015Faretlerini gizle"
+   },
+   "remove_button": {
+      "message": "Se\u00E7ili olan\u0131 kald\u0131r"
+   },
+   "show_block_element_menu": {
+      "message": "\u00D6\u011Feye sa\u011F t\u0131klad\u0131\u011F\u0131n\u0131zda \"\u00D6\u011Feyi Engelle\" se\u00E7ene\u011Fini g\u00F6ster"
+   },
+   "show_icon": {
+      "message": "\u0130konu adres \u00E7ubu\u011Funda g\u00F6ster."
+   },
+   "subscriptionSelection_location_label": {
+      "message": "S\u00FCzge\u00E7 listesi konumu:"
+   },
+   "subscriptionSelection_subscriptionSelector_label": {
+      "message": "L\u00FCtfen listeden bir s\u00FCzge\u00E7 aboneli\u011Fi se\u00E7in:"
+   },
+   "subscriptionSelection_title_label": {
+      "message": "Aboneli\u011Fin ad\u0131:"
+   },
+   "update_now": {
+      "message": "\u015Eimdi g\u00FCncelle\u015Ftir"
+   },
+   "whitelisted_domains": {
+      "message": "G\u00FCvenilir adresler"
+   }
+}

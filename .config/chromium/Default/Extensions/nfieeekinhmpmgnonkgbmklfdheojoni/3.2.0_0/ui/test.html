@@ -1,0 +1,227 @@
+<html>
+	<head>
+		<meta http-equiv=content-type content="text/html; charset=UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="../public/jqueryui/lightBlue/jquery-ui-1.7.2.custom.css"/> 
+		<link rel="stylesheet" type="text/css" href="../public/jquery.autocomplete.css"/>
+		<script type="text/javascript" src="../public/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="../public/jquery-ui-1.7.2.custom.min.js"></script> 
+		<script type="text/javascript" src="../public/jquery.autocomplete.min.js"></script>
+		<script type="text/javascript" src="../public/jquery.dataTables.min.js"></script> 
+
+
+<style type="text/css">
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+{border:0 none;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;}
+#main {border:solid 1px blue;}
+#output {border:solid 1px black;background-color:#ffffcc;margin:2px;}
+.f {float:left;margin:4px;border:solid 1px transparent;}
+.selected {border:solid 1px red;}
+.clear {clear:both;}
+
+body{background:#dceaf9 url(../ui/images/bg_title.png) repeat-x;padding:10px;font-size:80%;}
+h2 {margin:0;padding:6px;text-align:right;color:#999;font-family:fantasy,cursive,Courier;font-weight:normal;}
+#top {width:75%;margin:auto;font-size:1.3em;}
+#container {width:75%;height:80%;overflow:hidden;margin:auto;}
+.out {height:60%;border:solid 1px brown;overflow:auto;font-family: "Courier New", Courier, monospace;}
+</style>
+    <link rel="stylesheet" type="text/css" href="../public/databales/css/demo_page.css"/>  
+    <link rel="stylesheet" type="text/css" href="../public/databales/css/demo_table.css"/>  
+
+
+<script type="text/javascript">
+$(function(){
+  $('#container').tabs();
+});
+function test_bookmarks_obj(){
+	var div = $("#test_out");
+	div.html("");
+	var bkg = chrome.extension.getBackgroundPage();  // ref to background.html
+	var bm = bkg.gbm;
+	var line = $('<p>').html(test_result("Bookmarks Obj init", (bm!=null), bm));
+	div.append(line);
+	bm.Clear();
+	line = $('<p>').html(test_result("Is empty", (bm.IsNotEmpty()==false), null));
+	div.append(line);
+	console.log("before load");
+	bm.LoadBookmarks(test_bookmarks_loaded);
+	
+}
+function test_bookmarks_loaded(){
+	var div = $("#test_out");
+	var bkg = chrome.extension.getBackgroundPage();  // ref to background.html
+	var bm = bkg.gbm;
+	
+	var line = $('<p>').html(test_result("Load bookmarks", bm.IsNotEmpty(), bm));
+	div.append(line);
+
+	var line = $('<p>').html(test_result("Check SIG", bm.sig!="", bm.sig));
+	div.append(line);
+	
+	var b = { bkmk: "http://www.test.com/", title: "test page", labels: "test" };
+	bm.SaveBookmark(b, test_bookmark_saved);	
+}
+
+function test_bookmark_saved(){
+	var div = $("#test_out");
+	var bkg = chrome.extension.getBackgroundPage();  // ref to background.html
+	var bm = bkg.gbm;
+	
+	var line = $('<p>').html(test_result("Save bookmark", bm.load_error==false, bm.load_error));
+	div.append(line);
+	
+	var u = bm.GetBookmarkByUrl("http://www.test.com/");
+	line = $('<p>').html(test_result("Find Saved bookmark", u!=null, u.href));
+	div.append(line);
+	
+	bm.DeleteBookmark(u.bm_id, test_after_delete_bookmark);
+}
+function test_after_delete_bookmark(){
+	var div = $("#test_out");
+	var bkg = chrome.extension.getBackgroundPage();  // ref to background.html
+	var bm = bkg.gbm;
+	
+	var line = $('<p>').html(test_result("Delete bookmark", true, "deleted"));
+	div.append(line);
+
+	bm.Clear();
+	bm.LoadBookmarks(test_after_deleted);
+}
+
+function test_after_deleted(){
+	var div = $("#test_out");
+	var bkg = chrome.extension.getBackgroundPage();  // ref to background.html
+	var bm = bkg.gbm;
+
+	var u = bm.GetBookmarkByUrl("http://www.test.com/");
+	var line = $('<p>').html(test_result("Check Delete bookmark", u==null, u));
+	div.append(line);
+}
+
+var dot_line = '.................................';
+function test_result(msg, passed, result){
+	var s = dot_line.substr(msg.length);
+	var r = "";
+	if (passed) 
+		r = "<span style='color:green;'>PASSED</span>";
+	else
+		r = "<span style='color:red;font-weight:bold;'>FAILED</span>";
+	return "&gt;&gt; " + msg + s + " " + r + " = " + result;
+}
+
+function test_datatable(){
+  var bms = gbm_app.bookmarks.all_bookmarks;
+  var data = [];
+  for (var i=0; i<bms.length; i++){
+    var d = [];
+    var o = bms[i];
+    d.push(''+o.bm_id);
+    d.push(''+o.title);
+    d.push(''+o.url);
+    d.push(''+o.labels.join(", "));
+    data.push(d);
+  }
+  $('#example').dataTable({
+    "aaData" : data,
+		"aoColumns": [
+			{ "sTitle": "ID" },
+			{ "sTitle": "Title" },
+			{ "sTitle": "Url" },
+			{ "sTitle": "Labels", "sClass": "center" }
+		]
+  });
+}
+function test_search(){
+  div_main.html("");
+  var r = render_search_result(div_main, $('#test_para1').val(), search_id);
+  $('#output').html("found: " + r);
+}
+</script>
+
+
+<style type="text/css">
+	#sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; padding: 0; float: left; margin-right: 10px; background: #eee; padding: 5px; width: 143px;}
+	#sortable1 li, #sortable2 li, #sortable3 li { margin: 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+</style>
+<script type="text/javascript">
+	$(function() {
+		$("ul.droptrue").sortable({
+			connectWith: 'ul',
+			items: 'li',
+		});
+
+		$("#sortable1, #sortable2, #sortable3").disableSelection();
+	});
+
+function test_getselected(){
+  var s = [];
+   $('#sortable1 > li').each(function(idx, d){
+    s.push($(d).text());    
+   });
+   $('#tab_out').text(s.join(", "));
+}
+	</script>
+
+	</head>
+
+	<body>
+
+<div id="top"><h2>Google Bookmarks Chrome Extension Test Page</h2></div>
+<div id="container">	
+  <ul>		
+    <li>
+    <a href="#tabs-1">Bookmarks objects</a>
+    </li>		
+    <li>
+    <a href="#tabs-2">Datatabler</a>
+    </li>
+    <li>
+    <a href='#tabs-3'>Sort</a>
+    </li>		
+    <li style='float:right;padding-top:4px;'>			
+      <span>Test Page</span>		
+    </li>	
+  </ul>
+  <div id="tabs-1">
+    <div style="padding:8px;">
+      <input type="button" value="boomark OBJ" onclick="test_bookmarks_obj();" />	        
+      <div style="overflow:auto;height:78%;">	        
+        <div id="test_out" class="out"></div>
+      </div>
+    </div>	 
+  </div>	
+  <div id="tabs-2">
+    <div style="padding:8px;">
+      <input type="button" value="datatable" onclick="test_datatable();" />
+      <div style="overflow:auto;height:78%;">	        
+        <table cellpadding="0" cellspacing="0" border="0" class="display" id="example"></table>
+      </div>
+    </div>	 
+  </div>
+  <div id="tabs-3">
+
+
+
+
+<div class="option_sort">
+<ul id="sortable1" class='droptrue'>
+  <h2>SHOW</h2>
+	<li class="ui-state-default">Bookmarks</li>
+	<li class="ui-state-default">Search</li>
+	<li class="ui-state-default">Labels</li>
+	<li class="ui-state-highlight">Add</li>
+	<li class="ui-state-hover">Tools</li>
+</ul>
+<ul id="sortable2" class='droptrue'>
+  <h2>HIDE</h2>
+</ul>
+<br clear="both" />
+</div><!-- End demo -->
+
+<input type="button" value="save" onclick="test_getselected();" />
+<div class="out" id="tab_out"></div>
+
+  </div>
+</div>
+<div style="width:75%;margin:auto;">* press CTRL+SHIFT+J for javascript console.</div>
+	</body>
+</html>

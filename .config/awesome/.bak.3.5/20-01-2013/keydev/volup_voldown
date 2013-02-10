@@ -1,0 +1,12 @@
+KeyPress event, serial 33, synthetic NO, window 0x1a00001,
+    root 0x243, subw 0x0, time 940896, (1036,133), root:(1057,173),
+    state 0x0, keycode 123 (keysym 0x1008ff13, XF86AudioRaiseVolume), same_screen YES,
+    XLookupString gives 0 bytes: 
+    XmbLookupString gives 0 bytes: 
+    XFilterEvent returns: False
+
+KeyRelease event, serial 33, synthetic NO, window 0x1a00001,
+    root 0x243, subw 0x0, time 940898, (1036,133), root:(1057,173),
+    state 0x0, keycode 123 (keysym 0x1008ff13, XF86AudioRaiseVolume), same_screen YES,
+    XLookupString gives 0 bytes: 
+    XFilterEvent returns: False

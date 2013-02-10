@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#Text1
+		{
+			width: 40px;
+		}
+		#recent_num
+		{
+			width: 44px;
+		}
+	</style>
+	<script src="prototype/prototype_1.7_rc3.min.js"></script>
+	<script src="gen.js"></script>
+	<script src="ab.js"></script>
+</head>
+<body>
+	<img src="img/logo_32.png" style="height: 32px; width: 32px;" />
+	<b _lb="atomicBookmarksOptions"></b>
+	<hr />
+	<h4 _lb="openLinkOptions">
+	</h4>
+	<ul style="list-style: none; padding-left: 0.5em;">
+		<li>
+			<input type="checkbox" id="keep_bookmarks_opened" checked="checked" />
+			<label for="keep_bookmarks_opened" _lb="keepWindowOpenOpt">
+			</label>
+		</li>
+	</ul>
+	<ul style="list-style: none; padding-left: 0.5em;">
+		<li>
+			<h5 _lb="openLinkLeftButtonOptions">
+			</h5>
+		</li>
+		<li>
+			<input type="radio" name="open_in" id="open_win" />
+			<label for="open_win" _lb="inNewWindowOpt">
+			</label>
+		</li>
+		<li>
+			<input type="radio" name="open_in" id="open_tab" />
+			<label for="open_tab" _lb="inNewTabOpt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+			</label>
+			<input type="checkbox" name="open_in_background" id="open_in_background" checked="checked" />
+			<label for="open_in_background" _lb="inBackgroundOpt">
+			</label>
+		</li>
+		<li>
+			<input type="radio" name="open_in" id="open_cur" />
+			<label for="open_cur" _lb="inCurrentTabOpt">
+			</label>
+		</li>
+	</ul>
+	<ul style="list-style: none; padding-left: 0.5em;">
+		<li>
+			<h5 _lb="openLinkMiddleButtonOptions">
+			</h5>
+		</li>
+		<li>
+			<input type="radio" name="open_in_middle" id="open_win_middle" />
+			<label for="open_win_middle" _lb="inNewWindowOpt">
+			</label>
+		</li>
+		<li>
+			<input type="radio" name="open_in_middle" id="open_tab_middle" />
+			<label for="open_tab_middle" _lb="inNewTabOpt">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+			</label>
+			<input type="checkbox" name="open_in_background_middle" id="open_in_background_middle"
+				checked="checked" />
+			<label for="open_in_background_middle" _lb="inBackgroundOpt">
+			</label>
+		</li>
+		<li>
+			<input type="radio" name="open_in_middle" id="open_cur_middle" />
+			<label for="open_cur_middle" _lb="inCurrentTabOpt">
+			</label>
+		</li>
+	</ul>
+	<h4 _lb="recentBookmarks">
+	</h4>
+	<p style="margin-left: 0.5em" _lb="recentBookmarksNumberOpt">
+		:&nbsp;&nbsp;&nbsp;
+		<input type="number" maxlength="3" id="recent_num" max="999" oninput="setIntProperty(this, 999)" /></p>
+	<h4 _lb="extendedInformationOpt">
+	</h4>
+	<input type="checkbox" id="show_ext" checked="checked" />
+	<label for="show_ext" _lb="showExtendedInformationOpt">
+	</label>
+	<br />
+	<input type="checkbox" id="show_ext_tooltip" checked="checked" />
+	<label for="show_ext_tooltip" _lb="showExtendedInformationTooltipOpt">
+	</label>
+	<h4 _lb="editingBookmarksOpt">
+	</h4>
+	<p>
+		<input type="checkbox" id="open_manager_in_window" checked="checked" />
+		<label for="open_manager_in_window" _lb="openManagerInNewWindowOpt">
+		</label>
+	</p>
+	<h4 _lb="favBookmarkFoldersOpt">
+	</h4>
+	<table>
+		<tr>
+			<td>
+				<label for="startup_folder" _lb="startupFolderOpt">
+					:</label>
+			</td>
+			<td>
+				<select id="startup_folder" name="startup_folder" onchange="saveComboboxState(this, 'startup_folder')">
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="save_bookmarks_to" _lb="favBookmarksFolderOpt">
+					:</label>
+			</td>
+			<td>
+				<select id="save_bookmarks_to" name="save_bookmarks_to" onchange="saveComboboxState(this, 'bookmarks_folder')">
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="save_sessions_to" _lb="favSessionsFolderOpt">
+					:</label>
+			</td>
+			<td>
+				<select id="save_sessions_to" name="save_sessions_to" onchange="saveComboboxState(this, 'sessions_folder')">
+				</select>
+			</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	function handle_checkbox(checkboxName, localStorageRecord, defaultValue)
+	{
+		var checked = getStorageValueBool(localStorageRecord, defaultValue);
+		$(checkboxName).checked = checked;
+
+		Event.observe(checkboxName, "click", function (itm)
+		{
+			localStorage[localStorageRecord] = ($(checkboxName).checked == true)
+		});
+	}
+
+	function setIntProperty(input, maxLimit)
+	{
+		var value = input.value;
+		var re = /^\d+$/;
+		if (!re.test(value) || (maxLimit != undefined && value > maxLimit))
+		{
+			value = maxLimit;
+			input.value = maxLimit;
+		}
+		input.removeAttribute('class');
+		localStorage[input.id] = value;
+	}
+
+	function restoreComboboxState(comboBoxId, localStorageId)
+	{
+		var nodeId = localStorage[localStorageId];
+		populateCombobox(comboBoxId, nodeId);
+	}
+
+	function saveComboboxState(comboBox, localStorageId)
+	{
+		localStorage[localStorageId] = comboBox.value;
+	}
+
+	(function ()
+	{
+		// Left mouse button link opening options
+		switch (getStorageValue("open_in", "1"))
+		{
+			default:
+			case "1":
+				$('open_tab').checked = true;
+				break;
+			case "2":
+				$('open_win').checked = true;
+				break;
+			case "3":
+				$('open_cur').checked = true;
+				break;
+		};
+		Event.observe('open_win', "change", function (itm) { localStorage['open_in'] = "2"; });
+		Event.observe('open_tab', "change", function (itm) { localStorage['open_in'] = "1"; });
+		Event.observe('open_cur', "change", function (itm) { localStorage['open_in'] = "3"; });
+		handle_checkbox('open_in_background', 'bg_tabs', 'true');
+
+		// Middle mouse button link opening options
+		switch (getStorageValue("open_in_middle", "1"))
+		{
+			default:
+			case "1":
+				$('open_tab_middle').checked = true;
+				break;
+			case "2":
+				$('open_win_middle').checked = true;
+				break;
+			case "3":
+				$('open_cur_middle').checked = true;
+				break;
+		};
+		Event.observe('open_win_middle', "change", function (itm) { localStorage['open_in_middle'] = "2"; });
+		Event.observe('open_tab_middle', "change", function (itm) { localStorage['open_in_middle'] = "1"; });
+		Event.observe('open_cur_middle', "change", function (itm) { localStorage['open_in_middle'] = "3"; });
+		handle_checkbox('open_in_background_middle', 'bg_tabs_middle', 'true');
+
+		handle_checkbox('keep_bookmarks_opened', 'keep_opened', 'true');
+		$('recent_num').value = parseInt(getStorageValue('recent_num', "100", true));
+
+		// ext info
+		handle_checkbox('show_ext', 'ext', 'true');
+		handle_checkbox('show_ext_tooltip', 'ext_tooltips', 'true');
+
+		handle_checkbox('open_manager_in_window', 'edit_window', 'true');
+
+		restoreComboboxState('startup_folder', 'startup_folder');
+		restoreComboboxState('save_bookmarks_to', 'bookmarks_folder');
+		restoreComboboxState('save_sessions_to', 'sessions_folder');
+	})();
+</script>
+</html>

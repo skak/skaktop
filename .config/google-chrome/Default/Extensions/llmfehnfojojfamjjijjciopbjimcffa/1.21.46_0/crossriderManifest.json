@@ -1,0 +1,14 @@
+{  "crossrider":{
+  
+		"manifestHostUrl":"https://crossrider.cotssl.net",
+		"statsHostUrl":"http://stats.apps-update.com",
+		"errorHostUrl":"http://errors.apps-update.com",
+    "appID":14917,
+		"bgVersion":4,
+    "jsVersion":46,	
+    "pluginsVersion":14,
+    "InstallerParams": {"source_id":"0","sub_id":"0","uzid":"0"},
+    "InstallationThankYouPage": false
+    
+  }
+}

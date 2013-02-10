@@ -1,0 +1,27 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "download.js" ],
+      "matches": [ "http://codekiem.com/apk-downloader/dl/*" ]
+   }, {
+      "js": [ "market.js" ],
+      "matches": [ "*://play.google.com/store/apps/details?id=*" ]
+   } ],
+   "description": "Download APK from Android Market.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1jM2/E8uFRwdpo/4E6lA6ud3o0OsHA8Nue94veKyPJAb0SL7pPFRliDjI5+LZWbvWtJQFnF2nZb+D0o/gnAuFKEWoJd3he2CT0RRKcxOw8qgZGsDzrvNFn+HeNX6Zfm79te6/SxDgrIiNECzCf61ZDdUx+d1ExVa4yNxvGw9igwIDAQAB",
+   "name": "APK Downloader",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": "page_action.png",
+      "default_title": "APK Downloader",
+      "popup": "popup.html"
+   },
+   "permissions": [ "webRequest", "webRequestBlocking", "tabs", "https://www.google.com/accounts/ClientLogin", "*://android.clients.google.com/*", "*://*.android.clients.google.com/*" ],
+   "update_url": "http://codekiem.com/apk-downloader/updates.xml",
+   "version": "1.2.1"
+}

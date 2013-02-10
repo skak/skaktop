@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.wunderground.com/auto/wxmap/"
+      },
+      "urls": [ "http://www.wunderground.com/auto/wxmap/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPTlLj2iJbpvkEJDS8/8W0zFzsYQDNdeB4MSt+kaOEsqkM8fHdwj+ahegF+pinUkI7NPVTb6Eot9C9lG1W5yqC1gLsT+3miAu6Pe2y1n04G1a+R2IDIn40lFof2EQwFiBCr8l9QNtGnpf2rnJw6bG6uoHlsBdUyL5pAVvgM9+WjwIDAQAB",
+   "name": "__MSG_appName__",
+   "permissions": [ "geolocation" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}

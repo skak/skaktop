@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_09" class="java.beans.XMLDecoder">
+ <object class="esmska.data.Config">
+  <void property="UUID">
+   <string>ff23d293-73d0-46cf-901b-9ca3b82468ab</string>
+  </void>
+  <void property="UUIDMonth">
+   <int>1</int>
+  </void>
+  <void property="countryPrefix">
+   <string>+1</string>
+  </void>
+  <void property="horizontalSplitPaneLocation">
+   <int>371</int>
+  </void>
+  <void property="lookAndFeel">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>esmska.gui.ThemeManager$LAF</class>
+    <string>CROSSPLATFORM</string>
+   </object>
+  </void>
+  <void property="mainDimension">
+   <object class="java.awt.Dimension" id="Dimension0">
+    <void class="java.awt.Dimension" method="getField">
+     <string>width</string>
+     <void method="set">
+      <object idref="Dimension0">
+       <void class="java.awt.Dimension" method="getField">
+        <string>height</string>
+        <void method="set">
+         <object idref="Dimension0"/>
+         <int>869</int>
+        </void>
+       </void>
+      </object>
+      <int>707</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void property="showAdvancedSettings">
+   <boolean>true</boolean>
+  </void>
+  <void property="version">
+   <string>1.3</string>
+  </void>
+  <void property="verticalSplitPaneLocation">
+   <int>611</int>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,705 @@
+
+
+
+<HTML style="width:auto;display:none">
+<title>MightyText - SMS from Chrome</title>
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="mighty-just-m.png">
+      
+<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:regular,600,bold' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css3buttons/stylesheets/reset.css" media="screen"> 
+	<link rel="stylesheet" href="css3buttons/stylesheets/demo.css" media="screen"> 
+	<link href='http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin' rel='stylesheet' type='text/css'> 
+	<link rel="stylesheet" href="css3buttons/stylesheets/css3buttons.css" media="screen"> 
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+
+<script src="jquery-ui-1.8.10.custom/js/jquery-1.4.4.min.js"></script> 
+
+    <script type="text/javascript" src="chrome_ex_oauthsimple.js"></script>
+    <script type="text/javascript" src="chrome_ex_oauth.js"></script>
+    <script type="text/javascript"src="texty.js#eef21332asd"></script>
+    <script type="text/javascript" src="js_popup.js#32aeera3f3frdfa"></script>
+    
+<script src="crx-helper.js"></script>
+
+<script>
+
+      var oauth = ChromeExOAuth.initBackgroundPage({
+        'request_url' : 'https://www.google.com/accounts/OAuthGetRequestToken',
+        'authorize_url' : 'https://www.google.com/accounts/OAuthAuthorizeToken',
+        'access_url' : 'https://www.google.com/accounts/OAuthGetAccessToken',
+        'consumer_key' : 'anonymous',
+        'consumer_secret' : 'anonymous',
+        'scope' : 'http://www.google.com/m8/feeds/',
+        'app_name' : 'MightyText - Contacts Sync'
+      });
+
+
+	  var GOOGLE_CONTACTS_OAUTH_STATUS='UNKNOWN';
+
+
+
+//global variables
+
+	var which_phone_num_from_hash_tag_in_url=window.location.hash.substr(1); // MA NOTE -- get rid of the #
+      var resultdivclean = '<div id="results" style="display:none"><ul id="anchors-for-tabs" style="width:770px;font-size:14px;max-height:80px;overflow:auto;padding:0px;padding-left:5px"></ul></div>';
+
+      var db;
+      var status_of_just_sent_message=0; //would prefer to not make this global, but having scope problems in FullCycle func
+      var text_message_array = new Array();
+
+      var localContactsArray = new Array();
+      var log = document.getElementById('log');
+	  var just_added_msg_id='';
+	  var dynamic_info_global='';
+
+
+
+_gaq.push(["_trackEvent","Popup","Initial-Load","",1]);
+
+
+
+
+function _8cb99163ccec27911a1cdb22ee4a9eec21f5bce0a9e7c3fb5ce21d33a25cba3d1c99aa327ab9f7da()
+ 
+{
+
+
+if (which_phone_num_from_hash_tag_in_url=="options")
+	{
+	setTimeout("_4bf436d53f973e343f22f80a25fef04fcdfeabd4139a4834fbcbc00241f9970f37626cb56af585a4();",1500);
+	}
+	
+else if (window.localStorage.usingWebAppNew==1)
+		{
+		_93c2c335174bd7a4636f018647b1acf8ff2a279d11f428e2fdc3d968dfdcbf58ee9ca2489a18e4ce();
+		window.close();
+		}
+
+else //is a legacy CRX USER!
+	{
+	$("html").show();
+	
+	_9c477210d23ffe19a98e84cd79e7804fe7e02b5e7966f05d5ba5bdccbdf07eb0c2d946d9affcc6ad();
+	_a0490cdb023c115a91c22ea05ae412b29710663c2c1dfc3f9ba6addb8ad06733e293a4b0a1c7e4e1();
+	}
+
+}
+
+
+
+_792285c6254d6ae95dfa6d1d5848421053f2d24eacb381711c815b56ac54499f7190af8572c35b6f();
+_8cb99163ccec27911a1cdb22ee4a9eec21f5bce0a9e7c3fb5ce21d33a25cba3d1c99aa327ab9f7da();
+</script>
+
+
+
+</head>
+
+<link rel="stylesheet" href="jquery-ui-1.8.10.custom/css/ui-lightness/jquery-ui-1.8.10.custom.css">
+
+<style type="text/css">
+
+img.HoverBorder {
+opacity:0.55;
+}
+
+img.HoverBorder:hover {
+opacity:1.0;
+}
+
+p
+{
+font-size:14px;
+margin:0;
+}
+
+td {
+  font-size: 9px;
+  color: black;
+}
+
+ul {
+  font-size: 11px;
+  color: black;
+}
+
+li 
+{ list-style-type:none; }
+
+li.ui-tabs-nav li.ui-tabs {
+font-size:8px;
+font-weight:bold;
+background-color:#EEE;
+
+}
+
+
+.ui-tabs .ui-tabs-nav li {
+border-bottom: 0px !important;
+float: left;
+list-style: none;
+margin: 4px 5px 0px 0px;
+padding: 0px;
+position: relative;
+top: 1px;
+white-space: nowrap;
+
+}
+
+.ui-tabs .ui-tabs-nav li a {
+float: left;
+padding: 0.7em 0.6em;
+text-decoration: none;
+}
+
+
+.options-section{
+font-size:12px; 
+margin-bottom:10px;
+border-top: 2px solid;
+color:green;
+
+}
+
+
+
+
+li.ui-tabs-selectedddddd {
+color: #3F8CD9;
+font-weight:bold;
+background-color:green;
+}
+
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited .ui-state-default a:hover {
+color: #3F8CD9;
+background: #EAEAEA;
+text-decoration: none;
+border: 1px solid #C5C5C5;
+
+}
+
+.ui-tabs .ui-tabs-nav li a {
+float: left;
+padding: 0.4em 0.4em;
+text-decoration: none;
+}
+
+.ui-state-hover a, .ui-state-hover a:hover { 
+background-color: white;
+ }
+
+
+
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+border: none;
+border: 1px solid #C5C5C5;
+
+color: #C77405;
+font-weight: bold;
+
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+border: 2px solid #C5C5C5; /*MA -- this fixes tabs (2px) explosion to third-row issue */
+font-weight:normal;
+}
+
+
+
+
+.ui-widget-header {
+bbbackground: #3F8CD9; /* MA - blue background was there */
+background: white; /* MA - blue background was there */
+border: 1px solid #CCC;
+color: white;
+font-weight: bold;
+}
+
+
+.ui-widget-content{
+background-color:white;
+border:none;	
+}
+
+.ui-widget{
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+
+
+
+#results {
+	width:780px;
+	height:400px;
+	oooverflow:auto;
+	fffont-family: arial;
+	line-height: 20px;
+	background-color:white;
+	background:none;
+	border:none; /*overriding Jquery UI border*/
+	}
+	
+#resultholder {
+	bbackground-color:white;
+	max-height:350px;
+	}
+
+
+
+
+#top-header {
+width: 100%;
+height: 45px;
+padding-top:2px;
+padding-bottom:0px;
+background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#111));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#111));
+background-repeat-x: initial;
+background-repeat-y: initial;
+background-attachment: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: initial;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+clear:both;
+}
+
+
+
+
+#top-header a{
+color:#3F8CD9;
+margin:5px;
+font-size:12px;
+}
+
+
+button {
+margin-right: 10px; 
+ppadding: 0px 10px !important;
+}
+
+
+bbbbuttonold:hover{
+bborder: 1px solid #333333;
+
+
+}
+
+#msg {
+color: #333;
+height:18px;
+font-size:12px;
+margin-right: 5px;
+margin-top: 0px;
+margin-bottom:4px;
+overflow:auto;
+font-weight:bold;
+margin-left:200px;
+padding:5px;
+padding-top:5px;
+clear:both;
+visibility:hidden;
+}
+
+
+#msg:empty
+{
+padding:0px;
+} // avoids little circle yellow dot problem
+	
+	
+
+#top-notif-bar {
+color: black;
+font-size:13px;
+mmargin-top: 2px;
+margin-bottom: 2px;
+width:750px;
+overflow:auto;
+}
+
+
+
+
+.user-alert {
+background: #FFF1A8;
+display:inline;
+color: black;
+font-size: 13px;
+ppadding: 5px 5px;
+ttext-align: center;
+-webkit-border-radius: 5px;
+}
+
+
+.text-message-list{
+
+height:300px;
+overflow:auto;
+background:white;
+border:1px solid #CCC;
+padding:0px;
+-webkit-border-radius: 5px;
+
+}
+
+.sender-box
+{
+border-bottom-left-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+border: 1px solid; 
+
+border-top-color:#6FAC38;
+border-bottom-color:#EEE;
+border-left-color: #EEE;
+border-right-color: #EEE;
+
+margin:15px;
+width:400px
+}
+
+.sender-title
+{
+padding:5px;
+bbbackground-color: #6FAC38;
+border-color: #6FAC38;
+border-right-color: #6FAC38;
+
+color:white;
+display:block
+}
+
+
+.sms-time
+{
+color: #999;
+font-size:11px;
+margin-left:5px;
+}
+
+
+
+.outbound-state-info
+{
+color: green;
+font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+font-size:8px;
+}
+
+
+
+.sms-body
+{
+font-size:13px;
+border:1px solid #000;
+background-color: white;
+border-color: #A8A8A8;
+border-bottom-left-radius: 1em 1em;
+border-bottom-right-radius: 1em 1em;
+border-style: none;
+border-width: thin;
+border-top-left-radius: 1em 1em;
+border-top-right-radius: 1em 1em;
+overflow: hidden;
+padding: 2px 5px 2px 5px;
+text-align: left;
+-webkit-box-shadow: #BBB 2px 2px 2px;
+max-width:520px;
+OLDbackground-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#E0FDFF), from(#55BEC2), to(#0FFFEF));-webkit-box-shadow: #BBB 2px 2px 2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#EBEBEB), color-stop(15%,#D6D6D6), color-stop(71%,#D2D2D2), color-stop(99%,#E7E7E7)); /* webkit */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(20%,#e5ebee), color-stop(64%,#d7dee3), color-stop(100%,#f5f7f9)); /* webkit */
+display:block;
+
+    position:relative;
+    padding:4px 8px;
+    border:1.5px solid rgb(74,77,82);
+    border:1.5px solid rgba(74,77,82,.5);
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    max-width: 70%;
+
+
+
+}
+
+
+
+
+.sms-line-item
+{
+margin-left:5px
+}
+
+
+.sms-reply
+{
+margin-left:100px;
+}
+
+
+
+.sms-reply .sms-body
+{
+bbb-OLD-background-image: -webkit-gradient(linear, left top, left bottom, from(#B9FF69), from(#7EC217), to(#B9FF69));
+
+bbackground: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#D0ECCC), color-stop(15%,#87CD65), color-stop(70%,#92D664), color-stop(99%,#ADE763)); /* webkit */
+bbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8ffe8), color-stop(33%,#e3f5ab), color-stop(100%,#b7df2d)); /* webkit */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#f8ffe8), color-stop(15%,#e3f5ab), color-stop(70%,#e3f5ab), color-stop(99%,#b7df2d)); /* webkit */
+
+
+}
+
+
+.ui-tabs 
+{
+
+font-size:18px;
+
+}
+
+.ui-tabs-panel 
+{
+
+padding:0;
+
+}
+.message-action-links
+{
+font-size:11px;
+color:red;
+}
+
+.from-label
+{
+font-size:13px;
+}
+
+
+
+.ui-tabs .ui-tabs-nav li {
+display:inline;
+
+
+ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+padding-bottom:10px;
+border:3px black;
+}
+
+
+
+
+
+</style>
+
+
+
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.core.js"></script> 
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.widget.js"></script> 
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.tabs.js"></script> 
+
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.draggable.js"></script> 
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.position.js"></script> 
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.dialog.js"></script> 
+	<script src="jquery-ui-1.8.10.custom/development-bundle/ui/jquery.ui.autocomplete.js"></script> 
+
+    <script type="text/javascript" src="jquery.NobleCount.js#1"></script>
+
+
+
+	<link rel="stylesheet" href="demos.css">
+
+
+<style>
+
+
+
+body {
+
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  padding: 0px;
+  mmmargin: 1px;
+  width: 790px;
+  height:570px;
+  overflow: hidden;
+  font-size:12px;
+  vvvvertical-align:center;
+}
+
+
+.ui-helper-clearfix::after  /*MA Fix for Jquery tabs -- must put after the jquery UI includes! */
+	{
+	dddisplay:inline;
+	height:inherit;
+
+	}
+
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+border: 1px solid #C5C5C5; /*MA -- this fixes tabs (2px) explosion to third-row issue */
+
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+border: 1px solid #CCC;
+font-weight:600;
+}
+
+.ui-tabs .ui-tabs-nav li {
+border: 1px solid #CCC;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+ppadding-bottom:10px;
+border:2px solid #CCC;
+
+}
+
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited  {
+background-color: #3F8CD9;
+border:none;
+color:white;
+}
+
+
+
+
+ .ui-state-default a:hover {
+color: white;
+background-color: #3F8CD9;
+text-decoration: none;
+}
+
+
+
+
+	.ui-autocomplete {
+		max-height: 100px;
+		wwwidth:50px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+		/* add padding to account for vertical scrollbar */
+		ppadding-right: 20px;
+		margin-left:0;
+		left:0;
+		font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		font-size:12px;
+	}
+
+
+p{
+color:green;
+}
+
+
+
+</style>
+
+
+
+<body onload="setTimeout('_91f536e7d7bd855151876f5a748fa7f58a6e68d3f8237d8959e03355010bb85cc3dc46a46fb31110();',100);"style="background:#D0D2D3">
+
+
+<div id="top-notif-bar" class="user-alert" style="margin-left:0px"></div>
+
+<div id="top-header">
+
+  <div id="texty-logo" style='float:left;margin-bottom:10px;margin-top:-4px'>
+
+      <img  src="mighty_launch_small.png#1" wwidth=170 hheight=35 onclick="_gaq.push(['_trackEvent','Popup','Logo-Click','Logo-Click',1]);_5df7a7bdd63ae9b34725ca447d65f3922a72ebf567cacd7c03089ab2a6b981de1e955ad6a7c37335();_a0490cdb023c115a91c22ea05ae412b29710663c2c1dfc3f9ba6addb8ad06733e293a4b0a1c7e4e1();"></a>
+      
+  </div>
+
+
+	 <a id="separate-tab-open" style="margin-left:-110px;margin-top:-12px;" href="#" onclick="_gaq.push(['_trackEvent','Popup','Open-Texty-Separate-Tab','',1]);window.close();chrome.tabs.create({'url': chrome.extension.getURL('popup.html')}, function(tab) {});   
+"><img title='open separate tab'  width=14 height=14 src='open_in_new_window_inv.png'></a>   
+
+  
+  <span id="fb-like-button" style="float:left;margin-left:25px;margin-top:3px">
+ <!--
+ 
+  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FTexty%2F156773284381924&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font&amp;colorscheme=dark&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+-->
+  
+  </span>
+  
+
+
+	<div style='float:right;margin-right:1px;margin-bottom:10px;color:#3F8CD9;font-size:13px'>
+	  <span id="sign-in-status" name="sign-in-status" ></span>
+	  <span id="static-links-plus-separator"></span> 
+	  <a id="help" href="#" onclick="_gaq.push(['_trackEvent','Popup','Help-Link-Click','',1]);window.close();chrome.tabs.create({url: 'http://mightytext.net/help'})">Help</a>   
+	
+	  <a href="#" onclick="window.close()"><img src="red-close-x.png" class="HoverBorder" height=20 width=20 style="margin:1px;"></a>
+
+	</div>
+
+</div>
+
+<div id="action-info-bar" style="clear:both;height:40px;overflow:auto">
+
+
+	<div id="user-actions" style="float:left;margin-left:1px;margin-bottom:8px;padding:0px;width:275px;border:none">
+	</div>
+
+
+
+
+	  <div id='dynamic-message' style='float:right;font-size:12px;color:green;margin-right:8px;width:460px;text-align:right'>
+	  </div>
+
+  
+
+</div>
+
+
+	  <div id='msg' style='float:left;font-weight:bold' class='user-alert'>
+	  </div>
+
+
+
+<div id="resultholder">
+	<div id="results"> 
+	</div>
+</div>
+
+<div id="output-contacts"></div>
+
+<div id="messages" style="float:right; overflow:auto;margin:10px"><h4></h4></div>
+<p id="log" style="color: blue"></p>
+
+
+
+
+
+
+</body>
+
+
+
+</HTML>
