@@ -47,8 +47,8 @@ export SAVEHIST=10000
 export LESSHISTFILE="-"
 export PAGER="less"
 export READNULLCMD="${PAGER}"
-export VISUAL="emacsclient"
-export EDITOR="${VISUAL}"
+export VISUAL="gvim"
+export EDITOR="vim"
 export BROWSER="firefox"
 export XTERM="urxvt"
 export TERM=rxvt-unicode-256color
@@ -75,6 +75,7 @@ export LESS_TERMCAP_us=$'\E[1;32m'    # begin underline
 # {{{ Aliases
 ################# ALIAS ###################
 #GLOBAL
+alias wifi-menu="sudo wifi-menu"
 alias umount="sudo umount"
 alias mount="sudo mount"
 alias @wifi="sudo wifi-menu"
@@ -117,6 +118,11 @@ alias @ps="packer -S"
 alias @pss="packer -Ss"
 alias @psyu="packer -Syu"
 alias @psyy="packer -Syy"
+alias @sps="sudo packer -S"
+alias @spss="sudo packer -Ss"
+alias @spsyu="sudo packer -Syu"
+alias @spsyy="sudo packer -Syy"
+#
 ###########################################
 
 ############# HASH(ALIAS.DIR) #############
